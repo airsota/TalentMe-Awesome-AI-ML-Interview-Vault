@@ -175,6 +175,56 @@ def pure_python_dpp_greedy(quality_scores: np.ndarray, similarity_matrix: np.nda
 
 ---
 
+## 🧠 Native Obsidian Vault Support (1-Click Local Second Brain)
+
+Every markdown document in this repository adheres strictly to the **Karpathy LLM-Wiki / Second Brain Specification**:
+* **100% Native Markdown**: Compatible with [Obsidian](https://obsidian.md/), Logseq, and Foam.
+* **Standard YAML Frontmatter**: Includes metadata tags, category classification, bilingual summaries, and FAQ schema.
+* **KaTeX LaTeX Math Rendering**: All equations use standard `$...$` inline and `$$...$$` block syntax.
+* **Interactive Mermaid Diagrams**: Directly visualizes workflows inside Obsidian's native renderer.
+
+### Quick Setup with Obsidian:
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/airsota/TalentMe-Awesome-AI-ML-Interview-Vault.git
+   ```
+2. Open **Obsidian** $\to$ Click **"Open folder as vault"** $\to$ Select `TalentMe-Awesome-AI-ML-Interview-Vault`.
+3. Press `Ctrl + G` (or `Cmd + G`) to open the **Interactive Knowledge Graph View** connecting all mathematical foundations and role-track guides!
+
+---
+
+## ⚡ TalentMe MCP: Supercharge Local Memory with AI Mock Interviewers
+
+Pairing your local Obsidian vault with the **TalentMe MCP (Model Context Protocol) Server** transforms static notes into an interactive, autonomous AI career coach directly inside **Cursor, Claude Code, Windsurf, or Antigravity IDE**.
+
+```mermaid
+graph LR
+    subgraph Local["🏠 Your Local Machine"]
+        Obsidian["🧠 Local Obsidian Vault<br/>(Markdown Notes + Memory Graph)"]
+        IDE["💻 Cursor / Claude Code / Antigravity"]
+    end
+
+    subgraph MCP["⚡ TalentMe MCP Server"]
+        Mock["🎙️ tm-mock / mock-interview<br/>Interactive Stress Interviewer"]
+        Assess["📊 tm-assess & tm-plan<br/>14-Day Sprint Study Architect"]
+        Sync["🔄 bridge-sync-and-digest<br/>Cloud-to-Local Knowledge Distiller"]
+        Debrief["📝 tm-debrief<br/>Post-Interview Feedback Debriefer"]
+        Review["🔁 tm-review<br/>Ebbinghaus Spaced Repetition"]
+    end
+
+    Obsidian <--> IDE
+    IDE <--> MCP
+```
+
+### 🛠️ Key AI Agent Skills Available via TalentMe MCP:
+* **🎙️ `tm-mock` / `mock-interview`**: Simulates real-time FAANG / OpenAI multi-turn technical loops directly in your IDE terminal, cross-referencing your personal notes and grading your answers against production rubrics.
+* **📊 `tm-assess` & `study-planner`**: Analyzes your local skill coverage and generates an actionable, personalized 14-day sprint roadmap for your target job description.
+* **🔄 `bridge-sync-and-digest`**: Distills complex cloud topics into bite-sized summaries and seamlessly appends them to your local vault.
+* **📝 `tm-debrief`**: Instantly logs questions after real-world interview loops, identifying knowledge gaps and cross-linking to remediation guides.
+* **🔁 `tm-review`**: Prompts active-recall drills for decaying knowledge nodes based on the Ebbinghaus forgetting curve.
+
+---
+
 ## 🌐 Interactive Web Platform
 
 Experience the full interactive visual suite online at [**talentme.airsota.com**](https://talentme.airsota.com):
