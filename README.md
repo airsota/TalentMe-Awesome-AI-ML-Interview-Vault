@@ -193,35 +193,63 @@ Every markdown document in this repository adheres strictly to the **Karpathy LL
 
 ---
 
-## ⚡ TalentMe MCP: Supercharge Local Memory with AI Mock Interviewers
+## ⚡ TalentMe MCP: Supercharge Local Memory with AI Mock Interviewers & Cloud Sync
 
-Pairing your local Obsidian vault with the **TalentMe MCP (Model Context Protocol) Server** transforms static notes into an interactive, autonomous AI career coach directly inside **Cursor, Claude Code, Windsurf, or Antigravity IDE**.
+The true superpower of this repository is that **it is not just static text** — it seamlessly acts as your **Local Second Brain**, and when connected with the [**TalentMe MCP Server (GitHub: airsota/talentme-mcp)**](https://github.com/airsota/talentme-mcp), your AI assistant (Cursor, Claude Code, Windsurf, or Antigravity IDE) gains simultaneous read/write access to both your **Local Knowledge Vault** and the **TalentMe Cloud Knowledge Base**.
 
 ```mermaid
-graph LR
-    subgraph Local["🏠 Your Local Machine"]
-        Obsidian["🧠 Local Obsidian Vault<br/>(Markdown Notes + Memory Graph)"]
-        IDE["💻 Cursor / Claude Code / Antigravity"]
+graph TD
+    %% ==========================================
+    %% 1. Local Second Brain & IDE
+    %% ==========================================
+    subgraph S1["🏠 1. Your Local Machine & Second Brain"]
+        V1["🧠 Current Repository Vault<br/>• 157 In-Depth Guides<br/>• 477 Atomic Knowledge Cards<br/>• Personal Study Notes & Logs"]
+        IDE1["💻 AI Coding IDE & Agent Terminal<br/>• Cursor AI / Claude Code<br/>• Google Antigravity / Windsurf"]
+        V1 <--> IDE1
     end
 
-    subgraph MCP["⚡ TalentMe MCP Server"]
-        Mock["🎙️ tm-mock / mock-interview<br/>Interactive Stress Interviewer"]
-        Assess["📊 tm-assess & tm-plan<br/>14-Day Sprint Study Architect"]
-        Sync["🔄 bridge-sync-and-digest<br/>Cloud-to-Local Knowledge Distiller"]
-        Debrief["📝 tm-debrief<br/>Post-Interview Feedback Debriefer"]
-        Review["🔁 tm-review<br/>Ebbinghaus Spaced Repetition"]
+    %% ==========================================
+    %% 2. TalentMe MCP Protocol Server
+    %% ==========================================
+    subgraph S2["⚡ 2. TalentMe MCP Server (github.com/airsota/talentme-mcp)"]
+        MCP_Core["Model Context Protocol Core Gateway<br/>Bi-directional Dual-Memory Context Engine"]
+        
+        T1["🎙️ tm-mock / mock-interview<br/>Terminal Live Interactive Stress Interviewer"]
+        T2["📊 tm-assess & study-planner<br/>14-Day Baseline Diagnostics & Sprint Architect"]
+        T3["🔄 bridge-sync-and-digest<br/>Cloud-to-Local Knowledge Distillation"]
+        T4["📝 tm-debrief<br/>Post-Interview Feedback & Error Logging"]
+        T5["🔁 tm-review<br/>Ebbinghaus Spaced Repetition Practice"]
+        
+        MCP_Core --> T1
+        MCP_Core --> T2
+        MCP_Core --> T3
+        MCP_Core --> T4
+        MCP_Core --> T5
     end
 
-    Obsidian <--> IDE
-    IDE <--> MCP
+    %% ==========================================
+    %% 3. TalentMe Cloud Knowledge Base
+    %% ==========================================
+    subgraph S3["🌐 3. TalentMe Master Cloud Knowledge Base"]
+        Cloud_KB["TalentMe Cloud Master Graph<br/>• Real-Time Big Tech Interview Pipeline<br/>• SOTA Paper & System Architecture Feeds<br/>• Interactive Mindmap Topology Database"]
+    end
+
+    %% Connectors
+    IDE1 <== "Model Context Protocol (JSON-RPC)" ==> MCP_Core
+    T3 <== "Real-Time Cloud Query & Ingestion" ==> Cloud_KB
+    T1 -. "Live Company Rubric Cross-Ref" .-> Cloud_KB
 ```
 
-### 🛠️ Key AI Agent Skills Available via TalentMe MCP:
-* **🎙️ `tm-mock` / `mock-interview`**: Simulates real-time FAANG / OpenAI multi-turn technical loops directly in your IDE terminal, cross-referencing your personal notes and grading your answers against production rubrics.
-* **📊 `tm-assess` & `study-planner`**: Analyzes your local skill coverage and generates an actionable, personalized 14-day sprint roadmap for your target job description.
-* **🔄 `bridge-sync-and-digest`**: Distills complex cloud topics into bite-sized summaries and seamlessly appends them to your local vault.
-* **📝 `tm-debrief`**: Instantly logs questions after real-world interview loops, identifying knowledge gaps and cross-linking to remediation guides.
-* **🔁 `tm-review`**: Prompts active-recall drills for decaying knowledge nodes based on the Ebbinghaus forgetting curve.
+### 🌟 Why This Architecture Changes Everything:
+
+1. **📁 100% Local Privacy & Ownership**:
+   - The entire vault lives on your local disk. You can annotate, add your own company notes, and customize without vendor lock-in.
+2. **☁️ Zero-Latency Cloud Knowledge Expansion**:
+   - Through `talentme-mcp`, your IDE agent can pull the latest SOTA interview debriefs and architectural deep dives directly from TalentMe Cloud and distill them into your local vault.
+3. **🎙️ Proactive Terminal Mock Interviews**:
+   - Type `/mock` or invoke `tm-mock` in Cursor/Claude Code. The AI interviewer will examine you on topics in this repository (e.g. *DPO derivation*, *LoRA memory sizing*, *CUPED variance proofs*), probe edge cases, and log weak spots to your local Obsidian memory.
+
+👉 **Get the TalentMe MCP Server**: [**https://github.com/airsota/talentme-mcp**](https://github.com/airsota/talentme-mcp)
 
 ---
 
