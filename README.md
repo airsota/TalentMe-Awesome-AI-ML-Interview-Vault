@@ -47,24 +47,59 @@ Unlike generic interview prep lists with superficial answers, this repository pr
 
 ---
 
-## 📖 13 Foundational Modules Overview
+## 📖 13 Full-Spectrum Foundational Modules & System Topology
 
 ```mermaid
 graph TD
-    A["TalentMe Full-Spectrum Technical Vault"]
-    A --> M1["📐 Math & Optimization"]
-    A --> M2["📊 Classic Machine Learning"]
-    A --> M3["🧠 Deep Learning Foundations"]
-    A --> M4["⚡ Large Language Models (LLMs)"]
-    A --> M5["🎮 RL & Post-Training Alignment"]
-    A --> M6["👁️ Multimodal & Diffusion"]
-    A --> M7["🖥️ AI Infra & Distributed Training"]
-    A --> M8["🤖 AI Engineering & Agents"]
-    A --> M9["🏗️ Industrial System Design"]
-    A --> R1["💻 MLE Fast-Track"]
-    A --> R2["🚀 AIE Fast-Track"]
-    A --> R3["🎓 RS Fast-Track"]
-    A --> R4["📈 DS Fast-Track"]
+    %% ==========================================
+    %% Layer 1: Mathematical Foundations & ML
+    %% ==========================================
+    subgraph L1["📐 Layer 1: Mathematical Foundations & Classic Learning"]
+        M1["Math & Optimization<br/>• SVD & Spectral PCA<br/>• Matrix Calculus & Hessians<br/>• KKT & Lagrangian Duals<br/>• Itô Stochastic Calculus"]
+        M2["Classic Machine Learning<br/>• Logistic Regression<br/>• SVM Max-Margin & Duals<br/>• GBDT & XGBoost 2nd-Order<br/>• LightGBM GOSS & EFB"]
+        M1 --> M2
+    end
+
+    %% ==========================================
+    %% Layer 2: Deep Learning & Frontier Models
+    %% ==========================================
+    subgraph L2["🧠 Layer 2: Deep Learning & Frontier Architectures"]
+        M3["Deep Learning Foundations<br/>• ResNet & ViT Projection<br/>• RNN / LSTM / Mamba SSM<br/>• Kaiming Init & AdamW<br/>• RMSNorm & WGAN-GP"]
+        M4["Large Language Models (LLMs)<br/>• Multi-Head Attention & RoPE<br/>• KV Cache (MLA / GQA)<br/>• SFT Loss Masking & LoRA<br/>• MoE Routing & Load Balancing"]
+        M5["RL & Post-Training Alignment<br/>• MDP & Bellman Optimality<br/>• PPO Pessimistic Clipped Bound<br/>• DPO Implicit Reward Substitution<br/>• GRPO Pure RL Emergence"]
+        M6["Multimodal & Diffusion<br/>• CLIP Contrastive Learning<br/>• VLM Visual Projectors<br/>• DDPM SDE & Flow Matching<br/>• DiT Scaling Architectures"]
+        
+        M3 --> M4
+        M4 --> M5
+        M4 --> M6
+    end
+
+    %% ==========================================
+    %% Layer 3: Infrastructure & System Design
+    %% ==========================================
+    subgraph L3["🖥️ Layer 3: Infrastructure, Compound Systems & Industrial Design"]
+        M7["AI Infrastructure & Clusters<br/>• ZeRO-1/2/3 16Ψ Partitioning<br/>• Megatron 3D Parallelism<br/>• FlashAttention Online Softmax<br/>• vLLM PagedAttention"]
+        M8["AI Engineering & Agents<br/>• BM25 + Dense RRF (k=60)<br/>• Cross-Encoder Reranking<br/>• Agent State Machines & Loops<br/>• SWE-bench Sandboxed Eval"]
+        M9["Industrial System Design<br/>• 4-Stage Funnel (10M→10)<br/>• Real-time Feature Stores<br/>• Point-in-Time Joins<br/>• Risk Control & Fraud GNN"]
+        
+        M7 --> M8
+        M8 --> M9
+    end
+
+    %% ==========================================
+    %% Layer 4: 4 Specialized Role Fast-Tracks
+    %% ==========================================
+    subgraph L4["🎯 Layer 4: 4 Specialized Role Fast-Tracks"]
+        R1["💻 MLE Fast-Track<br/>DSSM log(p) Debiasing → MMoE / DCN-v2 → DPP Diversity Selection"]
+        R2["🚀 AIE Fast-Track<br/>SFT Data Packing → LoRA VRAM Calculus → Enterprise GraphRAG"]
+        R3["🎓 RS Fast-Track<br/>Paper 4-Step Deconstruction → DPO/PPO Proofs → Scaling Laws"]
+        R4["📈 DS Fast-Track<br/>Rubin DAG d-Sep → SCM/IV → CUPED Variance Reduction → SRM Funnel"]
+    end
+
+    %% Cross-Layer Connectors
+    L1 --> L2
+    L2 --> L3
+    L3 --> L4
 ```
 
 ### 1. [📐 Math & Optimization (Foundations/Math)](Foundations/Math/)
