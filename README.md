@@ -2,7 +2,7 @@
 
 # 🌟 TalentMe: Awesome AI / ML / LLM Technical Vault & Interview Mastery
 
-**The Ultimate Bilingual (English / 中文) Open-Source Technical Knowledge Base, Mathematical Derivation Codex, and Role-Driven Interview Preparation Architecture.**
+**The Ultimate Open-Source Technical Knowledge Base and Role-Driven Interview Preparation Architecture.**
 
 [![GitHub Stars](https://img.shields.io/github/stars/airsota/TalentMe-Awesome-AI-ML-Interview-Vault?style=for-the-badge&logo=github&color=8b5cf6)](https://github.com/airsota/TalentMe-Awesome-AI-ML-Interview-Vault)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
