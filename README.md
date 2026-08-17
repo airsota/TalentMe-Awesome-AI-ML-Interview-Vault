@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./assets/banner.png" alt="TalentMe: Awesome AI & ML Knowledge Vault" width="100%" style="border-radius: 12px; margin-bottom: 20px;" />
+
 # 🌟 TalentMe: Awesome AI / ML / LLM Technical Vault & Interview Mastery
 
 **The Ultimate Open-Source Technical Knowledge Base and Role-Driven Interview Preparation Architecture.**
