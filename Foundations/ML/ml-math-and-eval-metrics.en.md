@@ -16,6 +16,10 @@ interviewFollowups:
   - "Contrast Porter Stemming vs WordNet Lemmatization in NLP preprocessing pipelines."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/ML/ml-math-and-eval-metrics?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ml-math-and-eval-metrics)
+<!-- talentme:top:end -->
+
 # ML Evaluation Metrics & Data Engineering: Classification, Regression, Ranking (NDCG), Calibration & Preprocessing Guide
 
 > **Summary**: Evaluation metrics and preprocessing form the mathematical bridge connecting raw models to real-world business value. This exhaustive guide covers Classification (Macro/Micro F1, Hamming Loss), Ranking (MRR, MAP, NDCG), Regression (MSE, RMSE, $R^2$, Adjusted $R^2$), ROC vs PR curves, Mann-Whitney U AUC proof, Platt/Isotonic calibration, SMOTE/Hard Negative sampling, and NLP preprocessing.
@@ -127,3 +131,9 @@ class PureNumpyRankingMetrics:
         if not dcg_max: return 0.0
         return PureNumpyRankingMetrics.dcg_at_k(r, k) / dcg_max
 ```
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ml-math-and-eval-metrics-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ml-math-and-eval-metrics-coaching).
+<!-- talentme:bottom:end -->

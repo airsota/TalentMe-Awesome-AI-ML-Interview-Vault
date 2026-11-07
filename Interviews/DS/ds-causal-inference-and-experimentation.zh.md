@@ -16,6 +16,10 @@ interviewFollowups:
   - '在工业界无法做标准 A/B 实验时（如双边市场、全量发布、合规限制），如何构建因果推断决策树？'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/DS/ds-causal-inference-and-experimentation?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-causal-inference-and-experimentation)
+<!-- talentme:top:end -->
+
 # 🌐 DS 因果推断实战：PSM 倾向得分匹配、DiD 双重差分与 Synthetic Control
 
 > **核心摘要**：因果推断（Causal Inference）是数据科学家（DS）与产品分析师（PA）拉开核心竞争力的分水岭。在工业级业务中，由于商业伦理、溢出效应或全量上线等限制，往往无法进行标准随机对照试验（A/B Test）。本指南系统剖析 Rubin 潜在结果模型、Pearl 因果图 DAG、PSM 倾向得分匹配、DiD 双重差分、合成控制法 SCM 以及工具变量 2SLS，结合数理闭式解与生产级 Python 算子，构建从理论到落地的完备体系。
@@ -306,3 +310,9 @@ graph TD
 > **标准答题框架**：
 > 1. **单模型的脆弱性**：单独使用 Logistic 估算倾向得分进行 IPW 加权，若得分接近 0 或 1 会导致权重爆炸，估计方差极大；单独使用 OLS 线性回归，若真实产出曲面高度非线性，模型设定误差会导致严重偏误。
 > 2. **双重稳健的优势**：AIPW 将回归模型的残差通过倾向得分进行二重校正。只要**倾向得分模型**或**条件期望产出模型**中任何一个指定正确，整体因果估计就具备无偏一致性，极大幅度降低了模型设定风险。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-causal-inference-and-experimentation-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-causal-inference-and-experimentation-coaching)。
+<!-- talentme:bottom:end -->

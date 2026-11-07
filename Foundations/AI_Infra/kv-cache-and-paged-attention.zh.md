@@ -16,6 +16,10 @@ interviewFollowups:
   - "Chunked Prefill (块状预填充) 与 Automatic Prefix Caching (APC) 如何降低首 Token 延迟 (TTFT) 并提升 Token 吞吐率 (ITL)？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Infra/kv-cache-and-paged-attention?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=kv-cache-and-paged-attention)
+<!-- talentme:top:end -->
+
 # 🌐 KV Cache 显存管理全景：内存碎片拟合推导、vLLM PagedAttention 虚拟内存与 Prefix Caching
 
 > **核心摘要**：在 Transformer 自回归生成阶段，随着序列长度递增，重复计算历史 Key 和 Value 会带来巨额计算浪费。**KV Cache (键值缓存)** 通过空间换时间缓存历史 KV 张量，但带来了巨大的**显存容量与内存碎片瓶颈**。传统的连续显存预分配导致 60%~80% 的显存浪费。**vLLM PagedAttention** 借鉴操作系统虚拟内存分页技术，彻底解决了显存碎片化。本指南系统推导 KV Cache 容量公式、解构 PagedAttention 页表映射、写时复制与 Prefix Caching。
@@ -192,3 +196,9 @@ if __name__ == "__main__":
 1. **推理解算标配**：生产环境部署大模型务必采用基于 **PagedAttention** 的引擎（如 **vLLM** 或 **TensorRT-LLM**）；
 2. **长文本 Prefix 优化**：开启 **Automatic Prefix Caching** 可大幅提升长 Prompt 与多轮对话的响应速度；
 3. **显存预算估算**：部署前使用公式提前规划并发 Batch Size 下的 KV Cache 显存配额。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=kv-cache-and-paged-attention-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=kv-cache-and-paged-attention-coaching)。
+<!-- talentme:bottom:end -->

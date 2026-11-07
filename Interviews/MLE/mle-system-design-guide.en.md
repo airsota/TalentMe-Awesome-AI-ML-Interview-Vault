@@ -16,6 +16,10 @@ interviewFollowups:
   - 'How do real-time Feature Stores maintain online-offline feature parity? How does Point-in-Time Join eliminate data leakage?'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/MLE/mle-system-design-guide?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-system-design-guide)
+<!-- talentme:top:end -->
+
 # 🌐 MLE System Design Guide: Recommendation, Search & Risk Control
 
 > **Executive Summary**: Machine Learning System Design separates senior Machine Learning Engineers (MLE) and AI Architects from junior modelers. Candidates must demonstrate the ability to translate ambiguous business requirements into resilient, highly concurrent, and low-latency production pipelines. This guide dissects the standard 4-stage recommendation funnel (Retrieval $\to$ Pre-Ranking $\to$ Heavy Ranking $\to$ Re-Ranking), DSSM popularity debiasing, MMoE/ESMM multi-task modeling, DPP diversity selection, and real-time Feature Stores.
@@ -130,3 +134,9 @@ if __name__ == "__main__":
     S = np.array([[1.0, 0.95, 0.1, 0.0], [0.95, 1.0, 0.1, 0.0], [0.1, 0.1, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
     print("✅ DPP Selected Items:", pure_python_dpp_greedy(q, S, max_items=2))
 ```
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-system-design-guide-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-system-design-guide-coaching).
+<!-- talentme:bottom:end -->

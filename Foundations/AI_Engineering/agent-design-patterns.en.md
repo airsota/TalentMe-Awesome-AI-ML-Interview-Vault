@@ -16,6 +16,10 @@ interviewFollowups:
   - "Analyze security isolation and robustness challenges in Computer Use (desktop control) vision and OS execution."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Engineering/agent-design-patterns?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agent-design-patterns)
+<!-- talentme:top:end -->
+
 # 🌐 Agent Design Patterns: ReAct Loop, Reflexion Self-Correction, Plan-and-Execute & Graph Engineering
 
 > **Core Executive Summary**: LLMs are evolving from static question-answering engines into autonomous **AI Agents**. Powered by four core pillars—**Brain (LLM)**, **Planning**, **Memory**, and **Tools**—agents plan and execute multi-step workflows in complex environments. This guide dissects ReAct loops, Reflexion self-correction logs, Plan-and-Execute dynamic replanning, LangGraph state engineering, and Claude Code CLI workflows.
@@ -170,3 +174,9 @@ if __name__ == "__main__":
 1. **Production Standard**: Use **LangGraph** for non-linear agent state graphs with cycle control and checkpointers.
 2. **Error Self-Correction**: Integrate **Reflexion logs** for complex code and multi-step reasoning tasks.
 3. **Sandbox Security**: Execute code and OS actions inside isolated **Docker / MicroVM sandboxes**.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agent-design-patterns-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agent-design-patterns-coaching).
+<!-- talentme:bottom:end -->

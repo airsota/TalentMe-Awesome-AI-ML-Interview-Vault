@@ -16,6 +16,10 @@ interviewFollowups:
   - 'Compare PPO, DPO, and GRPO across computational efficiency, VRAM footprints, exploratory bounds, and reward hacking susceptibility.'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/RS/rs-core-cheatsheet?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-core-cheatsheet)
+<!-- talentme:top:end -->
+
 # 🌐 RS Core Cheatsheet: Top 30 Papers Breakdown & Deep RL
 
 > **Executive Summary**: Technical interviews for Research Scientist (RS) roles evaluate first-principles mathematical rigor, analytical loss derivations, generalization bounds, and model failure modes. This cheatsheet deconstructs the RS core knowledge map: the 4-step paper breakdown framework, a structured matrix of the Top 30 milestone papers, analytical derivation of DPO implicit reward substitution, PPO clipped objective dynamics, and Pure Python implementations.
@@ -119,3 +123,9 @@ if __name__ == "__main__":
 * **Scaling**: *Chinchilla (2022)*, *DeepSeek-R1 (2025)*, *Kaplan Scaling Laws (2020)*.
 * **Alignment**: *InstructGPT (2022)*, *DPO (2023)*, *GRPO (2024)*.
 * **Diffusion & Generation**: *DDPM (2020)*, *Flow Matching (2023)*, *DiT / Sora (2023/2024)*.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-core-cheatsheet-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-core-cheatsheet-coaching).
+<!-- talentme:bottom:end -->

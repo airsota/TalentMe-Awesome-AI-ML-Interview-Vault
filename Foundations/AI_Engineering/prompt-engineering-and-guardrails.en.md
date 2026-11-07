@@ -16,6 +16,10 @@ interviewFollowups:
   - "List the top jailbreak attack patterns (DAN, role-play, Agentic RAG poisoning) and their standard countermeasures."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Engineering/prompt-engineering-and-guardrails?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=prompt-engineering-and-guardrails)
+<!-- talentme:top:end -->
+
 # 🌐 Prompt Engineering & Safety Guardrails: Outlines & Llama Guard
 
 > **Core Executive Summary**: In enterprise AI application development, prompt engineering is far more than Few-Shot examples or Chain-of-Thought instructions. Production reliability rests on three pillars: **(1) System Prompt architecture** with role boundaries and injection defense; **(2) Structured Outputs hard constraints** — Outlines / Instructor guide decoding so JSON parsing succeeds 100% of the time with zero format errors; **(3) Llama Guard 3 input/output safety moderation** that blocks prompt injection, toxic content, and jailbreak attacks before they reach the model or the user.
@@ -198,3 +202,9 @@ if __name__ == "__main__":
 2. **Enforce, don't request**: Use Outlines / Instructor constrained decoding so 100% valid JSON is a property of the sampler, not a hope.
 3. **Independent guardrails**: Run Llama Guard 3 as separate input and output guards — safety must not share the main model's attack surface.
 4. **Test adversarial paths**: Red-team every production prompt with jailbreak templates and RAG poisoning cases before launch.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=prompt-engineering-and-guardrails-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=prompt-engineering-and-guardrails-coaching).
+<!-- talentme:bottom:end -->

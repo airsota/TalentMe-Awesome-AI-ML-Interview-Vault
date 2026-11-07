@@ -16,6 +16,10 @@ interviewFollowups:
   - "Design a high-concurrency, low-latency RAG service: how do you optimize cost/latency with semantic caching, parallel retrieval, and SSE streaming, and how do you isolate tenants?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/System_Design/llm-rag-agent-system-design?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-rag-agent-system-design)
+<!-- talentme:top:end -->
+
 # 🌐 Production LLM RAG & Agent System Design: Multi-Tenancy, SSE & High Availability
 
 > **Core Executive Summary**: Moving RAG knowledge bases and agentic systems from demo to enterprise production is a distributed-systems problem as much as an ML problem. This guide decomposes the full stack: the offline indexing pipeline (parse → chunk → embed → ANN index), the online serving path (query rewrite → hybrid retrieval → cross-encoder re-rank → grounded generation with SSE streaming), the agentic layer (Planner / Executor / Memory loops in the ReAct style), and the platform concerns that decide real deployments — multi-tenant isolation, semantic caching, latency/cost budgets, and RAGAS-based evaluation.
@@ -313,3 +317,9 @@ if __name__ == "__main__":
 3. **Enforce multi-tenancy at the index** (mandatory metadata filter + RBAC gateway), never at the prompt.
 4. **Treat context as a finite budget**: compaction, progressive disclosure, and memory hierarchies beat blindly growing context windows.
 5. **Evaluate continuously with RAGAS**, sliced by tenant and query type; optimize latency with semantic cache + parallel retrieval + SSE streaming, and gate releases on p50/p99 TTFT.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-rag-agent-system-design-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-rag-agent-system-design-coaching).
+<!-- talentme:bottom:end -->

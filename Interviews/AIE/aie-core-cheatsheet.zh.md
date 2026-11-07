@@ -16,6 +16,10 @@ interviewFollowups:
   - '什么是投机采样（Speculative Decoding）？为什么能够突破自回归解码的内存带宽瓶颈（Memory-bound）实现 2-3 倍加速？'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AIE/aie-core-cheatsheet?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-core-cheatsheet)
+<!-- talentme:top:end -->
+
 # 🌐 AIE 大模型系统工程师核心地图：SFT/LoRA/RAG/Agent 面试必考
 
 > **核心摘要**：大模型系统工程师（AI / LLM Systems Engineer, AIE）是当前 AI 工业界最火热的工程岗位。AIE 的技术栈横跨算法微调、系统架构、检索工程与推理基础设施。本核心地图全景拆解 AIE 岗位最高频的六大知识模块：AIE vs MLE 能力矩阵、SFT 数据工程与 Loss Masking、LoRA/QLoRA 显存精算、Advanced RAG 检索流水线、投机采样 Speculative Decoding 以及 vLLM 生产化推理集群。
@@ -162,3 +166,9 @@ if __name__ == "__main__":
 
 ### 考点 4：如何设计并调优企业级 RAG 系统的 Chunking 策略与 Hybrid Search (BM25 + Dense) RRF 融合？
 * **标准回答**：采用父子文档切分或句子窗口策略；结合 BM25 词法检索（捕获实体与型号）与 Dense 语义检索，利用 RRF ($k=60$) 融合后经 Cross-Encoder 二阶段重排截取 Top-5 送入 LLM。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-core-cheatsheet-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-core-cheatsheet-coaching)。
+<!-- talentme:bottom:end -->

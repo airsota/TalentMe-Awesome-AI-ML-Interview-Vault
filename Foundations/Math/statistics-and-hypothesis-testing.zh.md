@@ -16,6 +16,10 @@ interviewFollowups:
   - "z 检验、t 检验与卡方检验分别在什么场景下使用？各举一个机器学习中的应用。"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/Math/statistics-and-hypothesis-testing?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=statistics-and-hypothesis-testing)
+<!-- talentme:top:end -->
+
 # 🌐 统计推断与假设检验：分布族、极大似然、中心极限定理、p-value、置信区间与功效分析全景
 
 > **核心摘要**：统计推断是将带噪声的数据转化为经过校准的决策的学科，而假设检验是把证据转换为结论的引擎。本指南构建完整链路：常用分布族工具箱（正态、χ²、t、F、泊松、伯努利）；为大样本推断背书的**中心极限定理 (CLT)**；经由**极大似然估计 (MLE)** 与**矩估计**实现点估计并给出无偏性、一致性、有效性三大黄金性质；假设检验完整框架（H₀/H₁、两类错误、p-value 误区与多重比较）；z / t / χ² 检验的选型对比；置信区间的解析解与 **Bootstrap** 构建；以及功效分析与样本量公式 $n = (z_\alpha + z_\beta)^2 \sigma^2 / \delta^2$。每个概念都锚定回机器学习实践：A/B 测试、评估指标显著性检验与分类器对比。
@@ -340,3 +344,9 @@ if __name__ == "__main__":
 > 💡 **直观理解**: 整章一条主线:先选分布族 → 再算样本量 → 检验 + 区间 → 校正。所有公式最后都回到"信号 vs 噪声"两个词。
 >
 > 🎤 **面试速答**: "结论:统计推断面试四板斧——CLT(z 近似的依据)、MLE(样本比例)、p-value(条件概率,不是 $P(H_0|data)$)、置信区间(覆盖率解读)。原理:波动互相抵消给 CLT,对数给 MLE,条件概率给 p-value,频率学派给区间。例子:任何指标提升都用 Bootstrap 区间汇报,任何多重比较都用 Bonferroni/FDR 校正。"
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=statistics-and-hypothesis-testing-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=statistics-and-hypothesis-testing-coaching)。
+<!-- talentme:bottom:end -->

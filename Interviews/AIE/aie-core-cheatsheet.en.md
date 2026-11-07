@@ -16,6 +16,10 @@ interviewFollowups:
   - 'What is Speculative Decoding? Why does it break the memory bandwidth bottleneck (Memory-Bound) in autoregressive generation?'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AIE/aie-core-cheatsheet?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-core-cheatsheet)
+<!-- talentme:top:end -->
+
 # 🌐 AIE Core Cheatsheet: SFT, LoRA, RAG & Agent Interview Map
 
 > **Executive Summary**: The AI / LLM Systems Engineer (AIE) role spans model fine-tuning, retrieval engineering, agentic orchestration, and high-throughput serving systems. This cheatsheet deconstructs six essential modules: AIE vs. MLE competency matrices, SFT Data Packing with Loss Masking, LoRA/QLoRA VRAM budgeting, Advanced RAG architectures, Speculative Decoding, and production vLLM clusters.
@@ -120,3 +124,9 @@ if __name__ == "__main__":
     np.random.seed(42)
     print("✅ Speculative Accepted Count:", pure_python_speculative_verification([0.8, 0.7, 0.6, 0.1], [0.75, 0.65, 0.55, 0.4]))
 ```
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-core-cheatsheet-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-core-cheatsheet-coaching).
+<!-- talentme:bottom:end -->

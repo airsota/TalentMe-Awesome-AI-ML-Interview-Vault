@@ -16,6 +16,10 @@ interviewFollowups:
   - "Soft Actor-Critic (SAC) 引入的最大熵 (Maximum Entropy) 目标项如何鼓励 Agent 在未知状态中自由探索？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/RL/foundations-and-deep-rl?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=foundations-and-deep-rl)
+<!-- talentme:top:end -->
+
 # 🌐 经典与深度强化学习全景：MDP 体系、Bellman 最优方程、DQN、Policy Gradient、PPO 与 SAC 原理解构
 
 > **核心摘要**：强化学习 (Reinforcement Learning, RL) 是研究智能体 (Agent) 在与动态环境交互过程中，如何通过试错 (Trial-and-Error) 学习最优策略 $\pi(a|s)$ 以最大化累积折扣回报的数理科学。从经典表格型 Q-Learning 到结合深度神经网络的 DQN，再到支撑现代大模型 RLHF 对齐与 System 2 慢思考的 PPO 与 GRPO，强化学习已经建立了高度严密的数学基石。本指南系统解构 MDP 体系、Bellman 最优方程、Policy Gradient 定理、PPO 截断代理损失以及 SAC 熵最大化连续控制。
@@ -202,3 +206,9 @@ if __name__ == "__main__":
 1. **算法选型法则**：离散高维/LLM 对齐首选 **PPO** 或 **GRPO**；连续机械臂控制首选 **SAC**；
 2. **PPO 训练避坑指南**：必须启用 GAE (Advantage 归一化) 与 Clipping ($\epsilon=0.1\sim 0.2$)，防止策略梯度爆炸；
 3. **关乎探索 (Exploration)**：高难度非稀疏奖励场景务必引入 **SAC 熵最大化** 或 **Intrinsic Curiosity (内驱好奇心)**。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=foundations-and-deep-rl-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=foundations-and-deep-rl-coaching)。
+<!-- talentme:bottom:end -->

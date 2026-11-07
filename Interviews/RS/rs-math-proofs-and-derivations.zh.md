@@ -16,6 +16,10 @@ interviewFollowups:
   - '推导基于评分的扩散模型（Score SDE）前向与逆向随机微分方程，说明得分匹配（Score Matching）如何替代传统极大似然。'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/RS/rs-math-proofs-and-derivations?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-math-proofs-and-derivations)
+<!-- talentme:top:end -->
+
 # 🌐 RS 数学推导与白板面经：PPO 剪切损失、DPO 闭式解与 RoPE 旋转矩阵
 
 > **核心摘要**：在算法研究科学家（RS）的白板推导面试（Whiteboard Math Round）中，面试官要求候选人脱离 PPT 和现成工具包，在黑板上从第一性原理推演核心算法的闭式解、最优化边界与概率性质。本指南系统汇编顶会级数学推导：DPO 闭式解与隐式奖励消元、PPO 剪切悲观下界、RoPE 复数内积同构、Attention 缩放因子方差控制以及 Score SDE 扩散逆向方程。
@@ -179,3 +183,9 @@ $$\mathbb{E}[q_i] = \mathbb{E}[k_i] = 0, \quad \text{Var}(q_i) = \text{Var}(k_i)
 通过除以 $\sqrt{d_k}$ 进行归一化：
 $$\text{Var}\left( \frac{S}{\sqrt{d_k}} \right) = \frac{\text{Var}(S)}{d_k} = \frac{d_k}{d_k} = 1$$
 使点积方差恒定为 1，确保 Softmax 处于梯度灵敏的工作区间。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-math-proofs-and-derivations-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-math-proofs-and-derivations-coaching)。
+<!-- talentme:bottom:end -->

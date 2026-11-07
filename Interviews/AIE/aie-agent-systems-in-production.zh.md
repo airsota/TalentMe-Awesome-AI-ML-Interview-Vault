@@ -16,6 +16,10 @@ interviewFollowups:
   - "生产环境中如何观测与评估 Agent?LangSmith 式 trace 每一步应采集哪些字段与指标?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AIE/aie-agent-systems-in-production?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-agent-systems-in-production)
+<!-- talentme:top:end -->
+
 # 🤖 AIE Agent 生产系统:编排模式、上下文预算、可靠性工程与可观测性
 
 > **核心摘要**：Agent 本质是一个循环——目标、观测、策略、行动、记忆——但生产级 Agent 是一个**带护栏的循环**。本指南覆盖 LLM Agent 上线的完整工程栈：编排模式（ReAct / Plan-and-Execute / Reflexion / 多 Agent）、具备硬终止保证的循环与图式编排工程、把上下文窗口当作有限资源做预算的上下文工程、工具调用四层可靠性（校验/重试/幂等/超时降级）、每轮 token 成本与延迟核算，以及 LangSmith 式 trace 可观测性。贯穿全篇的核心思想是：**给一切上界——迭代数、token、时间、金钱——否则循环将反噬你。**
@@ -363,3 +367,9 @@ if __name__ == "__main__":
 3. **把上下文当账本管理**：预留系统/工具/输出余量，先压缩工具结果，将持久状态卸载到短/长期记忆后再淘汰。
 4. **让每次工具调用优雅失败**：校验 → 退避重试 → 强制幂等 → 超时降级；一个抖动依赖绝不能杀死整个任务。
 5. **全量 trace,评估轨迹**：按 LangSmith 式 span 字段逐步骤采集，用缓存感知定价归因每轮成本，把失败 trace 作为产品改进的第一手资产。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-agent-systems-in-production-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-agent-systems-in-production-coaching)。
+<!-- talentme:bottom:end -->

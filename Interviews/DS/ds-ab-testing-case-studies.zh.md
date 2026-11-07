@@ -16,6 +16,10 @@ interviewFollowups:
   - '当多个团队在同一用户漏斗上重叠跑实验时，如何设计分层正交（Multi-layer Orthogonal）实验架构？'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/DS/ds-ab-testing-case-studies?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-ab-testing-case-studies)
+<!-- talentme:top:end -->
+
 # 🌐 DS A/B 测试 Case Studies：CUPED 方差降低、SRM 检查与商业归因
 
 > **核心摘要**：A/B 测试是现代数据驱动企业的黄金决策支柱。然而在工业实际场景中，数据科学家面临三大核心挑战：样本方差大导致灵敏度不足、分流失衡（SRM）导致实验无效、以及双边市场溢出效应（Network Interference）违背独立性假设。本指南深入剖析微软 CUPED 方差缩减技术、SRM 卡方排查机制、双边市场 Switchback 设计与 Netflix/Uber 工业级 Case Studies。
@@ -179,3 +183,9 @@ graph TD
 
 ### Case 2: Uber 动态定价中的地理网格簇实验 (H3 Cluster Randomization)
 * **方案**：利用 Uber 开源的 H3 六边形地理网格系统，将物理距离相近的网格聚类为一个大簇（Cluster），按簇进行实验分流，最大限度物理隔离司机 cross-boundary 溢出。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-ab-testing-case-studies-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-ab-testing-case-studies-coaching)。
+<!-- talentme:bottom:end -->

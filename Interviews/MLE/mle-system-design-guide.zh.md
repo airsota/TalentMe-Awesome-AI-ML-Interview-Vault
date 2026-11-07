@@ -16,6 +16,10 @@ interviewFollowups:
   - 'Feature Store 如何保证离在线特征一致性？Point-in-Time Join 如何彻底杜绝时间穿越数据泄漏？'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/MLE/mle-system-design-guide?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-system-design-guide)
+<!-- talentme:top:end -->
+
 # 🌐 MLE 业务系统设计：推荐系统、搜索广告与风控架构全流程
 
 > **核心摘要**：机器学习系统设计（ML System Design）是机器学习工程师（MLE）与算法架构师面试的分水岭。候选人需要展示将模糊业务诉求转化为高可用、高并发工业级 AI 系统的全局工程架构能力。本指南系统剖析推荐系统标准四阶段漏斗（召回-粗排-精排-重排）、双塔 DSSM 与流行度校正、MMoE/ESMM 多目标精排、DPP 行列式点过程多样性打散以及实时 Feature Store。
@@ -188,3 +192,9 @@ if __name__ == "__main__":
   2. 粗排阶段：1,000 个 $\to$ 300 个（5ms，轻量交叉模型）；
   3. 精排阶段：300 个 $\to$ 50 个（25ms，MMoE/DCN-v2 深度多目标打分）；
   4. 重排阶段：50 个 $\to$ Top 10（10ms，DPP 多样性打散 + 强插/去重业务规则）。总耗时控制在 50ms 以内！
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-system-design-guide-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-system-design-guide-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "Compare hardware deployment bottlenecks (Memory-Bandwidth Bound vs Compute-Bound) across W8A8, W4A16, and W4A4."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/LLM/quantization-and-compression?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=quantization-and-compression)
+<!-- talentme:top:end -->
+
 # 🌐 LLM Quantization & Model Compression: INT8/INT4 Mapping, SmoothQuant Outliers, GPTQ Hessian & AWQ/Distillation
 
 > **Core Executive Summary**: As LLM parameter counts scale into tens to hundreds of billions, FP16/BF16 VRAM consumption and memory bandwidth become severe latency bottlenecks. **Model Quantization** maps continuous high-precision floating-point numbers into low-precision integers (INT8, INT4), slashing VRAM footprint by 50%~75% while boosting throughput. This guide dissects asymmetric and symmetric quantization math, **SmoothQuant** outlier migration, **GPTQ** second-order Hessian matrix column compensation, **AWQ** 1% salient weight protection, and **Knowledge Distillation** techniques.
@@ -186,3 +190,9 @@ if __name__ == "__main__":
 1. **Single GPU Decode / Edge Deployment**: Use **AWQ** or **GPTQ (INT4/W4A16)** to minimize HBM memory bandwidth bottleneck and boost decode speed.
 2. **High Concurrency Serving**: Use **SmoothQuant (INT8/W8A8)** to trigger Tensor Core INT8 matrix multiplication for maximum throughput.
 3. **Avoid Common Pitfalls**: Never apply standard INT8 activation quantization without SmoothQuant outlier migration, or activation outliers will crash model perplexity.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=quantization-and-compression-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=quantization-and-compression-coaching).
+<!-- talentme:bottom:end -->

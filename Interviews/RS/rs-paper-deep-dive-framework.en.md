@@ -16,6 +16,10 @@ interviewFollowups:
   - 'As a top-tier conference reviewer, what ablations and stress tests would you demand for a paper claiming superiority over GPT-4o?'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/RS/rs-paper-deep-dive-framework?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-paper-deep-dive-framework)
+<!-- talentme:top:end -->
+
 # 🌐 RS Paper Deep Dive Framework: Articulating Novelty & Research Vision
 
 > **Executive Summary**: In Research Scientist (RS) interviews, interviewers evaluate a candidate's **independent research taste, long-term technical vision, and rigorous deconstruction of SOTA literature**. Candidates must look beyond abstract summaries to demonstrate first-principles critical reasoning, distinguish scalable breakthroughs from empirical tweaks, and grasp theoretical asymptotic bounds. This guide presents the 4-step paper breakdown framework, DeepSeek-R1 pure RL emergence, and pure Python Pass@k estimators.
@@ -128,3 +132,9 @@ if __name__ == "__main__":
 ## Chapter 6: The Peer Reviewer Mindset
 
 Evaluate SOTA papers across four pillars: **Soundness** (implicit distributional assumptions), **Novelty** (dual isomorphisms in prior physics/statistics), **Significance** ($>3\sigma$ effect size over tuned baselines), and **Reproducibility** (multi-seed variance disclosures).
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-paper-deep-dive-framework-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-paper-deep-dive-framework-coaching).
+<!-- talentme:bottom:end -->

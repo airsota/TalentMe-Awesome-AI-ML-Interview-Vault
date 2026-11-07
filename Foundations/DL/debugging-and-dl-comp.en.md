@@ -16,6 +16,10 @@ interviewFollowups:
   - "Compare Inductive Biases of FCN, CNN, RNN, and Transformer and explain ViT data dependency."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/DL/debugging-and-dl-comp?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=debugging-and-dl-comp)
+<!-- talentme:top:end -->
+
 # Deep Learning Debugging & Competition Engineering Taxonomy: 4-Step Debugging Framework, Single Batch Overfitting, Gradient Check & Grad-CAM Guide
 
 > **Summary**: Debugging deep learning models is notoriously challenging because bad code often runs without crashing while silently degrading performance. This 100% exhaustive guide covers the 4-step debugging framework (Sanity Check, Overfit Single Batch, Gradient Checking), a checklist of 20 common DL engineering bugs, Grad-CAM interpretability heatmaps, Knowledge Distillation, and architecture Inductive Biases with Pure Numpy debugging implementations.
@@ -76,3 +80,9 @@ class PureNumpyDLDebuggingEngine:
 > 💡 **Intuition**: Gradient checking is "verify the formula by brute force": analytic gradients can hide derivation bugs, centered differences $(f(\theta+h) - f(\theta-h))/2h$ measure the real slope with $O(h^2)$ truncation error. Grad-CAM says "gradient is attribution": channels whose gradients toward class c are large are the ones lighting up the heatmap.
 >
 > 🎤 **Quick Answer**: "Relative error $<10^{-7}$ means the gradient is correct; $>10^{-2}$ means a serious bug. With $h=10^{-5}$, expect $10^{-7}$–$10^{-9}$. Example: on a 7×7 feature map, $Z=49$ spatial points are averaged to get one weight per channel."
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=debugging-and-dl-comp-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=debugging-and-dl-comp-coaching).
+<!-- talentme:bottom:end -->

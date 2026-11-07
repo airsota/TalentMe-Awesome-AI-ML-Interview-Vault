@@ -16,6 +16,10 @@ interviewFollowups:
   - "What is the compounding-error problem in learned world models, and how do MBPO, Dreamer, and receding-horizon MPC mitigate it?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/RL/model-based-rl-and-planning?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=model-based-rl-and-planning)
+<!-- talentme:top:end -->
+
 # 🧠 Model-Based RL & Planning: World Models, Dyna, MPC, MuZero & Dreamer
 
 > **Core Executive Summary**: Model-based reinforcement learning (MBRL) equips the agent with an internal world model — a learned approximation of the transition dynamics $\hat{P}_\phi(s' \mid s, a)$ and reward function $\hat{R}_\phi(s, a)$ — and uses it for planning or imagination. This guide covers learning world models, the Dyna architecture, MPC (Random Shooting, CEM), MuZero's latent-dynamics MCTS, Dreamer's latent imagination, JEPA-style representation-space prediction, and MBRL's central failure mode: model bias and compounding error.
@@ -389,3 +393,9 @@ if __name__ == "__main__":
 3. **Predict in latent space, not pixel space** — planning needs task-relevant dynamics, not reconstruction (MuZero, Dreamer, JEPA).
 4. **Use receding-horizon MPC for continuous control** — execute the first action, replan each step, and prefer CEM as the action dimension grows.
 5. **Refit the model continuously and consider ensembles** — it must track the policy's shifting data distribution.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=model-based-rl-and-planning-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=model-based-rl-and-planning-coaching).
+<!-- talentme:bottom:end -->

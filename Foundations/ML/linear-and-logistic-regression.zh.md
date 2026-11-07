@@ -16,6 +16,10 @@ interviewFollowups:
   - "Sigmoid 与 Probit 激活函数在模型假设与求导特性上有何区别？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/ML/linear-and-logistic-regression?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-and-logistic-regression)
+<!-- talentme:top:end -->
+
 # 线性与逻辑回归：数理推导、Log-Odds、极大似然、VIF检测与 Bias-Variance 全景全解
 
 > **核心摘要**：本指南全面覆盖线性回归与逻辑回归的核心数理框架。通过统一的数学语言，详细梳理从连续拟合到离散分类的演进逻辑、VIF 多重共线性检测、特征交叉拟合非线性、Sigmoid/Probit 选型比较、二分类交叉熵导数推导、小样本环境下的 Bias-Variance 靶心分析以及数值手算流程。
@@ -287,3 +291,9 @@ $$\text{EGE} = \underbrace{\left( f(x) - \mathbb{E}[\hat{f}(x)] \right)^2}_{\tex
 1. **理论掌握**：熟练推导 OLS 正规方程、Sigmoid Log-Odds 表达与 BCE 交叉熵梯度。
 2. **诊断技能**：学会计算 VIF 指标识别多重共线性，并利用 Bias-Variance 靶心模型诊断欠拟合/过拟合。
 3. **白板推导**：能够独立推导期望预测误差的 $\text{Bias}^2 + \text{Variance} + \sigma^2$ 三元拆解。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-and-logistic-regression-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-and-logistic-regression-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "在推荐系统中，Slate Bandits (列表决策) 如何解决多位置协同与上下文位置偏置 (Position Bias)？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/RL/bandits-and-online-decision?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=bandits-and-online-decision)
+<!-- talentme:top:end -->
+
 # 🌐 多臂老虎机与在线决策：MAB 探索与利用、LinUCB、Thompson Sampling 与 Contextual Bandits 落地
 
 > **核心摘要**：在推荐系统、在线广告投递与搜索重排中，系统面临着经典的**探索与利用 (Exploration vs Exploitation)** 矛盾——是继续推荐过去表现优异的旧物品（Exploitation），还是推荐潜在高收益的新冷启动物品（Exploration）？**多臂老虎机 (Multi-Armed Bandits, MAB)** 与 **情境老虎机 (Contextual Bandits)** 提供了极其优美的数理解决方案。本指南深度解构 Regret 遗憾值最小化理论、**UCB1** 霍夫丁不等式推导、**Thompson Sampling** 贝叶斯后验采样、**LinUCB** 特征线形关联模型以及在工业级推荐系统中的落地范式。
@@ -196,3 +200,9 @@ if __name__ == "__main__":
 1. **冷启动首选**：对于刚上线、零交互数据的推荐物品，使用 **Thompson Sampling** 或 **LinUCB** 进行快速概率探索；
 2. **矩阵求逆性能优化**：在工程实现中，对 $A_a^{-1}$ 的更新推荐使用 **Sherman-Morrison 公式** 增量维护逆矩阵，避免高频显式求逆；
 3. **线上 A/B 实验联动**：利用 MAB 自动按探索收益缩放流量配比，相比传统固定 50:50 A/B 测试能减少 80% 的 Opportunity Cost。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=bandits-and-online-decision-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=bandits-and-online-decision-coaching)。
+<!-- talentme:bottom:end -->

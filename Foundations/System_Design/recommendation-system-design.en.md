@@ -16,6 +16,10 @@ interviewFollowups:
   - "Why is GAUC preferred over AUC for evaluating recommendations, and how should offline metrics be paired with online A/B testing?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/System_Design/recommendation-system-design?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=recommendation-system-design)
+<!-- talentme:top:end -->
+
 # 🌐 Industry Recommendation System Design: 3-Stage Pipeline, Two-Tower Models & Feature Store
 
 > **Core Executive Summary**: No single model can score a hundred-million-item corpus within a ~50ms latency SLA. Production systems decompose inference into a **funnel — Retrieval → Pre-Ranking → Ranking → Re-Ranking** — trading model capacity for candidate volume at each stage. Retrieval runs on **DSSM Two-Tower** models with **ANN vector indexes (HNSW/IVF)**; ranking evolved from Wide&Deep to **DeepFM, DCN-V2, and MMoE multi-task networks**; the pipeline rests on a **Feature Store** preventing **Point-in-Time leakage**. Offline quality is validated with **AUC/GAUC/NDCG**, online behavior with **A/B experiments**.
@@ -339,3 +343,9 @@ if __name__ == "__main__":
 3. **Fix sampling bias first**: logit correction in training, probability calibration at serving.
 4. **Treat PIT leakage as a correctness bug**: ASOF joins, verbatim feature logging, continuous online-offline diffing.
 5. **Evaluate where you optimize**: GAUC/NDCG for within-feed ranking; A/B with guardrails and ramping decides what ships.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=recommendation-system-design-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=recommendation-system-design-coaching).
+<!-- talentme:bottom:end -->

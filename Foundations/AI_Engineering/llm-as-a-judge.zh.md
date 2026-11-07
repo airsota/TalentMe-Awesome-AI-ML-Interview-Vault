@@ -16,6 +16,10 @@ interviewFollowups:
   - "在设计评估 Rubric (评分量规) 时，如何通过 Chain-of-Thought (先写理由再打分) 提高 LLM Judge 的打分准确性与抗噪能力？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Engineering/llm-as-a-judge?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-as-a-judge)
+<!-- talentme:top:end -->
+
 # 🌐 LLM-as-a-Judge 自动化评估全景：Pointwise 与 Pairwise 范式、三大 Bias 消除与 Cohen's Kappa 统计一致性
 
 > **核心摘要**：随着 LLM 生成内容的日益复杂，传统基于 N-gram 重合度的 BLEU 和 ROUGE 指标无法衡量深刻的语义连贯性与事实准确性。**LLM-as-a-Judge** 采用更强大的 LLM (如 GPT-4) 作为裁判对生成结果进行自动化打分。本指南系统解构 Pointwise 与 Pairwise 评估范式、位置与长文偏置消除策略、Cohen's Kappa 统计学一致性校验、Elo 竞技场评分体系以及 MMLU/HumanEval 标准基准。
@@ -197,3 +201,9 @@ if __name__ == "__main__":
 1. **偏差防护**：Pairwise 评估务必使用 **位置调换 $(A, B) \ \& \ (B, A)$** 计算平局与均分；
 2. **CoT Prompt**：必须要求 LLM 裁判 **“先输出理由，再输出分数”**；
 3. **一致性校验**：每次上线新 LLM Judge 必须计算 **Cohen's Kappa ($\kappa \ge 0.75$)** 校验人类对齐度。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-as-a-judge-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-as-a-judge-coaching)。
+<!-- talentme:bottom:end -->

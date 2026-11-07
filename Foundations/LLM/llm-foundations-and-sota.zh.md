@@ -16,6 +16,10 @@ interviewFollowups:
   - "Kimi-K2 采用的 Muon / MuonClip 优化器相比传统 AdamW 在千亿级模型预训练中解决了什么梯度的数值稳定性问题？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/LLM/llm-foundations-and-sota?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-foundations-and-sota)
+<!-- talentme:top:end -->
+
 # 🌐 开源与商业 SOTA 大模型演进全景：从 BERT/GPT-4 到 LLaMA-3、Qwen-3、Gemma-4 与 Kimi-K2 架构对比
 
 > **核心摘要**：自 Transformer 论文问世以来，大语言模型 (LLM) 经历了从早期单向/双向编码器（BERT/GPT-1/2）到大规模自回归生成，再到现代高并发 MoE 稀疏激活与长链慢思考的巨幅跨越。本指南系统解构**商业闭源顶级模型**（GPT-4/4o, Claude 4, Gemini 2.0）、**开源基座统治者**（LLaMA 1/2/3 架构细节）、**开放后训练标准**（Tulu 3 的 SFT+DPO+RLVR 流程），以及**最新前沿 SOTA**（Qwen-3、Gemma-4、Kimi-K2）的底层网络设计、词表扩张、上下文窗口延长与优化器创新。
@@ -202,3 +206,9 @@ if __name__ == "__main__":
 1. **开源基座选型**：首选 **LLaMA-3 (8B/70B)** 或 **Qwen-2.5/3**，依托强大的 GQA 架构与 128K 词表，兼顾推理速度与多语言能力；
 2. **慢思考与长推理选型**：需要兼顾轻量与慢思考的场景，使用 **Qwen-3 双思维模式** 或 **DeepSeek-R1 Distill 蒸馏系** 模型；
 3. **后训练开源标准**：参考 **Tülu 3** 开放体系，结合 SFT + DPO + 可验证奖励 RLVR 实现高质量自建对齐。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-foundations-and-sota-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-foundations-and-sota-coaching)。
+<!-- talentme:bottom:end -->

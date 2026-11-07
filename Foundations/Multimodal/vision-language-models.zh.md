@@ -16,6 +16,10 @@ interviewFollowups:
   - "分析 Visual Instruction Tuning (视觉指令微调) 数据集 (如 LLaVA-Instruct-150K) 的构建方法 (GPT-4V 自动标记与对话生成)？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/Multimodal/vision-language-models?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vision-language-models)
+<!-- talentme:top:end -->
+
 # 🌐 视觉语言大模型 VLM 全景：ViT、Projector 桥接层、LLaVA 阶段训练与 DeepSeek-Janus Pro 原理解构
 
 > **核心摘要**：视觉语言大模型 (Vision-Language Models, VLM) 赋予了大语言模型“看懂世界”的能力。VLM 并非从零开始盲目训练，而是巧妙地通过跨模态投影层 (Cross-Modal Projector) 将预训练视觉编码器 (ViT) 抽取的高维图像 Token 映射至 LLM 的文本词嵌入空间 (Text Embedding Space)。本指南系统拆解 VLM 三段式架构、LLaVA 2-Stage 训练范式、高分辨率 Token 压缩方案，以及 DeepSeek-Janus Pro 统一解耦表征架构。
@@ -201,3 +205,9 @@ if __name__ == "__main__":
 1. **Projector 选型**：注重细粒度 OCR / 坐标定位选择 **2-Layer MLP**；注重长上下文对话效率选择 **Q-Former 压缩**；
 2. **训练范式避坑**：Stage 1 对齐务必冻结 LLM，防止未对齐的随机投影梯度破坏预训练文本语义；
 3. **理解与生成统一**：复杂多模态系统首选 **DeepSeek-Janus Pro** 的解耦编码器架构。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vision-language-models-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vision-language-models-coaching)。
+<!-- talentme:bottom:end -->

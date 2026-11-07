@@ -16,6 +16,10 @@ interviewFollowups:
   - "剖析 Model Stacking 的 5-Fold Cross-Validation 训练流程与 Meta-Learner 选型策略？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/MLE/mle-core-cheatsheet?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-core-cheatsheet)
+<!-- talentme:top:end -->
+
 # 🌐 MLE 机器学习工程师核心地图：高频八股、竞赛经验与 Pinterest 案例
 
 > **核心摘要**：MLE 面试核心是一套高频复现的知识点闭环——**正则化与偏差方差权衡、过拟合诊断、特征工程、评估指标 (AUC / PR / F1)、类别不平衡、梯度消失、交叉验证、模型选型与集成方法**。在生产落地（如 Pinterest 规模推荐系统）中，它们汇成一条流水线：过滤万亿级原始日志 → 以无穿越的 Target Encoding 做特征工程 → 严格交叉验证 → 异构基模型 Stacking。本速查表以标准回答 + 公式 + 速查表的形式覆盖最高频考点。
@@ -205,3 +209,9 @@ if __name__ == "__main__":
 2. **先选指标再选模型**：类别不平衡 → Stratified CV + PR-AUC + 调优阈值，绝不裸看 Accuracy。
 3. **模型家族与数据模态匹配**：表格用 GBDT、稀疏 ID 用 FM/DeepFM、视觉文本用 NN——再用正则化线性 Meta-Learner 异构堆叠。
 4. **先诊断再调参**：用偏差-方差分解决定是加数据、加容量还是加正则。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-core-cheatsheet-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-core-cheatsheet-coaching)。
+<!-- talentme:bottom:end -->

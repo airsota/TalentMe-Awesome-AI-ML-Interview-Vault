@@ -16,6 +16,10 @@ interviewFollowups:
   - "Derive ViT Patch Embedding math converting (H,W,C) to (N, D) sequence embeddings."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/DL/cnn-and-vit-architectures?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cnn-and-vit-architectures)
+<!-- talentme:top:end -->
+
 # Vision Architectures Evolution: 2D Conv, Receptive Field Calculus, Depthwise Separable Conv, ResNet Identity Mapping & Vision Transformer (ViT) Guide
 
 > **Summary**: Computer vision architectures evolved from handcrafted local inductive biases (CNNs) to data-driven global self-attention (ViT). This 100% exhaustive guide covers 2D Conv dimensions, Receptive Field (RF/ERF) calculus, Depthwise Separable Conv FLOPs reduction, ResNet Identity Mapping gradient proofs, ViT Patch Embeddings, and CNN vs ViT Inductive Bias trade-offs with rich SEO explanatory text and Pure Numpy implementations.
@@ -82,3 +86,9 @@ class PureNumpyVisionEngine:
 > 💡 **Intuition**: Conv = sliding window + inner product; patch embedding = reshape into patches + linear projection. The `transpose(0, 2, 4, 3, 5, 1)` in the real implementation is the whole magic of turning an image into a token sequence.
 >
 > 🎤 **Quick Answer**: "224×224×3, patch 16 → $N = 14^2 = 196$ patches, each flattened to $16\times16\times3 = 768$ dims, projected to $D$; with [CLS] that's 197 tokens. Example: $D=768$, the projection matrix is $768\times768$ — ViT-B/16's patch embedding layer."
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cnn-and-vit-architectures-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cnn-and-vit-architectures-coaching).
+<!-- talentme:bottom:end -->

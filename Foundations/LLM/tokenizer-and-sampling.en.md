@@ -16,6 +16,10 @@ interviewFollowups:
   - "Why must Position IDs be reset in Sequence Packing, and how does FlashAttention eliminate padding via cu_seqlens in CUDA?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/LLM/tokenizer-and-sampling?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tokenizer-and-sampling)
+<!-- talentme:top:end -->
+
 # 🌐 Tokenizer & Decoding Strategies: BPE, WordPiece, SentencePiece, Temperature, Top-k/p, Min-p, Gumbel-Max, Repetition Penalty & Sequence Packing
 
 > **Core Executive Summary**: The text processing pipeline of Large Language Models (LLMs) spans three stages: **Front-end Tokenization**, **Mid-end Autoregressive Logit Prediction**, and **Back-end Probability Sampling & Decoding**. This guide dissects BPE, WordPiece, Unigram, and SentencePiece algorithms; derives Beam Search (with Length Penalty and Constrained Banking), Repetition/Presence Penalties, Temperature scaling, Top-$k$, Top-$p$ (Nucleus), SOTA **Min-$p$** dynamic cutoff sampling, and differentiable **Gumbel-Softmax** sampling; and analyzes **Sequence Packing** architecture with FlashAttention `varlen` `cu_seqlens` CUDA pointers.
@@ -284,3 +288,9 @@ if __name__ == "__main__":
 1. **Tokenizer**: Prefer **Byte-level BPE / SentencePiece** (e.g. LLaMA-3 128K vocabulary) for multilingual zero-OOV guarantees with tiktoken Regex pre-splitting.
 2. **Sampling Preset**: Use **Temperature=0.7 + Repetition_Penalty=1.15 + Min-p=0.05** for general chat (replaces Top-p to prevent long-tail hallucinations); use **Temperature=0.0 (Greedy)** for Code and Math reasoning.
 3. **Training Optimization**: Mandate **Sequence Packing** in SFT and pre-training to eliminate padding waste with FlashAttention `varlen` `cu_seqlens` interfaces.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tokenizer-and-sampling-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tokenizer-and-sampling-coaching).
+<!-- talentme:bottom:end -->

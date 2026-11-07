@@ -16,6 +16,10 @@ interviewFollowups:
   - "推导 mAP@N 公式，并解释为什么 Netflix 用会话观看时长而非 CTR 作为线上核心指标？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/System_Design/industry-case-studies-pinterest-netflix?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=industry-case-studies-pinterest-netflix)
+<!-- talentme:top:end -->
+
 # 🌐 业界经典 System Case Studies：Pinterest 视觉搜索与 Netflix 推荐系统
 
 > **核心摘要**：学习 System Design 的最高境界是研读业界顶级科技巨头的真实架构。本指南全量解构两个经典工业案例——**Pinterest**（视觉搜索与推荐：图像嵌入、PinSage 式图神经网络表征、HNSW 近似最近邻检索、混合检索、多模态表征）与 **Netflix**（流媒体推荐：显式 + 隐式推荐信号、双阶段候选生成-排序、去重与多样性重排、以及闻名业界的 A/B 实验文化）。在此基础上提炼出一套可迁移的系统设计模板——**候选生成 → 排序 → 多样性 → 实验**，并给出工业案例类题目的五阶段面试答题框架（需求澄清 → 规模估算 → 数据流 → 组件 → 权衡）。
@@ -302,3 +306,9 @@ if __name__ == "__main__":
 3. **会算离线与在线指标**：能推导 mAP@N / RMSE，理解时间切分的重要性，并能论证会话观看时长优于 CTR 的原因。
 4. **把实验写进设计**：面试中主动提出 A/B 实验方案（分桶、护栏指标、p 值、Slow Cooker）是工业级回答的标志。
 5. **熟练五阶段框架**：需求澄清 → 规模估算 → 数据流 → 组件 → 权衡，任何工业案例题都能按此结构在 45–50 分钟内完整展开。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=industry-case-studies-pinterest-netflix-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=industry-case-studies-pinterest-netflix-coaching)。
+<!-- talentme:bottom:end -->

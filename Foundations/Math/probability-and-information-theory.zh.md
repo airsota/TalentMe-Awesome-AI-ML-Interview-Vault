@@ -16,6 +16,10 @@ interviewFollowups:
   - "在 VAE (变分自编码器) 中，如何通过 KL 散度对齐潜空间概率分布 N(mu, sigma^2) 与标准正态分布 N(0, I)？推导闭式 KL 散度公式？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/Math/probability-and-information-theory?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probability-and-information-theory)
+<!-- talentme:top:end -->
+
 # 🌐 AI 数理基础全景：贝叶斯推断、香农信息熵、交叉熵与 KL 散度非对称证明
 
 > **核心摘要**：概率论与信息论是整个人工智能、机器学习以及深度学习的核心数学支撑。从概率分布的**贝叶斯推断 (Bayesian Inference)** 到量化信息不确定性的**香农信息熵 (Entropy)**，再到深度学习损失函数的基石——**交叉熵 (Cross-Entropy)** 与 **KL 散度 (Kullback-Leibler Divergence)**，数理逻辑构成了算法优化的底座。本指南系统推导 MLE 与 MAP 数学关系、KL 散度非对称性证明、Softmax 交叉熵梯度求导以及 VAE 潜空间 KL 散度闭式解。
@@ -198,3 +202,9 @@ if __name__ == "__main__":
 > 💡 **直观理解**: 整章一条主线:信息论就是把"不确定性和分布差异"量成比特数——训练、对齐、生成的所有目标函数,都可以还原成熵、交叉熵、KL 的加减法。
 >
 > 🎤 **面试速答**: "结论:面试把三件事说清就够了——KL ≥ 0 且非对称、交叉熵 = 熵 + KL、Softmax 交叉熵梯度 = p − y。原理:对数把乘除变加减,是全部化简的根源。例子:损失选型——分类用交叉熵,分布对齐(VAE/RLHF)用 KL,生成指标报告用 JS 或 FID。"
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probability-and-information-theory-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probability-and-information-theory-coaching)。
+<!-- talentme:bottom:end -->

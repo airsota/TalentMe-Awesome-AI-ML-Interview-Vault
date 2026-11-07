@@ -16,6 +16,10 @@ interviewFollowups:
   - "Explain Inverted Dropout scaling by 1/(1-p) during training."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/DL/normalization-and-regularization?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=normalization-and-regularization)
+<!-- talentme:top:end -->
+
 # Normalization & Regularization Taxonomy: BatchNorm, LayerNorm, RMSNorm, L0/L1/L2 Weight Decay & Inverted Dropout Guide
 
 > **Summary**: Normalization and Regularization stabilize training dynamics and prevent overfitting. This 100% exhaustive guide covers feature scaling (Standardization, MinMax, RobustScaler), L0/L1/L2 convex relaxation geometry, Label Smoothing, Max-Norm constraints, Inverted Dropout mechanisms, and 5 Normalization paradigms (BatchNorm, LayerNorm, InstanceNorm, GroupNorm, RMSNorm) with rich SEO explanatory text and Pure Numpy implementations.
@@ -79,3 +83,9 @@ class PureNumpyNormEngine:
 > 💡 **Intuition**: BN is a two-mode machine: train on batch statistics (and update EMA), inference on frozen EMA. The `is_training` flag is exactly the `model.train()`/`model.eval()` distinction interviewers love.
 >
 > 🎤 **Quick Answer**: "BN inference uses EMA statistics (momentum 0.9) so single-sample predictions are deterministic; training uses batch stats — mixing the two (forgetting `model.eval()`) silently degrades results. RMSNorm's saving is literally one fewer `mean` reduction per layer."
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=normalization-and-regularization-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=normalization-and-regularization-coaching).
+<!-- talentme:bottom:end -->

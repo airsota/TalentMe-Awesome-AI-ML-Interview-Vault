@@ -16,6 +16,10 @@ interviewFollowups:
   - "什么是世界模型学习中的复合误差 (Compounding Error) 问题？MBPO、Dreamer 与滚动时域 MPC 分别如何缓解？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/RL/model-based-rl-and-planning?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=model-based-rl-and-planning)
+<!-- talentme:top:end -->
+
 # 🧠 基于模型的强化学习与规划：世界模型、Dyna、MPC、MuZero 与 Dreamer 全景
 
 > **核心摘要**：基于模型的强化学习 (Model-Based RL, MBRL) 为智能体配备一个内部**世界模型**——对环境的动态转移 $\hat{P}_\phi(s' \mid s, a)$ 与奖励函数 $\hat{R}_\phi(s, a)$ 的近似学习——并利用该模型进行**规划 (Planning)** 或生成**想象经验 (Imagined Experience)**。本指南系统解构世界模型的极大似然学习、Dyna 架构真实与想象 rollout 的混合、MPC 模型预测控制 (Random Shooting 与 CEM)、MuZero 潜空间动态模型 + MCTS、Dreamer 潜空间想象训练、世界模型与 JEPA 表征空间预测的内在联系，以及 MBRL 的核心失败模式——模型偏差与复合误差问题。
@@ -389,3 +393,9 @@ if __name__ == "__main__":
 3. **在潜空间而非像素空间预测**：MuZero 与 Dreamer 证明规划只需要任务相关动态，不需要重建；JEPA 式表征空间预测是规模化构建此类模型的现代路线。
 4. **连续控制用滚动时域 MPC**：每次只执行首动作并重规划；动作维度升高时用 CEM 替代 Random Shooting。
 5. **持续重拟合模型并考虑集成**：世界模型是随策略改进而漂移的移动靶，必须同步更新。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=model-based-rl-and-planning-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=model-based-rl-and-planning-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "Why does KNN suffer from the Curse of Dimensionality, and why does KD-Tree search degrade when d > 20?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/ML/clustering-and-knn?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=clustering-and-knn)
+<!-- talentme:top:end -->
+
 # Unsupervised Clustering & KNN: K-Means++, DBSCAN, GMM-EM & KD-Tree Guide
 
 > **Summary**: Clustering and nearest-neighbor methods form the backbone of pattern recognition and representation analysis. This guide explores coordinate descent in K-Means, K-Means++ initialization, DBSCAN density reachability, GMM expectation-maximization (EM) derivations, the curse of dimensionality, and KD-Tree search acceleration.
@@ -135,3 +139,9 @@ class PureNumpyKMeans:
         # K-Means++ init and coordinate descent updates
         pass
 ```
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=clustering-and-knn-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=clustering-and-knn-coaching).
+<!-- talentme:bottom:end -->

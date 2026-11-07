@@ -16,6 +16,10 @@ interviewFollowups:
   - "HyDE (Hypothetical Document Embeddings) 算法的工作流程是什么？在哪些 Query 场景下 HyDE 会失效？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Engineering/naive-and-advanced-rag?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=naive-and-advanced-rag)
+<!-- talentme:top:end -->
+
 # 🌐 RAG 检索增强生成全景：从 Naive RAG 到 Advanced RAG、混合检索 (BM25 + Dense)、RRF 与 Cross-Encoder 重排序
 
 > **核心摘要**：大语言模型受限于参数知识的截止日期与幻觉问题，**RAG (Retrieval-Augmented Generation)** 通过引入外部知识库，使得 LLM 在生成回答前能够实时检索准确、最新的权威文档。从简单的 Naive RAG，演进到具备预检索 (Pre-Retrieval)、后检索 (Post-Retrieval) 优化与多路混合检索的 **Advanced RAG**，RAG 已成为企业级 AI 系统落地的绝对核心。本指南系统解构 Chunking 策略、BM25 + Dense 混合检索、RRF 秩融合、Cross-Encoder 重排序以及 Document Intelligence 复杂的文档解析。
@@ -200,3 +204,9 @@ if __name__ == "__main__":
 1. **工业级检索标准**：一律采用 **BM25 + Dense 向量** 混合检索，并通过 **RRF** 算法进行得分对齐；
 2. **重排序必选**：在候选集粗筛 Top-30 后，务必接入 **BGE-Reranker (Cross-Encoder)** 压榨至 Top-5 输入给 LLM；
 3. **Chunking 避坑**：优先采用 **Parent-Child Chunking**，彻底杜绝切块过小导致的上下文缺失问题。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=naive-and-advanced-rag-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=naive-and-advanced-rag-coaching)。
+<!-- talentme:bottom:end -->

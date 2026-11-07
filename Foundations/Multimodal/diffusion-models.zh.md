@@ -16,6 +16,10 @@ interviewFollowups:
   - "对比 'Native 图像生成 (如 GPT-4o 离散 Token 预测)' 与 'Pipeline 扩散生成 (如 Stable Diffusion 串联)' 的优缺点？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/Multimodal/diffusion-models?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=diffusion-models)
+<!-- talentme:top:end -->
+
 # 🌐 扩散模型全景：DDPM 数理推导、Latent Diffusion (LDM)、DiT 架构与 GPT-4o Native 生成
 
 > **核心摘要**：生成式 AI 的两大支柱分别是自回归模型 (Autoregressive LLMs) 与 **扩散模型 (Diffusion Models)**。扩散模型借鉴了非平衡态热力学 (Non-equilibrium Thermodynamics) 原理，通过向数据添加高斯噪声（前向过程）并学习一步步恢复原始信号（反向去噪过程），实现了超越 GAN 的高画质与丰富多样性。本指南深度解构 DDPM 数学推导、DDIM 加速、Stable Diffusion 潜空间去噪、DiT (Diffusion Transformer) 架构，以及原生多模态 (Native Multimodal) 生成演化。
@@ -209,3 +213,9 @@ if __name__ == "__main__":
 1. **去噪架构选型**：工业级文生图/视频首选 **DiT (Diffusion Transformer)** 架构，享有极高的扩展性；
 2. **潜空间压缩**：强烈推荐使用 **VAE (8x 压缩)**，在潜空间中运行扩散，计算效率提升 64 倍；
 3. **采样加速**：线上实时推理务必使用 **DDIM** 或 **DPMSolver** 降至 20 步采样。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=diffusion-models-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=diffusion-models-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "Encoder-Only (BERT)、Decoder-Only (GPT) 与 Encoder-Decoder (T5) 在 Masking 机制与注意力矩阵上的本质区别？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/LLM/transformer-architecture?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=transformer-architecture)
+<!-- talentme:top:end -->
+
 # 🌐 Transformer 架构解构：Self-Attention、MHA/GQA/MQA、RoPE 与 FlashAttention 1/2/3 算子融合全景
 
 > **核心摘要**：Transformer 架构自 2017 年问世以来，已彻底重塑了自然语言处理、计算机视觉、语音与多模态人工智能的格局，成为生成式大语言模型 (LLM) 的基石。本指南系统剖析 Transformer 的核心数学推导、三大模型范式 (Encoder-Only, Decoder-Only, Encoder-Decoder)、注意力变体演进 (MHA → MQA → GQA)、位置编码 (RoPE/ALiBi)、长文本稀疏注意力 (BigBird) 以及 GPU 硬件级算子融合优化 (FlashAttention-1/2/3)。
@@ -339,3 +343,9 @@ if __name__ == "__main__":
 1. **架构选型**：自回归通用文本生成首选 **Decoder-Only + GQA (Grouped-Query Attention) + RoPE + SwiGLU**（即现代 LLaMA / Qwen / DeepSeek 标准套件）；
 2. **算子优化**：训练与推理中强制开启 **FlashAttention-2** 或 **FlashAttention-3 (Hopper H100)**，直接省去 80% 显存读写瓶颈；
 3. **长文本扩展**：若上下文超过 64K，配合 RoPE Dynamic Frequency Scaling (YaRN) 或 Sparse Attention (BigBird) 保证注意力长距离稳定。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=transformer-architecture-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=transformer-architecture-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "LightGBM 的 GOSS (基于梯度的单边采样) 和 EFB (互斥特征捆绑) 算法是如何提升训练速度的？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/ML/decision-trees-and-ensemble?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=decision-trees-and-ensemble)
+<!-- talentme:top:end -->
+
 # 决策树与集成学习：CART、GBDT 负梯度拟合、XGBoost 二阶展开与 LightGBM 极客全解
 
 > **核心摘要**：树模型与集成学习是表格数据 (Tabular Data) 领域的无冕之王。本指南系统梳理从单棵决策树的特征选择规则 (ID3 / C4.5 / CART) 到集成学习范式 (Bagging vs Boosting)，深入剖析 GBDT 的负梯度拟合、XGBoost 的二阶泰勒展开与正则化叶子权重推导，以及 SOTA 算法 LightGBM (GOSS / EFB) 的底层优化。
@@ -307,3 +311,9 @@ class PureNumpyGBDTRegressor:
 1. **分裂指标选型**：单树分类选 Gini 指数 (CART)，多路连续值特征选 C4.5 信息增益比；
 2. **集成范式抉择**：并行基树选随机森林 (RF) 降方差；高精度拟合选 GBDT/XGBoost 降偏差；
 3. **工业 SOTA 模型**：推荐大数据量表格使用 LightGBM，多类别离散特征选择 CatBoost。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=decision-trees-and-ensemble-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=decision-trees-and-ensemble-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "How do Slate Bandits handle position bias and list-wise interactions in recommender systems?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/RL/bandits-and-online-decision?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=bandits-and-online-decision)
+<!-- talentme:top:end -->
+
 # 🌐 Multi-Armed Bandits & Online Decision: MAB, LinUCB & Contextual Bandits
 
 > **Core Executive Summary**: In recommender systems, ad targeting, and search re-ranking, platforms face the classic **Exploration vs Exploitation** dilemma—exploit known high-performing items or explore new cold-start items? **Multi-Armed Bandits (MAB)** and **Contextual Bandits** provide mathematically optimal solutions. This guide dissects Regret lower bounds, **UCB1** Hoeffding inequality derivations, **Thompson Sampling** Bayesian posteriors, **LinUCB** feature regression, and industrial recommender patterns.
@@ -164,3 +168,9 @@ if __name__ == "__main__":
 1. **Cold Start**: Use **Thompson Sampling** or **LinUCB** for rapid probability exploration of new items.
 2. **Matrix Performance**: Use the **Sherman-Morrison formula** for rank-1 inverse updates.
 3. **Online A/B Testing**: MAB dynamic allocation cuts opportunity cost by 80% over fixed 50:50 splits.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=bandits-and-online-decision-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=bandits-and-online-decision-coaching).
+<!-- talentme:bottom:end -->

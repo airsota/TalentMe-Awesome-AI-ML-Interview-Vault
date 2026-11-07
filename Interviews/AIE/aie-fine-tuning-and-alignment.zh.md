@@ -16,6 +16,10 @@ interviewFollowups:
   - '微调过程中如何预防大模型发生灾难性遗忘（Catastrophic Forgetting）？回放数据（Replay Data）比例应如何配置？'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AIE/aie-fine-tuning-and-alignment?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-fine-tuning-and-alignment)
+<!-- talentme:top:end -->
+
 # 🌐 AIE 实战指南：企业级 SFT、LoRA 微调与 DPO/RLHF 偏好对齐落地
 
 > **核心摘要**：大模型微调与对齐是 AI 工程师（AIE）将开源基座模型落地为垂类业务专家的核心技能。在工业实践中，微调面临三大挑战：训练数据长短不一导致 Padding 算力巨大浪费、显存不足导致全量微调代价高昂、以及强化学习对齐训练极度不稳定。本指南系统剖析 Data Packing 算法、Loss Masking、LoRA/QLoRA 显存精算、Adapter 权重无损合并、DPO 闭式实现与 GRPO 纯 RL 对齐。
@@ -172,3 +176,9 @@ if __name__ == "__main__":
 $$A_i = \frac{r_i - \text{mean}(\{r_1, \dots, r_G\})}{\text{std}(\{r_1, \dots, r_G\})}$$
 
 **显存节省超 50%，支持将全部显存用于超长上下文思维链（Long CoT）训练**！
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-fine-tuning-and-alignment-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-fine-tuning-and-alignment-coaching)。
+<!-- talentme:bottom:end -->

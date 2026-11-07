@@ -16,6 +16,10 @@ interviewFollowups:
   - "从 RLHF 推导 DPO 目标函数：离线偏好数据如何取代显式奖励模型？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/RL/offline-rl-and-imitation-learning?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=offline-rl-and-imitation-learning)
+<!-- talentme:top:end -->
+
 # 🛰️ 离线强化学习与模仿学习：分布偏移、行为克隆、CQL、IQL 与 RLHF/DPO 全景全解
 
 > **核心摘要**：离线强化学习 (Offline RL) 旨在从**固定、预收集的数据集** $\mathcal{D} = \{(s, a, r, s')\}$ 中学习策略，且**不再与环境交互**。其核心障碍是**分布偏移 (Distribution Shift)**：学到的策略会访问与数据分布不一致的状态-动作对，此时自举 (Bootstrapping) 的 Q 估计会产生**外推误差 (Extrapolation Error)**。本指南系统覆盖行为克隆 (BC) 及其两大局限 (复合误差、因果混淆)、保守 Q 学习 (CQL) 的 Q 值下界惩罚、隐式 Q 学习 (IQL) 的 Expectile 回归、Offline→Online 微调、与 LLM 对齐 RLHF/DPO 的联系、数据集质量与 Reward Hacking，以及 Off-Policy Evaluation 的重要性采样估计。
@@ -358,3 +362,9 @@ if __name__ == "__main__":
 3. **Offline→Online 是阶段而非模式**：α 指数衰减、离线数据永久保留在回放池，上线前务必用 OPE（重要性采样 / FQE）验证；
 4. **LLM 对齐就是离线 RL**：RLHF 在冻结偏好数据集上训练奖励模型（分布偏移与 Reward Hacking 一个不少）；DPO 的闭式目标正是 LLM 尺度上的 IQL——固定数据集、无需在线回滚；
 5. **Reward Hacking 防御**：奖励模型集成、KL 锚定 $\pi_{ref}$、可验证奖励 (RLVR)、持续监控留出偏好准确率。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=offline-rl-and-imitation-learning-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=offline-rl-and-imitation-learning-coaching)。
+<!-- talentme:bottom:end -->

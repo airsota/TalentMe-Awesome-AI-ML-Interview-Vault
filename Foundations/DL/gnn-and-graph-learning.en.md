@@ -16,6 +16,10 @@ interviewFollowups:
   - "How are edge features incorporated in MPNN or Edge-Conditioned Conv for molecular graphs?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/DL/gnn-and-graph-learning?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gnn-and-graph-learning)
+<!-- talentme:top:end -->
+
 # Graph Neural Networks (GNN) Taxonomy: Graph Laplacian, Message Passing (MPNN), GCN, GraphSAGE, GAT & Edge Feature Guide
 
 > **Summary**: Representation learning on non-Euclidean graph-structured data is fundamental to modern recommender systems and molecular modeling. This 100% exhaustive guide covers graph matrices (Adjacency A, Degree D, Normalized Laplacian L_norm), Neural Message Passing (MPNN), GCN spectral convolution, GraphSAGE inductive sampling, GAT multi-head attention, and Pure Numpy GNN implementations with rich SEO explanatory text.
@@ -79,3 +83,9 @@ class PureNumpyGNNEngine:
 > 💡 **Intuition**: All three share one skeleton — "neighbor matrix × features": GCN's `A_norm @ H` is static, GraphSAGE's `A_mean @ H` averages, GAT's `Alpha @ H_prime` is a dynamically learned attention matrix. Understand that one equation and the three architectures differ only in where the matrix comes from.
 >
 > 🎤 **Quick Answer**: "GNN forward = normalized adjacency × features × weights. The Renormalization Trick ($\tilde A = A + I$) both preserves the node's own features and bounds the spectral radius — that's why GCN works where plain $A$ diverges after a few layers."
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gnn-and-graph-learning-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gnn-and-graph-learning-coaching).
+<!-- talentme:bottom:end -->

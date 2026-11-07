@@ -16,6 +16,10 @@ interviewFollowups:
   - "什么是文本蕴含 (Natural Language Inference, NLI)？描述 Premise 与 Hypothesis 三分类 (Entailment, Contradiction, Neutral) 的建模范式？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/LLM/nlp-tasks-and-ner?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=nlp-tasks-and-ner)
+<!-- talentme:top:end -->
+
 # 🌐 经典 NLP 任务全景：NER 命名实体识别、文本分类、seq2seq 翻译与文本蕴含 (NLI)
 
 > **核心摘要**：在 LLM 大模型爆发之前，自然语言处理（NLP）由一系列离散的经典任务组成。从抽取人名/地名的 **NER (命名实体识别)** 到情感分类、Seq2Seq 机器翻译以及逻辑推理的基础 **NLI (文本蕴含)**，经典 NLP 奠定了现代 Token 序列建模的基石。本指南系统解构 BiLSTM-CRF 序列标注、Viterbi 维特比解码、TextCNN 卷积分类、Seq2Seq 注意力翻译以及跨语言 Code-Mixing 机制。
@@ -204,3 +208,9 @@ if __name__ == "__main__":
 1. **序列标注必选**：做 NER 命名实体识别务必在模型顶层接入 **CRF 层** 防止标签非法转移；
 2. **轻量分类**：短文本极速分类优先选择 **TextCNN 或 FastText**；
 3. **维特比优化**：解码时使用 **Pure Numpy Viterbi** 压榨 C/C++ 级推理性能。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=nlp-tasks-and-ner-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=nlp-tasks-and-ner-coaching)。
+<!-- talentme:bottom:end -->

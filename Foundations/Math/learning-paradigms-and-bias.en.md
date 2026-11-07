@@ -16,6 +16,10 @@ interviewFollowups:
   - "Compare loss drivers, annotation costs, and generalization in Supervised, Self-Supervised, RL, and Meta-Learning."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/Math/learning-paradigms-and-bias?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=learning-paradigms-and-bias)
+<!-- talentme:top:end -->
+
 # 🌐 Generalization Theory: Inductive Bias, Double Descent & PAC Learning Paradigms
 
 > **Core Executive Summary**: Why do 70B+ parameter LLMs generalize exceptionally without severe overfitting? **Generalization Theory** explains this modern AI milestone. Prior architectural constraints are injected via **Inductive Bias**, while **Double Descent** allows over-parameterized models to surpass the interpolation threshold, supported by **PAC learning bounds**.
@@ -158,3 +162,9 @@ if __name__ == "__main__":
 1. **Architecture Scaling**: Prefer **weak-bias Transformers** for large-scale pre-training.
 2. **Over-parameterization**: Scale model capacity **past the interpolation threshold** to minimize test error.
 3. **Data Efficiency**: Use **Self-Supervised Learning (SSL)** to train models on unlabeled datasets.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=learning-paradigms-and-bias-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=learning-paradigms-and-bias-coaching).
+<!-- talentme:bottom:end -->

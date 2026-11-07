@@ -16,6 +16,10 @@ interviewFollowups:
   - '语义缓存（Semantic Cache）应放在 RAG 流水线的哪个位置？文档更新后如何保证缓存强一致性？'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AIE/aie-system-design-guide?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-system-design-guide)
+<!-- talentme:top:end -->
+
 # 🌐 AIE 大模型系统设计：千万级 RAG、Code Agent 与推理服务架构
 
 > **核心摘要**：大模型系统设计（LLM System Design）是 AI 应用架构师与 AIE 资深工程师面试的核心考核关卡。与传统分布式系统相比，大模型系统面临四大独特挑战：长上下文吞吐与显存墙瓶颈、非确定性生成的安全沙箱隔离、海量知识库高精度混合召回、以及端到端秒级流式响应。本指南深度拆解企业级多租户 RAG 架构、自主 Code Agent 状态机、vLLM PagedAttention 显存精算与 Pure Python 生产级算子。
@@ -190,3 +194,9 @@ graph LR
   2. **调度层**：基于 LangGraph 编排 Agent 状态机，维护短期会话上下文与 Redis 状态持久化。
   3. **执行层**：构建基于 gVisor 的轻量无状态沙箱容器池，实施 10s 硬超时与网络出站白名单。
   4. **模型层**：后端部署 vLLM + Ray Serve 集群，开启 Tensor Parallelism (TP=4) 与连续批处理（Continuous Batching），按实时队列深度弹性扩缩容。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-system-design-guide-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-system-design-guide-coaching)。
+<!-- talentme:bottom:end -->

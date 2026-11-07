@@ -16,6 +16,10 @@ interviewFollowups:
   - "Explain Chunked Prefill and Automatic Prefix Caching (APC) in reducing TTFT and improving token throughput."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Infra/kv-cache-and-paged-attention?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=kv-cache-and-paged-attention)
+<!-- talentme:top:end -->
+
 # 🌐 KV Cache Management: Exact Bounds Derivation, vLLM PagedAttention & Prefix Caching
 
 > **Core Executive Summary**: Autoregressive LLM generation requires caching key-value states to eliminate $O(N^2)$ recomputation. However, **KV Cache** imposes immense GPU memory capacity and fragmentation bottlenecks. Contiguous memory allocation wastes 60%-80% of VRAM. Inspired by OS virtual memory, **vLLM PagedAttention** eliminates memory fragmentation. This guide derives exact memory bounds, page table mappings, Copy-on-Write, and Prefix Caching.
@@ -144,3 +148,9 @@ if __name__ == "__main__":
 1. **Inference Engine Standard**: Deploy LLM serving using **PagedAttention** (vLLM or TensorRT-LLM).
 2. **Prefix Optimization**: Enable **Automatic Prefix Caching (APC)** for long system prompts.
 3. **Capacity Sizing**: Pre-calculate KV Cache bounds to optimize GPU VRAM allocation.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=kv-cache-and-paged-attention-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=kv-cache-and-paged-attention-coaching).
+<!-- talentme:bottom:end -->

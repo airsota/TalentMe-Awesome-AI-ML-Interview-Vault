@@ -16,6 +16,10 @@ interviewFollowups:
   - "Explain Mode Collapse causes and mitigation strategies (WGAN-GP, Spectral Normalization)."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/DL/gan-and-generative-basics?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gan-and-generative-basics)
+<!-- talentme:top:end -->
+
 # Generative Adversarial Networks (GAN) Taxonomy: Minimax Game, JS Divergence Flaw, WGAN Earth Mover Distance & WGAN-GP Guide
 
 > **Summary**: Generative Adversarial Networks (GANs) frame generative modeling as a two-player zero-sum game between a Generator and Discriminator. This 100% exhaustive guide covers Minimax game formulation, optimal discriminator D*(x) proof, JS divergence vanishing gradient flaws, WGAN Earth Mover distance derivations, WGAN-GP Gradient Penalty, Spectral Normalization, and Pure Numpy implementations with rich SEO explanatory text.
@@ -76,3 +80,9 @@ class PureNumpyGANEngine:
 > 💡 **Intuition**: The critic is a "scoring judge" without the final Sigmoid: it outputs an unconstrained score, and the score gap between real and fake approximates the Wasserstein distance — as long as the score function stays 1-Lipschitz.
 >
 > 🎤 **Quick Answer**: "WGAN loss = $\mathbb{E}[f_{fake}] - \mathbb{E}[f_{real}] + \lambda\,GP$ with $\lambda=10$ default; the GP term is computed on random interpolations between real and fake samples so the Lipschitz constraint holds everywhere, not just at the samples."
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gan-and-generative-basics-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gan-and-generative-basics-coaching).
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "分析 CLIP 在图文检索 (Image-Text Retrieval) 中的线性探测 (Linear Probe) 与全参数微调 (Fine-tuning) 的性能与泛化边界？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/Multimodal/clip-and-contrastive-learning?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=clip-and-contrastive-learning)
+<!-- talentme:top:end -->
+
 # 🌐 多模态对齐：CLIP 双塔对比学习、InfoNCE 损失、Zero-Shot 迁移与 SigLIP 原理解构
 
 > **核心摘要**：多模态表征对齐是连接视觉、文本、语音等异构数据的桥梁。OpenAI 提出的 **CLIP (Contrastive Language-Image Pre-Training)** 摒弃了传统的单模态分类标签，通过海量“图像-文本”对 (4 亿 pairs) 进行大规模双向对比学习，将视觉特征与自然语言嵌入统一映射至同一个规范化的超球面向量空间。本指南系统拆解 CLIP 架构、InfoNCE 损失推导、SigLIP 的 Sigmoid 代替 Softmax 优化，以及 Zero-Shot 开放词表分类范式。
@@ -210,3 +214,9 @@ if __name__ == "__main__":
 1. **模态空间正则化**：特征提取后务必施加 **$L_2$ Normalization**，保证点积精确等于余弦相似度；
 2. **分布式训练选型**：超大 Batch 场景强推荐 **SigLIP (Sigmoid Loss)**，可节省 40% 跨卡通信开销；
 3. **Prompt 迁移优化**：下游自适应首选 **CoOp 连续 Prompt 调优**，冻结基座能够完美防止过拟合。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=clip-and-contrastive-learning-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=clip-and-contrastive-learning-coaching)。
+<!-- talentme:bottom:end -->

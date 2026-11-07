@@ -16,6 +16,10 @@ interviewFollowups:
   - "当 Tool 调用返回 Error (如 API 404 或 Python 语法错误) 时，系统的 Error Recovery Prompt 策略应该如何设计？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Engineering/tool-use-and-function-calling?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tool-use-and-function-calling)
+<!-- talentme:top:end -->
+
 # 🌐 工具调用与 Function Calling 全景：Toolformer 自主插入、JSON Schema 规范与沙箱安全执行
 
 > **核心摘要**：大语言模型（LLM）虽然具备强大的文本生成能力，但无法实时查询当前天气、无法直接进行精确的大数字浮点运算，也无法直接执行代码。**Tool Use (工具调用)** 与 **Function Calling** 突破了 LLM 的能力边界，使其能够通过结构化 JSON 规范与外部 API、数据库以及代码沙箱（Code Interpreter）交互。本指南系统解构 Toolformer 自监督工具学习、OpenAI Function Calling 协议、Parallel 并行调用、沙箱安全隔离以及工具报错重试机制。
@@ -188,3 +192,9 @@ if __name__ == "__main__":
 1. **协议规范**：一律采用 **JSON Schema** 定义工具参数，并配合 **Constrained Decoding** 确保 100% 格式合法；
 2. **生产沙箱选型**：运行用户或 LLM 生成的代码务必部署 **E2B / Firecracker MicroVM** 隔离沙箱；
 3. **容错重试**：将工具 Exception 转化为标准 `tool` role 消息输入 LLM 引导自愈。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tool-use-and-function-calling-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tool-use-and-function-calling-coaching)。
+<!-- talentme:bottom:end -->

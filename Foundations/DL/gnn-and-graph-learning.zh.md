@@ -16,6 +16,10 @@ interviewFollowups:
   - "在分子图建模或推荐系统中，边特征 (Edge Features) 是如何通过 MPNN 或 ECC (Edge-Conditioned Conv) 融入节点 Embedding 更新的？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/DL/gnn-and-graph-learning?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gnn-and-graph-learning)
+<!-- talentme:top:end -->
+
 # 图神经网络 (GNN) 全景：邻接矩阵、图拉普拉斯矩阵、消息传递机制 (MPNN)、GCN、GraphSAGE、GAT 与边特征建模极客指南
 
 > **核心摘要**：非欧几里得空间 (Non-Euclidean Space) 图结构数据的表征学习是现代社交网络分析、分子药物研发与推荐系统的核心基石。从图论矩阵的严密数理基础（邻接矩阵、度矩阵与规范化图拉普拉斯矩阵）、通用神经消息传递范式 (Message Passing Neural Network, MPNN)，到四大主流 GNN 架构（GCN 谱域卷积、GraphSAGE 采样聚合、GAT 图注意力网络、Edge-GNN 边特征建模）。本指南系统剖析 GCN 重归一化技巧 (Renormalization Trick) 数理推导、GraphSAGE 解决超大图节点采样与归纳泛化 (Inductive Learning) 的机制、GAT 动态权重计算与多头注意力聚合，以及 Over-smoothing (过平滑) 现象的产生机制与 Pure Numpy GNN 算子引擎。全篇配备丰富的 SEO 说明性段落与工程实践。
@@ -220,3 +224,9 @@ class PureNumpyGNNEngine:
 2. **海量超大工业图 (推荐系统、社交网络)**：选择 **GraphSAGE**，利用邻域采样与归纳式学习实现 GPU VRAM 可控的高并发训练；
 3. **复杂的异质关系与边权重不确定场景**：选择 **GAT**，借助动态注意力分配不同邻居的关联重要度；
 4. **深层网络训练防崩溃**：层数超过 4 层时务必加入 Residual Connection、PairNorm 或 DropEdge，防止 Over-smoothing 导致特征收敛坍塌。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gnn-and-graph-learning-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gnn-and-graph-learning-coaching)。
+<!-- talentme:bottom:end -->

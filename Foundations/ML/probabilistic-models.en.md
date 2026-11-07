@@ -16,6 +16,10 @@ interviewFollowups:
   - "Compare generative HMM vs discriminative CRF in sequence labeling tasks."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/ML/probabilistic-models?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probabilistic-models)
+<!-- talentme:top:end -->
+
 # Probabilistic Graphical Models: Naive Bayes, HMM Viterbi & Linear-Chain CRF Guide
 
 > **Summary**: Probabilistic Graphical Models (PGM) combine graph theory and probability theory. This guide covers Naive Bayes conditional independence, HMM Viterbi dynamic programming, MEMM label bias, and Linear-Chain CRF global normalization.
@@ -112,3 +116,9 @@ class PureNumpyViterbiHMM:
         # Viterbi DP decoding implementation
         pass
 ```
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probabilistic-models-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probabilistic-models-coaching).
+<!-- talentme:bottom:end -->

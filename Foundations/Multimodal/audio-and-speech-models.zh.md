@@ -16,6 +16,10 @@ interviewFollowups:
   - "在 Whisper 的 Decoder 中，如何通过 Special Tokens (<|startoftranscript|>, <|translate|>, <|notimestamps|>) 控制多任务生成？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/Multimodal/audio-and-speech-models?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=audio-and-speech-models)
+<!-- talentme:top:end -->
+
 # 🌐 语音与音频处理全景：Whisper 弱监督架构、梅尔声谱图与 Audio-LLM 原理解构
 
 > **核心摘要**：语音是人类最自然、最便捷的交互媒介。传统语音识别 (ASR) 强依赖于复杂的声学模型与语言模型分工。随着 **OpenAI Whisper** 与 **Native Audio-LLM (如 GPT-4o Audio)** 的崛起，音频处理全量迈向了 Encoder-Decoder 大模型与离散 Token 化时代。本指南系统解构连续音频信号的 STFT 傅里叶变换、Log-Mel 声谱图提取、Whisper 多任务弱监督架构、RVQ 残差向量量化以及原生语音大模型。
@@ -203,3 +207,9 @@ if __name__ == "__main__":
 1. **ASR 基座选型**：转写与翻译任务强推荐 **OpenAI Whisper** 弱监督架构；
 2. **实时语音对话**：工业级超低延迟对话务必采用 **Native Audio-LLM**（基于 RVQ 离散 Token 化）；
 3. **信号预处理**：音频切帧务必加 **Hanning 窗** 防止频谱泄露。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=audio-and-speech-models-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=audio-and-speech-models-coaching)。
+<!-- talentme:bottom:end -->

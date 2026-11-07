@@ -16,6 +16,10 @@ interviewFollowups:
   - "当系统遭受突发流量冲击 (如每秒 10,000 QPS) 时，AI Serving 层的降级、限流 (Leaky Bucket / Token Bucket) 与队列排队策略应该如何设计？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Infra/high-concurrency-ai-system?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=high-concurrency-ai-system)
+<!-- talentme:top:end -->
+
 # 🌐 高并发 AI 系统设计全景：SSE 流式打字机推送、语义缓存 (Semantic Cache) 与 ML Runtimes
 
 > **核心摘要**：传统的 Web 系统处理的是毫秒级响应的轻量 HTTP 请求，而 AI 大模型服务单次生成可能长达数秒乃至数分钟。**高并发 AI 系统设计**必须解决流式长连接推送、GPU 计算资源的高效批处理、语义缓存加速以及突发流量下的熔断限流。本指南系统解构 HTTP SSE 打字机长连接、Semantic Cache 两级缓存、vLLM Continuous Batching 连续批处理以及 Triton Inference Server 生产集群部署。
@@ -189,3 +193,9 @@ if __name__ == "__main__":
 1. **协议选型**：前端打字机输出一律采用 **HTTP SSE** 通信协议；
 2. **高并发缓存**：部署 **Redis Hash + Vector DB** 组合的语义缓存，降低 GPU 压力；
 3. **推理解算批处理**：推理引擎必须开启 **vLLM Continuous Batching** 连续批处理。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=high-concurrency-ai-system-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=high-concurrency-ai-system-coaching)。
+<!-- talentme:bottom:end -->

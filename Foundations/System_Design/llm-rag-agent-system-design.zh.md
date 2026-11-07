@@ -16,6 +16,10 @@ interviewFollowups:
   - "设计一个高并发低延迟的 RAG 服务：如何用语义缓存、并行检索与 SSE 流式输出优化成本/延迟，并实现多租户隔离？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/System_Design/llm-rag-agent-system-design?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-rag-agent-system-design)
+<!-- talentme:top:end -->
+
 # 🌐 大模型 RAG 与 Agent 生产级系统架构：多租户隔离、流式服务与高可用
 
 > **核心摘要**：将 RAG 知识库与 Agent 应用从 Demo 推向企业生产环境，本质上是分布式系统工程与机器学习工程的交叉问题。本指南自上而下拆解完整技术栈：离线索引流水线（解析 → 分块 → 向量化 → ANN 建索引）、在线服务链路（查询改写 → 混合检索 → 交叉编码重排 → 带引用的流式生成）、Agent 智能层（Planner / Executor / Memory 与 ReAct 工具调用循环），以及决定真实部署成败的平台能力——多租户隔离、语义缓存、延迟/成本预算与 RAGAS 评测体系。
@@ -313,3 +317,9 @@ if __name__ == "__main__":
 3. **多租户隔离在索引层强制**（必选元数据过滤 + RBAC 网关），绝不依赖提示词。
 4. **把上下文当有限预算**：压缩、渐进式披露与记忆层级优于盲目加大上下文窗口。
 5. **用 RAGAS 持续评测**（Faithfulness / Answer Relevancy / Context Precision），按租户与查询类型切片分析；用语义缓存 + 并行检索 + SSE 流式输出优化延迟，并以 p50/p99 TTFT 作为发布门禁。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-rag-agent-system-design-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-rag-agent-system-design-coaching)。
+<!-- talentme:bottom:end -->

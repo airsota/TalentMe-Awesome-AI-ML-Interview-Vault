@@ -16,6 +16,10 @@ interviewFollowups:
   - 'Derive the gradient of self-attention: what does d(softmax(QK^T/sqrt(d))) look like and why is it tricky?'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/MLE/mle-coding-and-algo-prep?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-coding-and-algo-prep)
+<!-- talentme:top:end -->
+
 # 🌐 MLE Coding & Algo Prep: Zero-to-One ML Operators in Pure Numpy
 
 > **核心摘要**：Exhaustive technical deep dive into Pure Numpy handwritten ML operators for live coding interviews.
@@ -212,3 +216,9 @@ if __name__ == "__main__":
 * **标准回答**：交叉熵损失 L = - [y ln y_hat + (1-y) ln (1-y_hat)]。利用 sig'(z) = sig(z)(1-sig(z)) 链式法则求导得 dL/dw = X^T (y_hat - y)。
 
 > 🎤 **30-Second Answer**: "Conclusion: dL/dw = Xᵀ(ŷ − y)/n — the gradient is the residual projected into feature space. Mechanism: expanding the chain rule, the 1/ŷ term from cross-entropy cancels against the ŷ(1−ŷ) from the sigmoid derivative, leaving just (ŷ − y) — that is why the logistic regression gradient 'equals the residual', the prettiest step in the derivation. Example: X is (n, d), (ŷ−y) is (n,), so Xᵀ times the residual is (d,) — average over n and you get the steepest descent direction. Narrating forward → residual → update while writing is the full-score move."
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-coding-and-algo-prep-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-coding-and-algo-prep-coaching).
+<!-- talentme:bottom:end -->

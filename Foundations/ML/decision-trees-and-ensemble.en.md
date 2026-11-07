@@ -16,6 +16,10 @@ interviewFollowups:
   - "Explain how LightGBM GOSS and EFB algorithms accelerate training on high-dimensional tabular data."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/ML/decision-trees-and-ensemble?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=decision-trees-and-ensemble)
+<!-- talentme:top:end -->
+
 # Decision Trees & Ensemble Methods: CART, GBDT 2nd-Order Taylor & LightGBM Guide
 
 > **Summary**: Tree-based ensemble methods represent the state of the art for tabular datasets. This guide explores decision tree splitting criteria (ID3 / C4.5 / CART), ensemble paradigms (Bagging vs Boosting), GBDT pseudo-residuals, XGBoost 2nd-order Taylor expansion, and LightGBM (GOSS / EFB) speedups.
@@ -169,3 +173,9 @@ class PureNumpyGBDTRegressor:
 1. Use Gini Index (CART) for binary splits.
 2. Use Random Forest to reduce variance; use GBDT/XGBoost to reduce bias.
 3. Deploy LightGBM for large-scale tabular datasets.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=decision-trees-and-ensemble-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=decision-trees-and-ensemble-coaching).
+<!-- talentme:bottom:end -->

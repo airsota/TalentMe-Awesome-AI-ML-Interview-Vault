@@ -16,6 +16,10 @@ interviewFollowups:
   - "如何解决新广告的冷启动问题,并设计预算平滑(pacing)机制避免预算过早耗尽?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/System_Design/search-and-ad-system-design?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=search-and-ad-system-design)
+<!-- talentme:top:end -->
+
 # 🌐 搜索与计算广告系统设计:Query 意图理解、分布式倒排索引、RTB 竞价与 pCTR 预估
 
 > **核心摘要**:搜索与广告是同一漏斗的两面:理解用户意图 → 海量候选检索 → 按相关性(广告还需按期望收入)排序 → 在严格延迟预算内混排与投放。搜索侧,本指南覆盖 Query 理解、分布式倒排索引、Recall@K / MRR / NDCG 指标族与 Pointwise/Pairwise/Listwise 学习排序及双塔架构;广告侧,覆盖定向、pCTR/pCVR 预估、核心排序公式 $\text{eCPM} = \text{pCTR} \times \text{pCVR} \times \text{bid}$、GSP 与 VCG 拍卖之争、广告-自然结果混排、预算平滑与冷启动策略,并以一段可运行的 NumPy 实现收尾:NDCG 计算与 GSP 竞价模拟。
@@ -332,3 +336,9 @@ if __name__ == "__main__":
 ---
 
 *内容溯源:基于 Aman 的 System Design 笔记(搜索漏斗、NDCG 手算示例、广告端到端 Index Publisher、GSP/VCG、pacing)蒸馏为本 TalentMe Foundations 指南。*
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=search-and-ad-system-design-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=search-and-ad-system-design-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "How does the Maximum Entropy objective in Soft Actor-Critic (SAC) encourage exploration in unknown states?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/RL/foundations-and-deep-rl?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=foundations-and-deep-rl)
+<!-- talentme:top:end -->
+
 # 🌐 Foundations & Deep RL: MDP, Bellman Equations, DQN, Policy Gradient, PPO & SAC
 
 > **Core Executive Summary**: Reinforcement Learning (RL) studies how an agent learns an optimal policy $\pi(a|s)$ via trial-and-error interaction with a dynamic environment to maximize cumulative discounted rewards. From classical tabular Q-Learning to Deep Q-Networks (DQN) and PPO/GRPO powering modern LLM RLHF and System 2 slow-thinking, RL establishes rigorous mathematical foundations. This guide dissects MDPs, Bellman Optimality Equations, Policy Gradient Theorems, PPO Clipped Loss, and SAC maximum entropy continuous control.
@@ -156,3 +160,9 @@ if __name__ == "__main__":
 1. **Algorithm Selection**: Use **PPO** or **GRPO** for discrete/LLM alignment; use **SAC** for continuous robotics.
 2. **PPO Stability**: Always normalize Advantage via GAE and set Clipping $\epsilon \in [0.1, 0.2]$.
 3. **Exploration**: Use **SAC Maximum Entropy** for sparse-reward tasks.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=foundations-and-deep-rl-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=foundations-and-deep-rl-coaching).
+<!-- talentme:bottom:end -->

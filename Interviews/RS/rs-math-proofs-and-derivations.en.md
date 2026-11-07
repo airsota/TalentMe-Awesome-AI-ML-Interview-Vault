@@ -16,6 +16,10 @@ interviewFollowups:
   - 'Derive the forward and reverse stochastic differential equations (Score SDE) in score-based diffusion models.'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/RS/rs-math-proofs-and-derivations?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-math-proofs-and-derivations)
+<!-- talentme:top:end -->
+
 # 🌐 RS Math Proofs: PPO Clipped Loss, DPO Closed-Form & RoPE Matrix
 
 > **Executive Summary**: Whiteboard math interviews for Research Scientist (RS) positions test your ability to derive closed-form optimal estimators, optimization bounds, and probabilistic invariants from first principles without external libraries. This guide compiles gold-standard proofs: DPO closed-form implicit reward derivation, PPO clipped pessimistic lower bound, RoPE complex inner product isomorphism, Attention scaling variance, and Score SDE reverse diffusion dynamics.
@@ -130,3 +134,9 @@ $$\mathbb{E}[S] = \sum_{i=1}^{d_k} \mathbb{E}[q_i]\mathbb{E}[k_i] = 0$$
 $$\text{Var}(S) = \sum_{i=1}^{d_k} \text{Var}(q_i k_i) = \sum_{i=1}^{d_k} \mathbb{E}[q_i^2]\mathbb{E}[k_i^2] = \sum_{i=1}^{d_k} 1 \cdot 1 = d_k$$
 
 Without scaling, variance grows linearly with feature dimension $d_k$, pushing Softmax inputs into vanishing gradient saturation regions. Dividing by $\sqrt{d_k}$ normalizes the variance to $\text{Var}(S / \sqrt{d_k}) = d_k / d_k = 1$.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-math-proofs-and-derivations-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-math-proofs-and-derivations-coaching).
+<!-- talentme:bottom:end -->

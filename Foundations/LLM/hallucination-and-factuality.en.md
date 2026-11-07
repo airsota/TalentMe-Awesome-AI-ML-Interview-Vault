@@ -16,6 +16,10 @@ interviewFollowups:
   - "How are the 4 core metrics of RAGAS (Faithfulness, Answer Relevance, Context Precision, Context Recall) computed for enterprise RAG?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/LLM/hallucination-and-factuality?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=hallucination-and-factuality)
+<!-- talentme:top:end -->
+
 # 🌐 LLM Hallucination & Factuality: Taxonomies, FActScore, RAGAS, SAFE & Context Extension (PI/NTK/YaRN)
 
 > **Core Executive Summary**: LLMs often generate plausible-sounding but unfactual or logically contradictory text, known as **Hallucination**. Hallucinations represent the single largest bottleneck deploying LLMs to high-stakes healthcare, legal, and financial domains. This guide dissects **Intrinsic** and **Extrinsic** hallucination taxonomies, root causes in pre-training, SFT, and RLHF; derives **FActScore** atomic fact decomposition, **RAGAS** 4-metric evaluation, and **SAFE** automated verification; analyzes **Confidence-Aware Decoding**; and mathematically derives **Position Interpolation (PI)**, **NTK-Aware**, and **YaRN** RoPE extensions along with **Needle In A Haystack (NIAH)** benchmarks.
@@ -162,3 +166,9 @@ if __name__ == "__main__":
 1. **Context Extension Selection**: Standardize on **YaRN** or **NTK-Aware** for 128K+ sequences; always run **Needle In A Haystack (NIAH)** benchmarks.
 2. **Enterprise RAG Audit**: Deploy **RAGAS (Faithfulness & Precision)** to continuously prevent intrinsic hallucinations.
 3. **Confidence Control**: Monitor Token Entropy $H(P(y_t))$ to trigger search engine retrieval when model uncertainty spikes.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=hallucination-and-factuality-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=hallucination-and-factuality-coaching).
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "在大规模集群 (如 1024 卡 H100) 训练 409B MoE 模型时，如何设计 4D 混合并行 (DP + TP + PP + EP) 的最优拓扑映射？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Infra/distributed-parallelism?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=distributed-parallelism)
+<!-- talentme:top:end -->
+
 # 🌐 分布式并行训练全景：TP 张量并行、PP 流水线并行、DP 数据并行与 DeepSpeed ZeRO 1/2/3
 
 > **核心摘要**：单张 GPU 的显存（如 H100 80GB）远不足以装载千亿参数大模型的权重、梯度和优化器状态（70B 模型 FP16 训练至少需要 1.12TB 显存）。**分布式 4D 并行体系 (DP, TP, PP, EP)** 与 **DeepSpeed ZeRO** 实现了跨千卡 GPU 集群的高效显存切分与算力扩展。本指南系统解构 Megatron-LM 张量切分、1F1B 流水线气泡控制、ZeRO 1/2/3 显存推导以及 4D 混合并行拓扑规划。
@@ -200,3 +204,9 @@ if __name__ == "__main__":
 1. **单机内部**：TP 张量并行严格限制在单机 8 卡 NVLink 内；
 2. **跨机扩展**：使用 PP (流水线并行) 或 ZeRO-3 进行跨机拓扑扩展；
 3. **显存开销防护**：大规模训练首选 **PyTorch FSDP 或 DeepSpeed ZeRO-3**。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=distributed-parallelism-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=distributed-parallelism-coaching)。
+<!-- talentme:bottom:end -->

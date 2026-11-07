@@ -16,6 +16,10 @@ interviewFollowups:
   - "Analyze VLA (Vision-Language-Action) architecture (e.g. RT-2) mapping visual instructions to discrete action tokens."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/Multimodal/world-models-jepa?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=world-models-jepa)
+<!-- talentme:top:end -->
+
 # 🌐 World Models & JEPA: Yann LeCun's Non-Generative Prediction, I-JEPA/V-JEPA & Embodied AI (VLA)
 
 > **Core Executive Summary**: Turing Award winner Yann LeCun proposed **JEPA (Joint Embedding Predictive Architecture)**, advocating abandoning pixel-level reconstruction in favor of predicting world dynamics within an abstract representation space. World Models aim to construct an internal mental model of physical laws for AI. This guide dissects JEPA non-generative philosophy, I-JEPA mask prediction, V-JEPA spatio-temporal dynamics, EMA collapse prevention, and Embodied AI (VLA robotics).
@@ -158,3 +162,9 @@ if __name__ == "__main__":
 1. **Self-Supervised Vision**: Use **V-JEPA** for learning physical world dynamics without wasting compute on pixel reconstruction.
 2. **Collapse Prevention**: Always pair self-supervised encoders with **Stop-gradient + EMA Target Networks**.
 3. **Robotics Control**: Implement **VLA (Vision-Language-Action)** discrete tokenization for end-to-end robot policy learning.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=world-models-jepa-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=world-models-jepa-coaching).
+<!-- talentme:bottom:end -->

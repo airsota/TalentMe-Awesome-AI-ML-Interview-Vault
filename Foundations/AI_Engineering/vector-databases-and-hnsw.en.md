@@ -16,6 +16,10 @@ interviewFollowups:
   - "Compare Pgvector vs Native Distributed Vector DBs (Milvus/Qdrant) in write scalability and read-write isolation."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Engineering/vector-databases-and-hnsw?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vector-databases-and-hnsw)
+<!-- talentme:top:end -->
+
 # 🌐 Vector Databases: HNSW Graph Indexing, IVF-PQ Quantization & ANN Similarity Search
 
 > **Core Executive Summary**: High-dimensional vector search powers RAG and recommendation systems. Exact flat search $O(N \cdot D)$ fails at scale. **Vector Databases** leverage **ANN (Approximate Nearest Neighbor)** algorithms built on **HNSW graph indexing** and **IVF-PQ quantization**. This guide dissects distance metrics, IVF Voronoi partitions, PQ product compression, HNSW multi-layer routing, and enterprise database selection.
@@ -177,3 +181,9 @@ if __name__ == "__main__":
 1. **High Precision Standard**: Use **HNSW Pure Graph Indexing** for million-scale high recall applications.
 2. **Billion-Scale Compression**: Use **IVF-PQ** when memory cost is the primary constraint.
 3. **Metadata Filtering**: Always use **Single-Stage Hybrid Search** to avoid recall degradation.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vector-databases-and-hnsw-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vector-databases-and-hnsw-coaching).
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "Walk through the full workflow of reproducing a published paper's numbers, from reading the paper to component replacement."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/RS/rs-experiment-design-and-reproducibility?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-experiment-design-and-reproducibility)
+<!-- talentme:top:end -->
+
 # 🔬 RS Experiment Design & Reproducible Research: Ablations, Seed Control, Hyperparameter Search & the Full Reproducibility Checklist
 
 > **Core Executive Summary**: In Research Scientist (RS) interviews — and in research itself — the difference between a credible paper and an irreproducible one is almost never the model; it is the experiment design. This guide covers the three principles of experiment design (single-variable control, control baselines, and variance control through multi-seed averaging with fixed data partitioning), ablation study conventions (component on/off, gradient ablations, and standard table presentation), hyperparameter search strategies (grid vs. random vs. Bayesian, with budget allocation math), logging discipline (TensorBoard/W&B field checklists, semantic experiment naming, config fixation), the full reproducibility checklist (fixed seeds, data versions, deterministic mode, environment locking), and the classic pitfalls (train-validation leakage, test set contamination, selection bias, and Bonferroni correction). It closes with a Pure Numpy grid-search + multi-seed aggregation implementation and a paper reproduction workflow.
@@ -338,3 +342,9 @@ Watch the noise: the top-1 config by **mean** can differ from the top-1 of any s
 4. **Search by budget, not by hope**: random search with log-uniform priors as the default, Bayesian optimization for expensive evaluations, grid only for tiny discrete spaces.
 5. **Log everything, freeze everything**: config hash + data version + env lock + deterministic mode are the reproducibility contract; name runs semantically so every table row maps to a run id.
 6. **Correct for selection**: whenever you pick the best of $N$ trials, report the selection procedure and validate the final choice on untouched data.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-experiment-design-and-reproducibility-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-experiment-design-and-reproducibility-coaching).
+<!-- talentme:bottom:end -->

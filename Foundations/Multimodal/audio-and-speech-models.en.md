@@ -16,6 +16,10 @@ interviewFollowups:
   - "How does Whisper control multitask generation via Special Tokens (<|startoftranscript|>, <|translate|>)?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/Multimodal/audio-and-speech-models?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=audio-and-speech-models)
+<!-- talentme:top:end -->
+
 # 🌐 Speech & Audio Processing: Whisper Architecture, Log-Mel Spectrogram & Audio-LLM
 
 > **Core Executive Summary**: Speech is the most natural medium for human interaction. Traditional Speech Recognition (ASR) relied on complex acoustic and language model pipelines. Modern architectures powered by **OpenAI Whisper** and **Native Audio-LLMs (GPT-4o Audio)** shift audio processing into end-to-end discrete tokenization paradigms. This guide dissects STFT, Log-Mel Spectrograms, Whisper multitask weak supervision, and RVQ audio tokenizers.
@@ -165,3 +169,9 @@ if __name__ == "__main__":
 1. **ASR Standard**: Use **OpenAI Whisper** for robust multilingual speech recognition and translation.
 2. **Real-time Voice**: Build real-time speech assistants using **Native Audio-LLMs** with RVQ tokenization.
 3. **Windowing Safeguard**: Always apply a **Hanning Window** during STFT framing to prevent spectral leakage.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=audio-and-speech-models-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=audio-and-speech-models-coaching).
+<!-- talentme:bottom:end -->

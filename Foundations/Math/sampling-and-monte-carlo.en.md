@@ -16,6 +16,10 @@ interviewFollowups:
   - "How does the Bootstrap estimate the variance and confidence interval of an arbitrary statistic (e.g., the median)? Compare parametric vs non-parametric bootstrap and percentile vs BCa intervals."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/Math/sampling-and-monte-carlo?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=sampling-and-monte-carlo)
+<!-- talentme:top:end -->
+
 # 🎲 Sampling & Monte Carlo Methods: Inverse Transform, Rejection, Importance Sampling, MCMC & Bootstrap
 
 > **Core Executive Summary**: Sampling theory answers a fundamental question — how do we draw random values from a target distribution when we can only cheaply generate uniform randomness? This guide covers exact methods (inverse transform with its correctness proof), approximate methods (rejection sampling with acceptance-rate derivation, importance sampling with variance analysis and optimal proposal), Markov chain machinery (Metropolis-Hastings and Gibbs with detailed balance, burn-in and convergence diagnostics), resampling (parametric and non-parametric Bootstrap for variance estimation and confidence intervals), the $O(1/\sqrt{n})$ Monte Carlo error law with variance-reduction techniques (stratified sampling, control variates), and the bridge from classical sampling to LLM decoding (temperature, top-k, top-p). Pure Numpy implementations (inverse transform, rejection, Bootstrap CI) and 5 high-frequency interview Q&As are included.
@@ -397,3 +401,9 @@ if __name__ == "__main__":
 4. **Always diagnose MCMC**: discard burn-in, run multiple chains, and report Gelman-Rubin $\hat{R} < 1.1$ plus ESS — correlated samples silently inflate confidence.
 5. **Respect the $O(1/\sqrt{n})$ law**: to halve MC error, quadruple samples — or lower $\sigma_g$ with stratified sampling / control variates instead of raising $n$.
 6. **Bootstrap for anything without a closed-form SE**: median, quantiles, ratios — use it with $B \ge 1000$ for SE and percentile CIs, and BCa for skewed statistics.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=sampling-and-monte-carlo-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=sampling-and-monte-carlo-coaching).
+<!-- talentme:bottom:end -->

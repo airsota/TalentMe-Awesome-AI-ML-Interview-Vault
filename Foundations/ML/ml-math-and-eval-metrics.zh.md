@@ -16,6 +16,10 @@ interviewFollowups:
   - "文本预处理中 Stemming (词干提取 - 如 Porter Stemmer) 与 Lemmatization (词形还原 - 如 WordNet) 有何本质区别？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/ML/ml-math-and-eval-metrics?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ml-math-and-eval-metrics)
+<!-- talentme:top:end -->
+
 # 机器学习评估指标与数据工程全景：分类/回归/排序(NDCG)、概率校准、不平衡采样与文本预处理极客指南
 
 > **核心摘要**：评估指标与数据预处理是连接模型输出与真实业务价值的数理基石。本指南全量整合 `` 中 9 大模块，涵盖分类评估（混淆矩阵、F-beta、Macro/Micro-F1、Hamming Loss）、搜索推荐排序评估（MRR、MAP、DCG/NDCG）、回归评估（MSE、RMSE、MAPE、$R^2$、Adjusted $R^2$）、ROC/PR 曲线与 AUC 的 Mann-Whitney U 证明、概率校准（Platt/Isotonic）、不平衡采样（SMOTE/Hard Negative Mining）、防泄漏交叉验证以及 NLP 预处理（Stemming/Lemmatization/POS Tagging）。
@@ -308,3 +312,9 @@ class PureNumpyRankingMetrics:
 1. **分类/排序/回归选型**：多级相关性选 NDCG；不平衡二分类看 PR/AUC；回归防冗余特征看 Adjusted $R^2$；
 2. **概率与采样**：高可靠概率输出必用 Platt/Isotonic 校准；对比学习必用 Hard Negative Mining；
 3. **文本预处理**：搜索匹配首选 Lemmatization 词形还原与 POS 标注。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ml-math-and-eval-metrics-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ml-math-and-eval-metrics-coaching)。
+<!-- talentme:bottom:end -->

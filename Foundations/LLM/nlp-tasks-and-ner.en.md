@@ -16,6 +16,10 @@ interviewFollowups:
   - "Describe Natural Language Inference (NLI) premise-hypothesis 3-class modeling."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/LLM/nlp-tasks-and-ner?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=nlp-tasks-and-ner)
+<!-- talentme:top:end -->
+
 # 🌐 Classical NLP Tasks: NER, Text Classification, seq2seq Translation & NLI Entailment
 
 > **Core Executive Summary**: Classical NLP established the foundations of text sequence modeling prior to large language models. From **NER (Named Entity Recognition)** sequence tagging to text classification, Seq2Seq translation, and **NLI (Natural Language Inference)**, classical paradigms remain essential for enterprise text pipelines. This guide dissects BiLSTM-CRF, Viterbi dynamic programming, TextCNN convolutions, and cross-lingual Code-Mixing.
@@ -158,3 +162,9 @@ if __name__ == "__main__":
 1. **Sequence Tagging Standard**: Use a **CRF layer** on top of token representations for NER tasks.
 2. **Fast Text Classification**: Use **TextCNN** for low-latency CPU text categorization.
 3. **Sequence Decoding**: Apply **Viterbi dynamic programming** for exact path decoding.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=nlp-tasks-and-ner-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=nlp-tasks-and-ner-coaching).
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - 'How do leading tech companies architect multi-layer orthogonal experimentation platforms across overlapping funnels?'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/DS/ds-ab-testing-case-studies?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-ab-testing-case-studies)
+<!-- talentme:top:end -->
+
 # 🌐 DS A/B Testing Case Studies: CUPED, SRM Checks & Attribution
 
 > **Executive Summary**: A/B testing is the gold standard for data-driven product decisions. In real-world enterprise environments, data scientists face three critical bottlenecks: high variance requiring massive sample sizes, Sample Ratio Mismatch (SRM) invalidating traffic randomization, and network interference violating SUTVA in two-sided marketplaces. This guide dives deep into Microsoft's CUPED variance reduction mathematics, SRM diagnostic frameworks, Switchback experiments, and production case studies from Netflix, Uber, and Meta.
@@ -143,3 +147,9 @@ Early metric spikes often reflect curiosity rather than sticky utility. Maintain
 
 * **Netflix Interleaving**: Blending recommendation variants into a single ranked carousel to increase sensitivity by $100\times$.
 * **Uber Spatial H3 Clustering**: Partitioning geographic regions into hexagonal clusters to isolate cross-boundary driver spillovers.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-ab-testing-case-studies-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-ab-testing-case-studies-coaching).
+<!-- talentme:bottom:end -->

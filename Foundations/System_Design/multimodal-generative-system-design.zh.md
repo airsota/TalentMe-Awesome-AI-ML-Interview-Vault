@@ -16,6 +16,10 @@ interviewFollowups:
   - "设计大规模生成服务的安全审核与评测体系：FID/CLIP 分数/美学/一致性指标、NSFW 过滤、水印溯源。"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/System_Design/multimodal-generative-system-design?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=multimodal-generative-system-design)
+<!-- talentme:top:end -->
+
 # 🌐 多模态生成系统架构设计：图像/视频生成服务、模型切片与 GPU 动态扩缩容
 
 > **核心摘要**：多模态生成负载（文生图、文生视频、视觉语言理解）是当今 ML 服务中计算量最大、延迟最高的场景，绝不能沿用经典同步 RPC 架构。单张 SDXL 图像需要在数十亿参数的 UNet/DiT 主干上迭代 25+ 步去噪（单卡 A100 需 2–4 秒），而一段 5 秒 720p 视频需要处理数百万时空 token。生产级系统因此围绕四大支柱构建：(1) **异步任务队列**解耦客户端与 GPU Worker；(2) **模型切片与管线放置**，将文本编码器 / 去噪器 / VAE 解码器拆分到不同 GPU；(3) **推理加速**，通过步数蒸馏（SDXL-Turbo、LCM）、动态批处理与 INT8/FP8 算子把成本压低 10–50 倍；(4) **以队列深度为信号的 GPU 自动扩缩容**。在生成主链路之上，还叠加多模态理解模型（视觉编码器 + LLM 融合）、图文检索、内容安全闸门与持续在线评测。
@@ -315,3 +319,9 @@ if __name__ == "__main__":
 3. **成本算术**：吃透 $\text{成本} = \frac{\text{FLOPs}}{\text{GPU TFLOPS} \times \eta \times 3600} \times \text{时价}$；视频是图像的 30–100 倍，必须激进批处理与缓存。
 4. **选型**：写实生成用扩散，实时用 GAN，理解+生成统一时用自回归/DiT 混合。
 5. **治理**：输入过滤 → 生成中审核 → 输出过滤 → 水印溯源四层闸门，每次发布前离线安全回归，线上持续监控 FID/CLIP 分数与人工偏好。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=multimodal-generative-system-design-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=multimodal-generative-system-design-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "什么是 peeking 问题？序贯检验或预注册停止规则如何修复它？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/DS/ds-statistics-and-experiment-design?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-statistics-and-experiment-design)
+<!-- talentme:top:end -->
+
 # DS 统计与实验设计：假设检验、功效分析、样本量计算、多重比较、SRM 与 CUPED 全景全解
 
 > **核心摘要**：随机化线上实验是产品因果决策的金标准，DS 面试几乎必考其背后的统计学。本指南完整串起实验全链路：假设设定 (H₀/H₁)、α/β 权衡与功效 power = 1−β、均值与比率两类样本量公式、多重比较校正 (Bonferroni/Holm/FDR-BH)、p-hacking 与 peeking 问题、SRM 检测与排查、AA 测试、随机化单元与网络干扰、北极星/guardrail 指标体系、CUPED 方差缩减推导与显著性检验工具选型 (t 检验/卡方/序贯检验)，每个环节均配公式与 Pure Numpy 实现。
@@ -339,3 +343,9 @@ if __name__ == "__main__":
 3. **绝不在名义 α 下偷看**：使用预注册分析日期、O'Brien–Fleming 分组序贯设计，或恒有效序贯检验（mSPRT）支持提前停止。
 4. **有意识地做多重比较校正**：验证性主指标用 FWER（Bonferroni/Holm），探索性扫描用 FDR（Benjamini–Hochberg），并明确说明用了哪一种。
 5. **先减方差，再堆流量**：CUPED 借助高相关实验前协变量（$\rho \ge 0.5$）常常能省下数周时长；同时按因果机制选对随机化单元，防住网络干扰。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-statistics-and-experiment-design-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-statistics-and-experiment-design-coaching)。
+<!-- talentme:bottom:end -->

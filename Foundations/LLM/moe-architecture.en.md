@@ -16,6 +16,10 @@ interviewFollowups:
   - "How is the All-to-All communication bottleneck in Expert Parallelism (EP) resolved during distributed MoE training and inference?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/LLM/moe-architecture?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=moe-architecture)
+<!-- talentme:top:end -->
+
 # 🌐 Mixture-of-Experts (MoE) & DeepSeek MLA/MTP/mHC Architecture: Top-k Routing, Aux-Loss-Free, KAN vs MLP
 
 > **Core Executive Summary**: As model scales reach trillion-parameter frontiers, Dense forward FLOPs become unsustainable. **Mixture-of-Experts (MoE)** replaces FFN layers with multiple expert networks, using a **Gating Router** to dynamically activate only the Top-$k$ experts per token (e.g. 8 active out of 256). This expands parameter capacity by orders of magnitude while keeping FLOPs constant. This guide dissects MoE gating math, **DeepSeek-V3/V4 Auxiliary-Loss-Free** load balancing, **MLA (Multi-Head Latent Attention)** 93% VRAM savings, **MTP (Multi-Token Prediction)**, and **KAN (Kolmogorov-Arnold Networks)**.
@@ -176,3 +180,9 @@ if __name__ == "__main__":
 1. **MoE Routing**: Replace traditional auxiliary losses with **DeepSeek Auxiliary-Loss-Free dynamic bias adjustment** for 100% load balancing without accuracy loss.
 2. **Long-Context Attention**: Adopt **DeepSeek MLA** for 93% KV Cache VRAM savings via low-rank latent vectors and decoupled RoPE.
 3. **Distributed Systems**: Overlap Expert Parallelism (EP) All-to-All communication with expert GEMM computations.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=moe-architecture-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=moe-architecture-coaching).
+<!-- talentme:bottom:end -->

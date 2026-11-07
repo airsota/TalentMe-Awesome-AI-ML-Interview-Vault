@@ -16,6 +16,10 @@ interviewFollowups:
   - 'How do you prevent Catastrophic Forgetting during enterprise domain adaptation? What proportion of general replay data should be retained?'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AIE/aie-fine-tuning-and-alignment?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-fine-tuning-and-alignment)
+<!-- talentme:top:end -->
+
 # 🌐 AIE Fine-Tuning Guide: Enterprise SFT, LoRA & DPO Alignment
 
 > **Executive Summary**: LLM fine-tuning and alignment empower AI Engineers (AIE) to transform foundation models into domain-specific reasoning engines. In production workflows, teams face three hurdles: padding compute waste in variable-length batches, severe VRAM bottlenecks during full fine-tuning, and instability in reinforcement learning from human feedback. This guide presents the Data Packing algorithm, LoRA/QLoRA VRAM budgeting, zero-latency weight fusion, DPO mechanics, and GRPO alignment.
@@ -125,3 +129,9 @@ PPO loads 4 models concurrently (Actor, Critic, Reference, Reward). **GRPO elimi
 For query $q$, sample $G$ outputs $\{o_1, \dots, o_G\}$ and score via rule-based rewards:
 $$A_i = \frac{r_i - \text{mean}(\{r_1, \dots, r_G\})}{\text{std}(\{r_1, \dots, r_G\})}$$
 This cuts training VRAM by $>50\%$, freeing resources for long chain-of-thought exploration.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-fine-tuning-and-alignment-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-fine-tuning-and-alignment-coaching).
+<!-- talentme:bottom:end -->

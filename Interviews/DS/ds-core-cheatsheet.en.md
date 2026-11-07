@@ -16,6 +16,10 @@ interviewFollowups:
   - 'What is the Population Stability Index (PSI)? What debugging and retraining steps are required when PSI > 0.25?'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/DS/ds-core-cheatsheet?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-core-cheatsheet)
+<!-- talentme:top:end -->
+
 # 🌐 DS Core Cheatsheet: Causal Inference, A/B Testing & Drift
 
 > **Executive Summary**: The fundamental mandate of a Data Scientist (DS) is to drive business growth through rigorous statistical inference, causal identification, and experimentation. This cheatsheet deconstructs five high-frequency interview pillars: sample size algebra and MDE sizing, continuous peeking mitigation via mSPRT, Uplift heterogeneous causal effect modeling (S/T/X-Learners), CUPED variance reduction, and PSI data drift monitoring.
@@ -145,3 +149,9 @@ Uplift models predict individual incremental lift: $\tau(X) = \mathbb{E}[Y(1) - 
 * **S-Learner**: Single model $Y = f(X, T)$. Prone to regularization bias shrinking $\tau(X) \to 0$.
 * **T-Learner**: Two separate models $\mu_1(X), \mu_0(X)$. Can overfit when $N_T \ll N_C$.
 * **X-Learner**: Two-stage imputed counterfactual residuals. **Gold standard for imbalanced treatment cohorts**.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-core-cheatsheet-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-core-cheatsheet-coaching).
+<!-- talentme:bottom:end -->

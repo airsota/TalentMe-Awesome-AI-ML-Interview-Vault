@@ -16,6 +16,10 @@ interviewFollowups:
   - "DeepSeek-R1 如何将 MCTS 推理期树搜索与 GRPO 端到端强化学习做泛化融合？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/RL/agentic-rl-and-reasoning-search?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agentic-rl-and-reasoning-search)
+<!-- talentme:top:end -->
+
 # 🌐 智能体 RL 与推理搜索全景：MCTS 蒙特卡洛树搜索、PRM 过程监督与 RLVR 可验证奖励
 
 > **核心摘要**：随着大语言模型迈向 **Agentic 自主智能体** 与 **System 2 慢思考** 阶段，传统单步静态输出已被长链轨迹规划 (Trajectory Planning)、多步工具调用与试错反思所取代。**智能体强化学习 (Agentic RL)** 将环境反馈与决策树搜索结合，形成了以 **MCTS 蒙特卡洛树搜索**、**PRM 过程监督**、**RLVR 可验证奖励** 为代表的前沿技术族。本指南系统解构 Agentic RL 轨迹优化、MCTS 节点选择公式、PRM 细粒度步骤打分以及消除 Neural RM 漏洞的 RLVR 训练范式。
@@ -197,3 +201,9 @@ if __name__ == "__main__":
 1. **代码与数学模型训练首选**：全面引入 **RLVR (可验证奖励)** 替代传统 Neural RM，从根本上杜绝 Reward Hacking；
 2. **慢思考推理实现**：通过 **MCTS 树搜索 (Test-Time Compute)** 结合 **PRM 过程监督**，在推理阶段赋予模型探索深度解题空间的能力；
 3. **样本效率提升**：智能体训练务必使用 **Hindsight Relabeling** 将探索失败轨迹重新标定为有效练习数据。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agentic-rl-and-reasoning-search-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agentic-rl-and-reasoning-search-coaching)。
+<!-- talentme:bottom:end -->

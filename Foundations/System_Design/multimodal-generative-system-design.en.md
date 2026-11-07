@@ -16,6 +16,10 @@ interviewFollowups:
   - "Design the safety and evaluation stack for a large-scale generative service: metrics (FID/CLIP-score/aesthetics/consistency), NSFW and prompt-injection filtering, and watermarking."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/System_Design/multimodal-generative-system-design?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=multimodal-generative-system-design)
+<!-- talentme:top:end -->
+
 # 🌐 Multimodal Generative System Design: Image/Video Generation & GPU Scaling
 
 > **Core Executive Summary**: Multimodal generative workloads — text-to-image, text-to-video, and vision-language understanding — are the most compute-hungry and latency-sensitive tasks in modern ML serving. They cannot be served like classic synchronous RPCs: a single SDXL image needs 25+ denoising steps on a multi-billion-parameter UNet/DiT backbone (2–4 s on one A100), and a 5-second 720p video demands millions of spatiotemporal tokens. Production systems therefore rest on four pillars: (1) **async task queues** decoupling clients from GPU workers; (2) **model slicing and pipeline placement** across text encoder / denoiser / VAE decoder; (3) **inference acceleration** via step distillation (SDXL-Turbo, LCM), dynamic batching, and INT8/FP8 kernels; and (4) **GPU auto-scaling** driven by queue depth. Around the generation path sit multimodal understanding models (vision encoder + LLM fusion), image-text retrieval, content-safety filters, and continuous online evaluation.
@@ -315,3 +319,9 @@ Run it: `python3 ddim_sampler.py` → samples split cleanly across the two Gauss
 3. **Cost arithmetic**: $\text{cost} = \frac{\text{FLOPs}}{\text{GPU TFLOPS} \times \eta \times 3600} \times \text{price}$; video is 30–100× images — batch and cache aggressively.
 4. **Selection**: diffusion for photoreal generation, GAN for real-time, autoregressive/DiT hybrids when one model must understand *and* generate.
 5. **Governance**: input filter → in-loop moderation → output filter → watermark/provenance, offline safety regression before every deploy, online FID/CLIP-score/human-preference monitoring.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=multimodal-generative-system-design-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=multimodal-generative-system-design-coaching).
+<!-- talentme:bottom:end -->

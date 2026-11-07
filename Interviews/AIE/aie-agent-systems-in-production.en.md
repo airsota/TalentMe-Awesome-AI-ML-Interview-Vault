@@ -16,6 +16,10 @@ interviewFollowups:
   - "How would you observe and evaluate an agent in production? What trace fields and metrics does a LangSmith-style trace capture per step?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AIE/aie-agent-systems-in-production?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-agent-systems-in-production)
+<!-- talentme:top:end -->
+
 # 🤖 AIE Agent Systems in Production: Orchestration Patterns, Context Budgeting, Reliability & Observability
 
 > **Core Executive Summary**: An agent is a loop — goal, observation, policy, action, memory — but a production agent is a *guarded* loop. This guide covers the engineering stack for shipping reliable LLM agents: orchestration patterns (ReAct, Plan-and-Execute, Reflexion, Multi-Agent), loop and graph engineering with hard termination guarantees, context engineering as finite-resource budgeting, tool-call reliability, per-turn cost and latency accounting, and LangSmith-style trace observability. The recurring theme: **bound everything — iterations, tokens, time, money — or the loop owns you.**
@@ -361,3 +365,9 @@ The simulator encodes the two most important production lessons: the loop always
 3. **Budget context as a ledger**: reserve system/tools/output headroom, compact tool results first, and offload durable state to short/long-term memory before it is lost.
 4. **Make every tool call fail gracefully**: validate → retry with backoff → enforce idempotency → degrade on timeout; a flaky dependency must never kill the task.
 5. **Trace everything, evaluate the trajectory**: capture LangSmith-style span fields per step, attribute cost per turn with cache-aware pricing, and treat the failure trace as the primary improvement artifact.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-agent-systems-in-production-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-agent-systems-in-production-coaching).
+<!-- talentme:bottom:end -->

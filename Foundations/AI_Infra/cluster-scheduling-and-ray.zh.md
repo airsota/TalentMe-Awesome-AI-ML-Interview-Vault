@@ -16,6 +16,10 @@ interviewFollowups:
   - "对比 Ray 与 Spark 的定位差异：为什么分布式强化学习与大规模训练场景选 Ray，而批处理 ETL 场景选 Spark？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Infra/cluster-scheduling-and-ray?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cluster-scheduling-and-ray)
+<!-- talentme:top:end -->
+
 # 🌐 集群调度与 Ray：K8s 调度管线、Raylet 架构、分布式对象存储、弹性扩缩容与 GPU 调度全景
 
 > **核心摘要**：任何 ML 平台都要回答同一个核心问题：给定 $N$ 台节点（CPU/GPU/内存），如何为 $M$ 个任务分配资源，使利用率最高、用户之间公平、且故障不拖垮整个作业？本指南从第一性原理拆解集群调度基本问题（资源分配/优先级/公平性），深入 Kubernetes 调度管线（过滤/打分两阶段、污点/亲和性），随后全面剖析 Ray 的核心架构（Driver/Raylet 调度器/分布式对象存储/任务与 Actor 双原语）、调度与弹性扩缩容策略（Autoscaler）、GPU 感知调度（拓扑感知/共享 GPU/MIG）、Ray Train 与 DP/TP 分布式训练集成、故障恢复与任务重试，最后给出 Ray 与 Spark 的定位对比。
@@ -449,3 +453,9 @@ DRF: A gets (3.00 CPU, 12.00 GPU), B gets (6.00 CPU, 2.00 GPU) -> dominant share
 5. **按隔离需求选 GPU 共享模式**：训练用整卡、突发小模型用 MPS 分数共享、多租户硬隔离用 MIG、TP 组用拓扑感知放置。
 6. **让故障变便宜**：无状态任务配 `max_retries` 免费获得 4 个 9 韧性；Actor 状态要 checkpoint；控制对象体积避免 Object Store 落盘。
 7. **按控制循环选引擎**：确定性批处理/ETL 选 Spark，RL、训练（Ray Train + DeepSpeed ZeRO）、HPO（Tune）与推理服务选 Ray——调度粒度的需求就是最终判据。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cluster-scheduling-and-ray-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cluster-scheduling-and-ray-coaching)。
+<!-- talentme:bottom:end -->

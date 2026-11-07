@@ -16,6 +16,10 @@ interviewFollowups:
   - "为什么 Bergstra & Bengio 在理论上证明了随机搜索 (Random Search) 比网格搜索 (Grid Search) 在高维超参数调优中效率显著更高？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/DL/optimizer-and-initialization?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=optimizer-and-initialization)
+<!-- talentme:top:end -->
+
 # 优化器与训练工程全景：SGD、Momentum、AdamW 解耦权重衰减、Xavier/Kaiming 初始化推导、梯度累积与重计算 (Checkpointing) 极客指南
 
 > **核心摘要**：优化器与训练工程是连接神经网络结构设计与显存硬件物理限制的坚实桥梁。从自适应学习率优化器的演进（SGD $\to$ Momentum $\to$ RMSprop $\to$ Adam $\to$ AdamW）、打破对称性迷局的权重初始化数理推导（Xavier/Glorot 方差守恒与 Kaiming/He 修正），到单卡训练千亿大模型的显存降维武器（梯度累积 Gradient Accumulation 与梯度重计算 Gradient Checkpointing），再到基于贝叶斯优化的自动化超参数搜索（Optuna TPE）。本指南系统剖析 AdamW 解决传统 Adam 权重衰减缩放失效的数理机制、Xavier 与 Kaiming 初始化方差推导、Gradient Checkpointing 激活值显存降维原理，以及 Pure Numpy 优化器与初始化引擎实现。全篇配备丰富的 SEO 说明性段落与工程落地实践。
@@ -222,3 +226,9 @@ class PureNumpyOptimizerEngine:
 1. **优化器选型**：大语言模型/Transformer 必选 **AdamW**；传统 CV / 强化学习首选 SGD with Momentum；
 2. **权重初始化**：ReLU / GELU 系列必选 **Kaiming Normal**；Tanh / Sigmoid 必选 **Xavier Normal**；严禁全零初始化；
 3. **显存扩展工程**：单卡显存受限时优先开启 **Gradient Accumulation** 扩大 Batch；训练数十亿规模大模型时开启 **Gradient Checkpointing** 实现显存 $\mathcal{O}(\sqrt{L})$ 降维。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=optimizer-and-initialization-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=optimizer-and-initialization-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "Explain CUDA Warp (32 threads), Warp Divergence, and Memory Coalescing optimization principles."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Infra/gpu-hardware-and-hbm?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gpu-hardware-and-hbm)
+<!-- talentme:top:end -->
+
 # 🌐 GPU Hardware Architecture: SM, Tensor Cores, HBM Bandwidth & Roofline Model
 
 > **Core Executive Summary**: AI LLM performance relies directly on underlying GPU hardware physics. Modern GPUs like NVIDIA H100/A100 feature massively parallel architectures built of **Streaming Multiprocessors (SMs)**, **Tensor Cores**, and 3TB/s+ **HBM3** memory. This guide dissects SM microarchitecture, Tensor Core mixed-precision matrix multiplication, Roofline bottleneck modeling, and FlashAttention SRAM tiling.
@@ -145,3 +149,9 @@ if __name__ == "__main__":
 1. **Memory IO Reduction**: Use **FlashAttention** to avoid $O(N^2)$ HBM reads/writes.
 2. **Quantized Compute**: Utilize **FP8 (E4M3)** precision to double Tensor Core throughput.
 3. **Memory Coalescing**: Align CUDA memory access to 32-byte boundaries for maximum bandwidth.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gpu-hardware-and-hbm-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gpu-hardware-and-hbm-coaching).
+<!-- talentme:bottom:end -->

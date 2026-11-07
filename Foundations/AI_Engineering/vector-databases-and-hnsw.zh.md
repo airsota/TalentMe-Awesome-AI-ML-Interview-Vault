@@ -16,6 +16,10 @@ interviewFollowups:
   - "对比传统关系型数据库扩展 (如 Pgvector) 与原生分布式向量数据库 (如 Milvus / Qdrant) 在高并发写入与读写分离上的架构差异？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Engineering/vector-databases-and-hnsw?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vector-databases-and-hnsw)
+<!-- talentme:top:end -->
+
 # 🌐 Vector DB 向量数据库全景：HNSW 图索引、IVF-PQ 乘积量化与 ANN 相似度检索原理解构
 
 > **核心摘要**：随着 Embedding 模型的普及，高维海量向量检索成为了大模型 RAG 与推荐系统的基石。传统暴力遍历 (FLAT) 检索复杂度为 $O(N \cdot D)$，在数十亿规模向量下无法做到毫秒级响应。**向量数据库 (Vector DB)** 通过 **ANN (Approximate Nearest Neighbor)** 算法，建立了以 **HNSW 图索引** 和 **IVF-PQ 量化** 为核心的高速检索拓扑。本指南系统拆解向量距离度量、IVF 倒排聚类、PQ 乘积压缩、HNSW 概率图路由以及工业级 Vector DB 选型范式。
@@ -223,3 +227,9 @@ if __name__ == "__main__":
 1. **高精度首选**：百万级数据量且追求高 Recall 首选 **HNSW 纯图索引**；
 2. **海量数据压缩**：十亿级向量库显存受限首选 **IVF-PQ** 乘积量化；
 3. **混合过滤**：必须采用 **Single-Stage Hybrid Search**（结合 Bitset）进行 Metadata 过滤，防止 Recall 崩塌。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vector-databases-and-hnsw-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vector-databases-and-hnsw-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "How does LoRA achieve Zero Inference Latency during deployment, and what precautions are needed during weight merging?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/LLM/parameter-efficient-fine-tuning?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=parameter-efficient-fine-tuning)
+<!-- talentme:top:end -->
+
 # 🌐 Parameter-Efficient Fine-Tuning (PEFT): LoRA, QLoRA, DoRA, Prefix/Prompt Tuning, Adapters & MoRA/ReLoRA
 
 > **Core Executive Summary**: As Large Language Models (LLMs) scale to hundreds of billions of parameters, Full Fine-Tuning becomes computationally prohibitive. **Parameter-Efficient Fine-Tuning (PEFT)** techniques freeze the pre-trained base weight $W_0$ and train a tiny subset of incremental parameters ($<1\%$), matching full fine-tuning accuracy. This guide provides an exhaustive analysis of **LoRA** low-rank math, **QLoRA** NF4 4-bit quantization and paged memory management, **DoRA** magnitude-direction decomposition, **Prefix/Prompt Tuning** virtual token mechanisms, **Houlsby Adapters**, and SOTA extensions like **MoRA/ReLoRA/S-LoRA**.
@@ -197,3 +201,9 @@ if __name__ == "__main__":
 1. **Primary Recommendation**: Prefer **DoRA** or **LoRA** targeting ALL linear layers ($r=16, \alpha=32$). For VRAM-constrained setups, use **QLoRA (NF4 + DQ)**.
 2. **Deployment**: Always execute `merge_weights()` for zero inference latency in production. Use **S-LoRA** for multi-tenant dynamic adapter serving.
 3. **Target All Modules**: Never restrict LoRA to $W_q, W_v$; apply to $W_q, W_k, W_v, W_o, W_{\text{gate}}, W_{\text{up}}, W_{\text{down}}$ for maximum parameter capacity.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=parameter-efficient-fine-tuning-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=parameter-efficient-fine-tuning-coaching).
+<!-- talentme:bottom:end -->

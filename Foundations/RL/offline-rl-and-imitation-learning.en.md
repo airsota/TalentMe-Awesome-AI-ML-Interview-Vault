@@ -16,6 +16,10 @@ interviewFollowups:
   - "Derive the DPO objective from RLHF and explain how offline preference data replaces an explicit reward model."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/RL/offline-rl-and-imitation-learning?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=offline-rl-and-imitation-learning)
+<!-- talentme:top:end -->
+
 # 🛰️ Offline RL & Imitation Learning: Distribution Shift, BC, CQL, IQL & the Road to RLHF/DPO
 
 > **Core Executive Summary**: Offline Reinforcement Learning (RL) aims to learn a policy from a **fixed, pre-collected dataset** $\mathcal{D} = \{(s, a, r, s')\}$ with **no further environment interaction**. The central obstacle is **distribution shift**: the learned policy visits state-action pairs that differ from the data, where bootstrapped Q-estimates suffer from **extrapolation error**. This guide systematically covers Behavioral Cloning (BC) and its limits (compounding errors, causal confusion), Conservative Q-Learning (CQL) with its Q-value lower-bound penalty, Implicit Q-Learning (IQL) via expectile regression, Offline→Online fine-tuning, the modern connection to RLHF/DPO for LLM alignment from offline preference data, dataset quality, reward hacking, and Off-Policy Evaluation.
@@ -358,3 +362,9 @@ if __name__ == "__main__":
 3. **Offline→Online is a phase, not a mode**: decay $\alpha$ exponentially, keep the offline dataset in the replay buffer, and validate with OPE (importance sampling / FQE) before any real-world deployment;
 4. **LLM alignment is offline RL**: RLHF trains a reward model on a frozen preference dataset (distribution shift and reward hacking included); DPO's closed-form objective is the LLM-scale equivalent of IQL — learning from a fixed dataset without online rollouts;
 5. **Reward hacking defense**: ensemble reward models, KL anchoring to $\pi_{ref}$, verifiable rewards (RLVR), and continuous monitoring of held-out preference accuracy.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=offline-rl-and-imitation-learning-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=offline-rl-and-imitation-learning-coaching).
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "How do INT4 quantization, mmap, and NPU acceleration break mobile memory bandwidth limits in On-Device AI?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Infra/speculative-decoding?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=speculative-decoding)
+<!-- talentme:top:end -->
+
 # 🌐 Speculative Decoding: Draft Model Sampling, Rejection Sampling & On-Device Acceleration
 
 > **Core Executive Summary**: Autoregressive decoding generates tokens sequentially. Transferring gigabytes of model weights from GPU HBM for a single token yields an arithmetic intensity of just $O(1)$ FLOPs/Byte (Memory-Bound). **Speculative Decoding** uses a lightweight Draft Model to generate candidate tokens, verified by the Target Model in 1 parallel forward pass. **Rejection Sampling** ensures mathematically zero loss in output probability distribution while boosting speed by 2x-3x.
@@ -141,3 +145,9 @@ if __name__ == "__main__":
 1. **Serving Architecture**: Adopt **Eagle / Medusa** multi-head speculation to eliminate dual-model VRAM overhead.
 2. **Distribution Alignment**: Use **Rejection Sampling** for zero quality degradation.
 3. **On-Device Deployment**: Combine **INT4 quantization and mmap** for mobile hardware execution.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=speculative-decoding-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=speculative-decoding-coaching).
+<!-- talentme:bottom:end -->

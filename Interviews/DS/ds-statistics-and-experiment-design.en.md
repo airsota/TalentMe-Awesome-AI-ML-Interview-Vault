@@ -16,6 +16,10 @@ interviewFollowups:
   - "What is the peeking problem, and how do sequential testing or pre-registered stopping rules fix it?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/DS/ds-statistics-and-experiment-design?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-statistics-and-experiment-design)
+<!-- talentme:top:end -->
+
 # DS Statistics & Experiment Design: Hypothesis Testing, Sample Size, Multiple Comparisons, SRM & CUPED
 
 > **Core Executive Summary**: Randomized online experiments are the gold standard for causal product decisions, and DS interviews almost always probe the statistics beneath them. This guide covers the full pipeline — hypothesis setup (H₀/H₁), power = 1 − β, sample size formulas, multiple-comparison corrections (Bonferroni/Holm/BH-FDR), p-hacking and peeking, SRM, AA tests, randomization and interference, metric hierarchies, CUPED, and test selection — with formulas and a pure Numpy implementation.
@@ -343,3 +347,9 @@ if __name__ == "__main__":
 3. **Never peek at nominal α**: pre-registered analysis dates, O'Brien–Fleming designs, or always-valid sequential tests (mSPRT) when early stopping matters.
 4. **Correct for multiplicity deliberately**: FWER (Bonferroni/Holm) for confirmatory primary metrics, FDR (Benjamini–Hochberg) for exploratory sweeps — and state which one you used.
 5. **Shrink variance before inflating traffic**: CUPED with a correlated covariate ($\rho \ge 0.5$) often saves weeks of runtime; choose the randomization unit to match the causal mechanism.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-statistics-and-experiment-design-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-statistics-and-experiment-design-coaching).
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "写出 ViT 中 Patch Embedding 将 (H, W, C) 图像转化为 (N, D) 序列向量的数学投影公式与 [CLS] token 的作用。"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/DL/cnn-and-vit-architectures?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cnn-and-vit-architectures)
+<!-- talentme:top:end -->
+
 # 视觉架构演进全景：2D 卷积、感受野迭代计算、Depthwise 深度可分离卷积、ResNet 恒等残差映射与 Vision Transformer (ViT) 极客指南
 
 > **核心摘要**：从传统的 2D 卷积神经网络 (CNN) 到打破模态壁垒的 Vision Transformer (ViT)，计算机视觉架构经历了从“人工设计局部归纳偏置”到“数据驱动全局自注意力”的伟大范式转移。本指南系统剖析系统剖析 2D 卷积维度与感受野 (Receptive Field, RF) 通用递推公式、深度可分离卷积 (Depthwise Separable Conv) 算力折降推导、ResNet 解决网络退化 (Degradation Problem) 的恒等残差映射 (Identity Mapping) 梯度直通证明、Vision Transformer (ViT) Patch Embedding 与 `[CLS]`Token 机制，以及 CNN 局部平移不变性与 ViT 全局自注意力在归纳偏置 (Inductive Bias) 上的本质权衡。全篇配备丰富的 SEO 说明性段落与 Pure Numpy 视觉算子引擎。
@@ -241,3 +245,9 @@ class PureNumpyVisionEngine:
 1. **边缘与轻量级设备**：选择基于 Depthwise Separable Conv 的 MobileNet 架构；
 2. **通用中等规模视觉任务**：首选 ResNet-50 / ConvNeXt，具备极佳的收敛稳定性与局部特征拟合；
 3. **超大规模与多模态大模型**：首选 Vision Transformer (ViT) / Swin Transformer，通过海量预训练突破表达上限。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cnn-and-vit-architectures-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cnn-and-vit-architectures-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "什么是 PSI？如何搭建生产环境的特征漂移监控体系？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/MLE/mle-data-and-feature-engineering?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-data-and-feature-engineering)
+<!-- talentme:top:end -->
+
 # 🌐 MLE 数据与特征工程：质量管线、编码策略、不平衡处理、特征选择与漂移检测
 
 > **核心摘要**：模型的性能在训练开始之前就已注定——它由数据质量与特征工程决定。本指南覆盖 MLE 数据管线的完整闭环：数据质量四大威胁（漏标、噪声、重复、异常值）与清洗管线、缺失值填充策略对比、类别特征编码（Label / One-Hot / Target / OOF / Embedding）与防泄漏、数值特征变换（标准化、归一化、分桶、Box-Cox）、多项式特征交叉与维数爆炸、类别不平衡处理（重采样、SMOTE、代价敏感学习、指标选型）、特征选择（过滤 / 包裹 / 嵌入法）与置换重要性 / SHAP、以及生产环境基于 PSI 的漂移监控。
@@ -300,3 +304,9 @@ if __name__ == "__main__":
 3. **变换匹配模型家族**：树模型几乎不需要预处理；线性模型需要缩放；重度偏态需要 Box-Cox/对数变换；交互特征要精选而非穷举。
 4. **不平衡先换指标**：切到 PR-AUC + MCC、使用 Stratified CV，再决定重采样、SMOTE 或代价敏感损失。
 5. **默认漂移会发生，逐日监控**：对每个特征计算 PSI 并配置告警阈值，让模型响亮而尽早地失败，而不是悄然退化。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-data-and-feature-engineering-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-data-and-feature-engineering-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "在 Sequence Packing 序列打包中，为什么必须重置 Position IDs？FlashAttention 如何通过 cu_seqlens 在 CUDA 级消除 100% 的 Padding？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/LLM/tokenizer-and-sampling?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tokenizer-and-sampling)
+<!-- talentme:top:end -->
+
 # 🌐 Tokenizer 分词器与 LLM 采样解码全景：BPE、WordPiece、SentencePiece、Temperature、Top-k/p、Min-p、Gumbel-Max、Penalty 与 Sequence Packing 打包优化
 
 > **核心摘要**：大语言模型 (LLM) 的文本处理管道由**前端文本离散化 (Tokenization)**、**中端自回归 Logit 预测**与**后端概率采样解码 (Decoding & Sampling)** 三大核心阶段构成。本指南系统剖析 BPE、WordPiece、Unigram、SentencePiece 分词算法的数学本质；深入推导 Greedy Search、Beam Search (含长度惩罚与约束 Banking 机制)、Repetition/Presence Penalty、Temperature 缩放、Top-$k$、Top-$p$ (Nucleus Sampling)、最新 SOTA **Min-$p$** 动态截断以及可微 **Gumbel-Softmax** 采样；并解析大模型训练中消除无效 Padding 算力浪费的 **Sequence Packing (序列打包)** 架构与 FlashAttention `varlen` 指针传递。
@@ -298,3 +302,9 @@ if __name__ == "__main__":
 1. **分词器选型**：多语言与代码大模型首选 **Byte-level BPE / SentencePiece**（如 LLaMA-3 128K 词表），配合 tiktoken 级别的 Regex 预分词防止字符混乱；
 2. **采样推荐配置**：通用对话首选 **Temperature=0.7 + Repetition_Penalty=1.15 + Min-p=0.05**（彻底替代 Top-p）；代码与数学推导首选 **Greedy Search (T=0)**；
 3. **训练性能优化**：SFT 与预训练阶段强制引入 **Sequence Packing**，利用 FlashAttention 的 `varlen` `cu_seqlens` 接口实现硬件级零 Padding 计算。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tokenizer-and-sampling-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tokenizer-and-sampling-coaching)。
+<!-- talentme:bottom:end -->

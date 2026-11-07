@@ -16,6 +16,10 @@ interviewFollowups:
   - "Compare Native image generation (GPT-4o discrete token prediction) vs Pipeline diffusion generation."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/Multimodal/diffusion-models?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=diffusion-models)
+<!-- talentme:top:end -->
+
 # 🌐 Diffusion Models: DDPM Derivation, Latent Diffusion, DiT & GPT-4o Native Generation
 
 > **Core Executive Summary**: Generative AI rests on two pillars: Autoregressive LLMs and **Diffusion Models**. Inspired by non-equilibrium thermodynamics, diffusion models add Gaussian noise (forward process) and learn to reverse the corruption step-by-step (reverse denoising process). This guide dissects DDPM derivations, DDIM acceleration, Stable Diffusion latent denoising, DiT architectures, and native multimodal token generation.
@@ -164,3 +168,9 @@ if __name__ == "__main__":
 1. **Architecture Selection**: Prefer **DiT (Diffusion Transformer)** for state-of-the-art text-to-image and video generation.
 2. **Latent Space Efficiency**: Run diffusion inside **VAE Latent Space** (8x spatial reduction) to save 64x compute.
 3. **Inference Acceleration**: Deploy **DDIM** or **DPMSolver** to reduce inference from 1000 steps to 20 steps.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=diffusion-models-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=diffusion-models-coaching).
+<!-- talentme:bottom:end -->

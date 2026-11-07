@@ -16,6 +16,10 @@ interviewFollowups:
   - "Position Ray against Spark: why is Ray preferred for distributed reinforcement learning and large-scale training while Spark dominates batch ETL?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Infra/cluster-scheduling-and-ray?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cluster-scheduling-and-ray)
+<!-- talentme:top:end -->
+
 # 🌐 Cluster Scheduling & Ray: K8s Scheduling Pipeline, Raylet Architecture, Object Store, Autoscaling & GPU Scheduling
 
 > **Core Executive Summary**: Every ML platform asks one question: given $N$ nodes of CPU/GPU/memory, how do we place $M$ tasks so resources are utilized, users treated fairly, and failures don't kill the job? This guide covers the cluster scheduling problem (resource allocation, priority, fairness), the Kubernetes two-phase scheduling pipeline (filtering, scoring, taints, affinity), Ray's architecture (Driver, Raylet, Object Store, Task vs Actor), its scheduling and autoscaling policies, GPU-aware scheduling (topology, sharing, MIG), Ray Train + DP/TP integration, fault recovery and retries, and finally Ray vs Spark.
@@ -397,3 +401,9 @@ Verified output (seed=42): capacity (8,1) — all policies: makespan 28.68s, 43.
 5. **Pick GPU sharing by isolation need**: whole-GPU for training, MPS fractional for bursty small models, MIG for hard multi-tenant isolation, topology-aware for TP groups.
 6. **Make failures cheap by design**: stateless tasks with `max_retries` get four nines for free; checkpoint actor state; keep objects small enough to avoid Object Store spill.
 7. **Pick the engine by control loop**: Spark for deterministic batch/ETL; Ray for RL, training (Ray Train + DeepSpeed ZeRO), HPO (Tune) and serving — scheduling granularity is the deciding factor.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cluster-scheduling-and-ray-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=cluster-scheduling-and-ray-coaching).
+<!-- talentme:bottom:end -->

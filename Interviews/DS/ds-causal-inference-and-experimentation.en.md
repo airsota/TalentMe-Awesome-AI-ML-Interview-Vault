@@ -16,6 +16,10 @@ interviewFollowups:
   - 'When randomized A/B tests are infeasible (spillover, full rollouts, legal constraints), how to design a practical causal decision tree?'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/DS/ds-causal-inference-and-experimentation?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-causal-inference-and-experimentation)
+<!-- talentme:top:end -->
+
 # 🌐 DS Causal Inference: PSM, Difference-in-Differences & Synthetic Control
 
 > **Executive Summary**: Causal inference separates senior Data Scientists and Product Analysts from junior data query roles. In real-world tech systems, ethical constraints, spillover dynamics, and marketplace network effects frequently prohibit randomized controlled trials (A/B testing). This guide systematically explores Rubin's Potential Outcomes framework, Pearl's Causal DAGs, Propensity Score Matching (PSM), Difference-in-Differences (DiD), Synthetic Control (SCM), and Instrumental Variables (2SLS) with mathematical derivations and pure Python implementations.
@@ -245,3 +249,9 @@ graph TD
     Q4 -->|Unobserved Confounders Exist| M4["Exogenous Shocks & Instrumental Variables (IV / 2SLS)"]
     Q4 -->|All Confounders are Observed| M5["PSM Matching / IPW Weighting / Doubly Robust (AIPW)"]
 ```
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-causal-inference-and-experimentation-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-causal-inference-and-experimentation-coaching).
+<!-- talentme:bottom:end -->

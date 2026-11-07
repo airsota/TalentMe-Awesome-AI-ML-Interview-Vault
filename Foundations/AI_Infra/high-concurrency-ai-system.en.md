@@ -16,6 +16,10 @@ interviewFollowups:
   - "Design rate limiting (Token Bucket) and degradation queue strategies under 10,000 QPS spike traffic."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Infra/high-concurrency-ai-system?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=high-concurrency-ai-system)
+<!-- talentme:top:end -->
+
 # 🌐 High-Concurrency AI System Design: SSE Streaming, Semantic Cache & ML Runtimes
 
 > **Core Executive Summary**: Traditional web servers handle millisecond HTTP requests. LLM serving involves multi-second streaming responses. **High-Concurrency AI System Design** addresses typewriter streaming transport, continuous GPU iteration batching, semantic cache acceleration, and circuit-breaker rate limiting under traffic spikes.
@@ -157,3 +161,9 @@ if __name__ == "__main__":
 1. **Streaming Standard**: Implement **HTTP SSE** for LLM client typewriter output.
 2. **Cache Acceleration**: Deploy **Redis + Vector DB Semantic Cache** to relieve GPU load.
 3. **Batching Efficiency**: Enable **Continuous Iteration Batching** in vLLM / TensorRT-LLM.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=high-concurrency-ai-system-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=high-concurrency-ai-system-coaching).
+<!-- talentme:bottom:end -->

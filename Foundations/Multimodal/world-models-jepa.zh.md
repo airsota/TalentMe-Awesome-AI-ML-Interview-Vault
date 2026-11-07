@@ -16,6 +16,10 @@ interviewFollowups:
   - "分析 VLA (Vision-Language-Action) 模型 (如 Google RT-2) 将视觉指令映射为离散机器人动作 (Action Tokens) 的架构逻辑？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/Multimodal/world-models-jepa?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=world-models-jepa)
+<!-- talentme:top:end -->
+
 # 🌐 世界模型与 JEPA 全景：Yann LeCun 非生成式表征预测、I-JEPA / V-JEPA 与具身智能 (VLA) 落地
 
 > **核心摘要**：图灵奖得主 Yann LeCun 提出了著名的 **JEPA (Joint Embedding Predictive Architecture)** 架构，主张放弃像素级生成（Pixel Reconstruction），转而在抽象表征空间 (Representation Space) 中预测世界的未来演变。世界模型 (World Models) 试图为 AI 构建一个符合物理定律的内部心理模型 (Mental Model)。本指南系统拆解 JEPA 非生成式预测哲学、I-JEPA 图像语义补全、V-JEPA 视频时空演化、防止表征塌陷的 EMA 机制，以及在具身智能 (VLA 机器人控制) 中的落地范式。
@@ -190,3 +194,9 @@ if __name__ == "__main__":
 1. **自监督预训练选型**：注重高层语义抽象与物理规则学习首选 **V-JEPA**，摆脱像素生成巨大的算力浪费；
 2. **防范 Collapse**：自监督模型必须引入 **Stop-gradient + EMA Target Network** 机制；
 3. **具身智能控制**：机器人系统推荐采用 **VLA (Vision-Language-Action)** 离散 Action Token 化方案。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=world-models-jepa-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=world-models-jepa-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "什么是 PII (个人身份识别信息) 脱敏？对比基于 RegEx 与基于 NER 命名实体识别在 PII 拦截上的准确率差异？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Infra/security-and-privacy?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=security-and-privacy)
+<!-- talentme:top:end -->
+
 # 🌐 AI 安全与隐私全景：Prompt 注入攻击、Guardrails 防御、差分隐私与联邦学习
 
 > **核心摘要**：大语言模型（LLM）的开放交互特性带来了前所未有的安全挑战。**Prompt 注入攻击** 能够绕过系统设定劫持模型行为，**PII 泄露** 可能引发严重的合规危机。通过在输入输出端部署 **Guardrails (安全护栏)**，并在模型微调阶段引入 **差分隐私 (DP-SGD)** 与 **联邦学习 (FedAvg)**，可以在保护数据隐私的前提下安全释放 AI 价值。本指南系统解构提示词注入、Guardrails 架构、DP-SGD 数学推导与联邦学习聚合。
@@ -178,3 +182,9 @@ if __name__ == "__main__":
 1. **RAG 隔离**：在 RAG 系统中严格对检索文档使用 `<context>` 界定符强化隔离；
 2. **多层 Guardrails**：在网关接入 **Presidio PII 脱敏 + Llama Guard** 校验；
 3. **隐私微调**：对敏感数据微调使用 **Opacus (DP-SGD)** 并严格监控 $(\epsilon, \delta)$ 隐私预算。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=security-and-privacy-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=security-and-privacy-coaching)。
+<!-- talentme:bottom:end -->

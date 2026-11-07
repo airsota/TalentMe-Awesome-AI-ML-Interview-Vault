@@ -16,6 +16,10 @@ interviewFollowups:
   - "Detail LLMOps automated CI/CD pipeline: prompt regression testing, benchmark evaluation, and canary rollouts."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Infra/mlops-and-testing?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mlops-and-testing)
+<!-- talentme:top:end -->
+
 # 🌐 MLOps & Online Testing: Data Drift Monitoring, PSI Metric, A/B Testing & CUPED
 
 > **Core Executive Summary**: Production deployment is not the end of the ML lifecycle. **MLOps & LLMOps** maintain real-time observability, continuous retraining, and statistical A/B experimentation. **Population Stability Index (PSI)** alerts against Data Drift, while **CUPED** reduces metric variance to validate new models with fewer samples and shorter test windows.
@@ -145,3 +149,9 @@ if __name__ == "__main__":
 1. **Drift Automation**: Automate model retraining pipelines when **PSI $\ge 0.25$**.
 2. **Experiment Speed**: Apply **CUPED** variance reduction to cut A/B test durations in half.
 3. **Data Integrity**: Enforce **Chi-Square SRM checks** before analyzing A/B test metrics.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mlops-and-testing-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mlops-and-testing-coaching).
+<!-- talentme:bottom:end -->

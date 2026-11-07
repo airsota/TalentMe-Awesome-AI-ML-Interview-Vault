@@ -16,6 +16,10 @@ interviewFollowups:
   - "RAGAS 框架在企业级 RAG 评估中的 4 大核心指标（Faithfulness, Answer Relevance, Context Precision, Context Recall）如何计算？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/LLM/hallucination-and-factuality?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=hallucination-and-factuality)
+<!-- talentme:top:end -->
+
 # 🌐 大模型幻觉与真实性全景：内在/外在幻觉分类、FActScore 评估、RAGAS 框架与 RoPE 位置插值 (PI/NTK/YaRN) 扩展技术
 
 > **核心摘要**：大语言模型 (LLM) 在生成文本时常出现看似合理但违背事实或上下文逻辑的现象，称为**幻觉 (Hallucination)**。幻觉是阻碍 LLM 在医疗、法律、金融等高风险场景落地的最大瓶颈。本指南系统剖析**内在 (Intrinsic)** 与 **外在 (Extrinsic)** 幻觉分类及其预训练、SFT 与 RLHF 阶段的深层诱因；深入推导 **FActScore** 原子事实拆解、**RAGAS** 4 维评估与 **SAFE** 自动化验证；解析**置信度解码 (Confidence-Aware Decoding)**；并深度推导 **Position Interpolation (PI)**、**NTK-Aware**、**YaRN** 等 RoPE 位置编码扩展技术及 **Needle In A Haystack (NIAH)** 大海捞针长上下文基准。
@@ -209,3 +213,9 @@ if __name__ == "__main__":
 1. **长上下文扩展选型**：首选 **YaRN** 或 **NTK-Aware**，配合少量长文本 SFT 获得极佳的 128K~1M 序列能力；测试长文本质量务必绘制 **Needle In A Haystack 热力图**；
 2. **企业级 RAG 评估标准**：落地 RAG 系统时必须部署 **RAGAS (Faithfulness & Precision)** 监控，预防内在幻觉破坏业务逻辑；
 3. **知识库与自信度控制**：开启置信度解码或熵阈值监测，对于低自信度 Token 强制触发搜索引擎检索或输出标准退避语句。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=hallucination-and-factuality-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=hallucination-and-factuality-coaching)。
+<!-- talentme:bottom:end -->

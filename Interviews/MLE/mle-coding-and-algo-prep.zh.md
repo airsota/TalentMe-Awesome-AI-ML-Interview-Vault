@@ -16,6 +16,10 @@ interviewFollowups:
   - '手写目标检测中的 NMS (Non-Maximum Suppression) 算子，如何高效计算两个 Bounding Box 的 IoU？'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/MLE/mle-coding-and-algo-prep?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-coding-and-algo-prep)
+<!-- talentme:top:end -->
+
 # 🌐 MLE 算法手写实战：零基础 Pure Numpy 手写 LR、K-Means、Self-Attention 与 NMS
 
 > **核心摘要**：全量拆解 MLE 面试高频机器学习算法手写 (Whiteboard / Live Coding) 实战。深入剖析零依赖 Pure Numpy 实现逻辑回归 (Logistic Regression)、K-Means 迭代聚类、Softmax 数值防溢出技巧与 Self-Attention / NMS 算子。
@@ -212,3 +216,9 @@ if __name__ == "__main__":
 * **标准回答**：交叉熵损失 L = - [y ln y_hat + (1-y) ln (1-y_hat)]。利用 sig'(z) = sig(z)(1-sig(z)) 链式法则求导得 dL/dw = X^T (y_hat - y)。
 
 > 🎤 **面试速答**："结论：dL/dw = Xᵀ(ŷ − y)/n，梯度就是"残差投影到特征空间"。原理：链式法则展开时，交叉熵的 1/ŷ 项与 sigmoid 导数的 ŷ(1−ŷ) 恰好约掉，中间项只剩 (ŷ−y)，这就是逻辑回归梯度"恰好等于残差"的原因——也是手写实现里最漂亮的一步。例子：X 是 (n, d)，(ŷ−y) 是 (n,)，Xᵀ 乘残差得到 (d,)，再除以 n 做平均，方向就是损失下降最快的方向。手写时逐行讲"前向 → 残差 → 更新"三步即可满分。"
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-coding-and-algo-prep-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-coding-and-algo-prep-coaching)。
+<!-- talentme:bottom:end -->

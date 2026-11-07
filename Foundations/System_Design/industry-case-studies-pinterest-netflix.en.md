@@ -16,6 +16,10 @@ interviewFollowups:
   - "Derive mAP@N and explain why session watch time is a better online metric than CTR for Netflix."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/System_Design/industry-case-studies-pinterest-netflix?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=industry-case-studies-pinterest-netflix)
+<!-- talentme:top:end -->
+
 # 🌐 Industry System Case Studies: Pinterest Visual Search & Netflix Recommendation
 
 > **Core Executive Summary**: Real-world system design mastery comes from studying architectures that actually run at scale. This guide dissects **Pinterest** (image embeddings, PinSage-style graph embeddings, HNSW ANN retrieval, multimodal representations) and **Netflix** (signals, two-stage candidate generation → ranking, dedup & diversity, A/B experimentation culture), then distills a transferable template — *candidate generation → ranking → diversity → experimentation* — and a 5-phase interview framework (requirements → scale → data flow → components → tradeoffs).
@@ -303,3 +307,9 @@ if __name__ == "__main__":
 4. **Experimentation is the product's immune system** — temporal splits, randomized holdouts, guardrails, and significance gate every change.
 5. **Separate freshness-critical from quality-critical data paths** — a real-time lane plus a batch base-index lane.
 6. **In interviews, front-load the funnel and the numbers** — template first, then scale, then tradeoffs.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=industry-case-studies-pinterest-netflix-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=industry-case-studies-pinterest-netflix-coaching).
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "In backpropagation, how do you verify the chain rule with a Jacobian dimension check, and what role does the Hessian play in optimization?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/Math/linear-algebra-for-ai?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-algebra-for-ai)
+<!-- talentme:top:end -->
+
 # 📐 Linear Algebra Core for AI: Vector Spaces, Four Subspaces, EVD/SVD, Projection & Least Squares, Jacobian/Hessian
 
 > **Core Executive Summary**: Linear algebra is the substrate of machine learning and deep learning: every tensor is a matrix, every layer is a matrix multiplication, and every loss surface is a function of matrix products. This guide covers the non-negotiable core — vector spaces and matrix algebra, the four fundamental subspaces with the rank-nullity theorem, eigendecomposition (EVD) and singular value decomposition (SVD) with their geometric meaning, the geometry of orthogonal projection and least squares (the normal equation $X^T X w = X^T y$ as a projection statement), decomposition applications such as PCA, low-rank approximation and the Moore-Penrose pseudoinverse, and finally multivariate calculus (gradient, Jacobian, Hessian) with the chain-rule dimension check used in every backpropagation pass.
@@ -401,3 +405,9 @@ if __name__ == "__main__":
 3. **Use singular values, not eigenvalues, for arbitrary matrices**: $\sigma_i = \sqrt{\lambda_i(A^T A)}$ is the stable route; it also degrades gracefully when $\text{rank}(A) < \min(m, n)$.
 4. **Verify gradient shapes every backprop pass**: the Jacobian chain rule $(k \times n) = (k \times m)(m \times n)$ catches transposed derivatives before they silently poison training.
 5. **Truncated SVD is the universal compression primitive**: PCA, embedding pruning, denoising, and LoRA all reduce to Eckart-Young — pick $k$ by looking at the singular value spectrum and the explained-variance curve.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-algebra-for-ai-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-algebra-for-ai-coaching).
+<!-- talentme:bottom:end -->

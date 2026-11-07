@@ -16,6 +16,10 @@ interviewFollowups:
   - "生成式模型 (HMM) 与判别式模型 (CRF) 在序列标注任务中的核心优缺点对比。"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/ML/probabilistic-models?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probabilistic-models)
+<!-- talentme:top:end -->
+
 # 概率图模型：朴素贝叶斯条件独立、HMM 维特比 (Viterbi) 动态规划与 CRF 解决标注偏置极客全解
 
 > **核心摘要**：概率图模型 (Probabilistic Graphical Models, PGM) 结合了概率论与图论，是处理不确定性与序列标注任务的数理基石。本指南系统剖析从朴素贝叶斯 (Naive Bayes) 的条件独立性假设与拉普拉斯平滑，到隐马尔可夫模型 (HMM) 的状态转移/发射概率矩阵与 Viterbi 解码，再到最大熵马尔可夫模型 (MEMM) 的标注偏置问题及条件随机场 (CRF) 的全局归一化求解。
@@ -264,3 +268,9 @@ class PureNumpyViterbiHMM:
 1. **独立特征文本分类**：使用朴素贝叶斯 (Multinomial NB)，配合拉普拉斯平滑快速构建 Baseline；
 2. **传统简单时序解码**：使用 HMM 与 Viterbi 解码算法；
 3. **复杂上下文序列标注 (NER/词性标注)**：优先使用线性链 CRF (或 BiLSTM-CRF / Transformer-CRF)，利用全局归一化消除标注偏置。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probabilistic-models-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probabilistic-models-coaching)。
+<!-- talentme:bottom:end -->

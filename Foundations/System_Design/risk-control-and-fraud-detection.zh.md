@@ -16,6 +16,10 @@ interviewFollowups:
   - "黑产可以伪装设备指纹、轮换 IP,图方法如何识别团伙欺诈?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/System_Design/risk-control-and-fraud-detection?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=risk-control-and-fraud-detection)
+<!-- talentme:top:end -->
+
 # 🌐 实时风控与欺诈检测系统架构：流批一体、图风控与实时特征工程
 
 > **核心摘要**：金融级风控系统必须在 **10ms 决策 SLA** 内对每秒数百万级事件给出 **放行 / 拒绝 / 人工复核** 三种决策,而欺诈率往往低于 **0.1%**。本指南全量拆解实时风控链路——事件接入、实时特征工程、规则引擎、模型打分、策略决策与人工审核——并深入异常检测、样本不平衡与代价敏感学习、风控评估指标、反欺诈对抗、图风控团伙识别,以及延迟预算与优雅降级策略。
@@ -329,3 +333,9 @@ if __name__ == "__main__":
 3. **为 0.1% 的类别而设计**:训练用 SMOTE/类别加权/Focal Loss,评估用 PR-AUC + MCC + 误杀率,阈值决策依赖概率校准——绝不用裸准确率。
 4. **用图思考**:团伙欺诈是结构性的;实体图谱 + 社群发现 + 在线一跳/二跳查询产出攻击者难以伪造的高精度特征。
 5. **把欺诈当军备竞赛**:监控规则命中率、抬高攻击成本(验证升级)、对可伪装特征降权——系统必须在"天"级可重调,而不是"季度"级。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=risk-control-and-fraud-detection-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=risk-control-and-fraud-detection-coaching)。
+<!-- talentme:bottom:end -->

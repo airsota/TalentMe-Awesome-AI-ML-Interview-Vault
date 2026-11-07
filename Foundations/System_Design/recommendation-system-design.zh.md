@@ -16,6 +16,10 @@ interviewFollowups:
   - "推荐评估中为什么 GAUC 比 AUC 更有效？离线指标 (NDCG) 与在线 A/B 实验应如何配合使用？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/System_Design/recommendation-system-design?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=recommendation-system-design)
+<!-- talentme:top:end -->
+
 # 推荐系统工业级架构设计：召回-精排-重排三阶段、双塔模型与离在线一致性 Feature Store
 
 > **核心摘要**：推荐系统是电商（淘宝/Amazon）、短视频（抖音/TikTok）以及信息流（小红书/Pinterest）的核心商业引擎。面对千万级 Item 与亿级 User，任何单一模型都无法在 **50ms 延迟 SLA** 内对全量候选打分，因此工业界采用**漏斗式多阶段架构：召回 (Retrieval) → 粗排 (Pre-Ranking) → 精排 (Heavy Ranking) → 重排 (Re-Ranking)**，每一阶段用模型容量换取候选规模；召回层由 **DSSM 双塔模型 + ANN 向量索引 (HNSW/IVF)** 主导，精排层经历了 Wide&Deep → **DeepFM → DCN-V2 → MMoE/PLE 多目标**的演进；全链路依赖 **Feature Store** 保证批流特征离在线一致性，防止 **Point-in-Time 特征穿越**；离线用 **AUC / GAUC / NDCG** 评估，在线用 **A/B 实验**决策。本指南以生产级数字与推导逐层拆解。
@@ -335,3 +339,9 @@ if __name__ == "__main__":
 3. **精排必答**：能对比 Wide&Deep/DeepFM/DCN-V2 的交叉机制（写出 Cross 层公式与低秩分解），能讲清 MMoE/PLE 门控公式与 ESMM 对样本选择偏差的消除。
 4. **特征必答**：能画出 Kafka + Flink 实时特征与 Hive/Spark 批量特征的 Feature Store 数据流，说出 ASOF Join、双跑对账、请求级特征日志三层防泄漏手段。
 5. **评估必答**：会手算 GAUC 与 NDCG，能解释 AUC 的"全局区分度"盲区，并能说出守卫指标、永久留出组、序贯检验、逐级放量的 A/B 实验流程——离线榜单只海选，A/B 定生死。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=recommendation-system-design-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=recommendation-system-design-coaching)。
+<!-- talentme:bottom:end -->

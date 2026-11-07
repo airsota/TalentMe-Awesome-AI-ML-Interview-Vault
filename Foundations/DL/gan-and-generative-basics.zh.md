@@ -16,6 +16,10 @@ interviewFollowups:
   - "解释 GAN 训练中的模式崩塌 (Mode Collapse) 现象，并列举 3 种现代防范工程手段 (WGAN-GP, Spectral Normalization, Unrolled GAN)。"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/DL/gan-and-generative-basics?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gan-and-generative-basics)
+<!-- talentme:top:end -->
+
 # 生成对抗网络 (GAN) 全景：Minimax 博弈、JS 散度缺陷、WGAN Wasserstein 距离推导、WGAN-GP 梯度惩罚与 Mode Collapse 极客指南
 
 > **核心摘要**：生成对抗网络 (Generative Adversarial Networks, GAN) 是深度学习领域最具震撼力的隐式生成模型 (Implicit Generative Models) 之一。通过生成器 (Generator) 与判别器 (Discriminator) 之间的双人零和博弈 (Two-Player Zero-Sum Game)，GAN 能够学习极其复杂的高维数据分布。然而，原始 GAN 面临着训练极度不稳定的致命难题。本指南系统剖析 Minimax 目标函数、最优判别器 $D^*(x)$ 数学推导、JS 散度在高维流形不重叠时引发梯度消失的物理成因、WGAN 引入 Wasserstein 距离（推土机距离）及 Kantorovich-Rubinstein 对偶性的证明、WGAN-GP 梯度惩罚 (Gradient Penalty) 与谱归一化 (Spectral Normalization)，以及模式崩塌 (Mode Collapse) 的数理防御机制。全篇配备丰富的 SEO 说明性段落与 Pure Numpy GAN 算子引擎。
@@ -187,3 +191,9 @@ class PureNumpyGANEngine:
 1. **经典图像生成首选**：**WGAN-GP** 或带有 **Spectral Normalization (SN-GAN)** 的架构，彻底告别模式崩塌与梯度消失；
 2. **评估指标**：使用 **FID (Fréchet Inception Distance)** 度量生成图像与真实图像在特征空间高斯分布的距离（FID 越低越好），避免单凭视觉主观评价；
 3. **演进方向**：在现代超高分辨率与可控生成任务中，逐渐由 **Diffusion Models (扩散模型)** 继承并超越，但在实时极速单步推理生成中 GAN 依然具备不可替代的效率优势。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gan-and-generative-basics-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gan-and-generative-basics-coaching)。
+<!-- talentme:bottom:end -->

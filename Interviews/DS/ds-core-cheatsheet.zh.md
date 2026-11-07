@@ -16,6 +16,10 @@ interviewFollowups:
   - '什么是总体稳定性指数（PSI）？当 PSI 检测到严重漂移时你该采取哪些工程排查与重训措施？'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/DS/ds-core-cheatsheet?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-core-cheatsheet)
+<!-- talentme:top:end -->
+
 # 🌐 DS 核心知识地图：因果推断、A/B 测试与 Data Drift
 
 > **核心摘要**：数据科学家（Data Scientist）的核心使命在于运用严格的统计推断、因果识别与实验科学驱动商业增长。本速查全景拆解 DS 面试中最高频的五大硬核模块：假设检验与样本量闭式推导、连续偷窥与 mSPRT 序贯检验、Uplift 异质增益模型（S/T/X-Learner）、CUPED 方差缩减以及 PSI 数据漂移监控。
@@ -179,3 +183,9 @@ graph TD
 
 ### 考点 2：如何设计北极星指标 (North Star Metric) 与 Guardrail 护栏指标？
 * **标准回答**：北极星指标衡量核心用户价值与商业变现的乘积（如 DAU 时长、总交易 GMV）；护栏指标（Guardrails）负责安全兜底，包含：(1) 技术性能（P99 延迟、Crash 率）；(2) 商业生态（负反馈率、退订率）；(3) 体验平衡（召回覆盖度、曝光基尼系数）。任何实验只有在**护栏指标未被显著击穿的前提下**，北极星指标正向才准许全量发布。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-core-cheatsheet-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=ds-core-cheatsheet-coaching)。
+<!-- talentme:bottom:end -->

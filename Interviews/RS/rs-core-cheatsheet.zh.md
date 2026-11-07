@@ -16,6 +16,10 @@ interviewFollowups:
   - '对比 PPO、DPO 与 GRPO：在计算复杂度、显存占用、探索能力与奖励过度优化（Reward Hacking）上各有何优劣？'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/RS/rs-core-cheatsheet?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-core-cheatsheet)
+<!-- talentme:top:end -->
+
 # 🌐 RS 核心知识地图：顶会必读 30 篇论文解构与深度强化学习 Deep RL
 
 > **核心摘要**：算法研究科学家（Research Scientist, RS）岗位的技术面试深度远超普通工程开发。面试官深究每一篇 SOTA 论文背后的第一性原理、损失函数的解析推导、泛化界的数学保证以及模型的失效边界。本速查全景拆解 RS 岗位核心知识地图：SOTA 论文解构四步法、顶会必读 30 篇里程碑论文脉络、DPO 闭式隐式奖励严格推导、PPO 剪切目标以及 Pure Python 算子实现。
@@ -137,3 +141,9 @@ if __name__ == "__main__":
 | | **DPO (2023)** | 隐式奖励代换，将 RLHF 等价转化为二分类交叉熵 | DPO 的闭式解推导、为什么不需要估计配分函数 $Z(x)$？ |
 | **4. 扩散与世界模型**| **DDPM (2020) & Flow Matching (2023)** | 将朗之万逆扩散转化为均方误差去噪回归；线性向量场 ODE | 评分匹配 Score Matching 与 DDIM 确定性采样 |
 | | **DiT / Sora (2023/2024)** | 将 U-Net 骨干网络替换为 Transformer，实现视觉 Scale | AdaLN 条件注入机制、时空 Patch 编码 |
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-core-cheatsheet-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-core-cheatsheet-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "过程奖励模型 (PRM) 与结果奖励模型 (ORM) 在复杂链式推理 (CoT/Math) 强化学习中的应用有何不同？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/LLM/alignment-and-rlhf-dpo?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=alignment-and-rlhf-dpo)
+<!-- talentme:top:end -->
+
 # 🌐 大模型偏好对齐全景：RLHF 3 阶段、PPO 截断损失、DPO 隐式奖励代换、GRPO 与 PRM/ORPO 深度剖析
 
 > **核心摘要**：预训练与 Supervised Fine-Tuning (SFT) 赋予了大语言模型 (LLM) 强大的语言建模与指令遵循能力，但模型依然可能生成有害、偏见或不符合人类期望的回复（即 **Alignment Tax 现象**）。人类偏好对齐技术通过引入人类或 AI 反馈，引导模型向**有用性 (Helpfulness)、诚实性 (Honesty) 与无害性 (Harmlessness)** 3H 标准对齐。本指南系统剖析经典 **RLHF 3 阶段**（SFT $\to$ RM $\to$ PPO）、推导 **PPO 截断目标与 GAE** 优势估计；数学证明 **DPO (Direct Preference Optimization)** 隐式奖励代换；解析 **IPO、KTO、ORPO** 无 Reference 变体；并深度剖析 DeepSeek-R1 采用的无 Critic **GRPO (Group Relative Policy Optimization)** 与 **PRM (Process Reward Model)** 过程奖励机制。
@@ -239,3 +243,9 @@ if __name__ == "__main__":
 1. **通用对话偏好首选**：直接采用 **DPO** 或 **ORPO**，省去训练稳定度极差的 PPO Critic 与 Reward Model，大幅降低训练资源要求；
 2. **复杂推理/数学/代码强化学习首选**：采用 DeepSeek-R1 验证有效的 **GRPO (Group Relative Policy Optimization)**，彻底摆脱 Critic 模型显存枷锁，配合同步训练 **PRM (过程奖励模型)** 提升长链推理可靠度；
 3. **单点反馈数据**：针对真实线上离线日志（只有单点 Liked/Disliked），直接采用 **KTO** 算法进行快速对齐。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=alignment-and-rlhf-dpo-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=alignment-and-rlhf-dpo-coaching)。
+<!-- talentme:bottom:end -->

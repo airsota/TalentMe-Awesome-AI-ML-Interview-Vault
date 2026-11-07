@@ -16,6 +16,10 @@ interviewFollowups:
   - "When feature dimension d >> n (e.g. text classification), should you pick a Linear or RBF kernel? Why?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/ML/support-vector-machines?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=support-vector-machines)
+<!-- talentme:top:end -->
+
 # Support Vector Machines (SVM): Max-Margin Geometry, Duality, KKT & RBF Kernel Guide
 
 > **Summary**: Support Vector Machine (SVM) is one of the most mathematically elegant algorithms in classical statistical learning. This guide provides a systematic analysis of maximum margin geometry, soft-margin slack variables, Lagrangian dual optimization, KKT sparsity, Mercer theorem, kernel tricks, and practical selection matrices.
@@ -270,3 +274,9 @@ class PureNumpyRBFSVM:
 1. **Geometry**: Master geometric margin minimization to QP formulation.
 2. **Duality**: Derive KKT conditions and support vector sparsity.
 3. **Kernels**: Understand RBF infinite-dimensional expansion and selection criteria.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=support-vector-machines-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=support-vector-machines-coaching).
+<!-- talentme:bottom:end -->

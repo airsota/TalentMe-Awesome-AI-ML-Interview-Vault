@@ -16,6 +16,10 @@ interviewFollowups:
   - "解释普通 Dropout 与 Inverted Dropout (倒置 Dropout) 的数学公式差异，为什么 PyTorch/TensorFlow 默认采用 Inverted Dropout？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/DL/normalization-and-regularization?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=normalization-and-regularization)
+<!-- talentme:top:end -->
+
 # 归一化与正则化全景：BatchNorm、LayerNorm、RMSNorm、L0/L1/L2 权重衰减与 Inverted Dropout 极客指南
 
 > **核心摘要**：在深度神经网络的训练过程中，**归一化 (Normalization)** 与 **正则化 (Regularization)** 是平滑 Loss 优化曲面、消除内部协变量偏移 (Internal Covariate Shift, ICS) 以及防御过拟合 (Overfitting) 的两大核心工程武器。本指南系统剖析系统剖析特征缩放受惠算法矩阵 (Standardization, MinMax, RobustScaler)、$L_0/L_1/L_2$ 凸松弛约束的数理差异、Label Smoothing 标签平滑、Inverted Dropout 机制与 Max-Norm 约束、归一化 5 大范式（BatchNorm, LayerNorm, InstanceNorm, GroupNorm 与 LLaMA / DeepSeek 标配的 RMSNorm），以及解答 BatchNorm 是否强制标准正态分布等经典误区。全篇配备丰富的 SEO 说明性段落与 Pure Numpy 手写归一化算子。
@@ -253,3 +257,9 @@ class PureNumpyNormEngine:
 1. **特征缩放**：无离群点选 Standardization；有极重异常值选 RobustScaler；树模型无需缩放；
 2. **正则化**：需剔除无用特征选 $L_1$；防止过拟合通用选择 $L_2$ Weight Decay；结合 Label Smoothing 与 Max-Norm 约束防止过自信与梯度发散；
 3. **归一化**：大模型与 NLP 首选 **RMSNorm** / LayerNorm；CV 大 Batch 选择 BatchNorm；CV 小 Batch 选择 GroupNorm。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=normalization-and-regularization-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=normalization-and-regularization-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "端侧 AI 推理 (On-Device LLM) 中，如何结合 INT4/FP4 量化、内存映射 (mmap) 与 NPU 硬件加速突破移动端带宽瓶颈？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Infra/speculative-decoding?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=speculative-decoding)
+<!-- talentme:top:end -->
+
 # 🌐 猜想解码 (Speculative Decoding) 全景：Draft Model 小模型草稿、拒绝采样证明与端侧加速
 
 > **核心摘要**：大语言模型在生成阶段逐 Token 自回归预测，每次前向传播都要将数十吉字节的模型权重从 HBM 加载到 GPU 芯片上，算术强度仅为 $O(1)$ FLOPs/Byte（内存带宽极度受限）。**Speculative Decoding (猜想解码)** 引入一个极其轻量的 Draft Model 快速猜测多个候选 Token，再由 Target Model 在一次前向传播中并行校验。通过**拒绝采样 (Rejection Sampling)**，在保证输出概率分布 100% 严格无损的前提下，将推理提速 2x~3x！本指南系统解构 Draft-Verify 流程、数学无损证明、Medusa 无 Draft 方案以及端侧 NPU 加载优化。
@@ -182,3 +186,9 @@ if __name__ == "__main__":
 1. **架构首选**：在大模型推理集群中，优先采用 **Eagle / Medusa** 单模型多头猜想范式；
 2. **数学无损**：严格使用 **Rejection Sampling 补偿公式**，确保输出质量无衰减；
 3. **端侧部署**：结合 **INT4 量化与 mmap 零拷贝**，充分压榨移动端统一内存与 NPU 算力。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=speculative-decoding-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=speculative-decoding-coaching)。
+<!-- talentme:bottom:end -->

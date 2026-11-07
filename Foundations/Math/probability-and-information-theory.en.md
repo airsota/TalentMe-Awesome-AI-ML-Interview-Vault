@@ -16,6 +16,10 @@ interviewFollowups:
   - "Derive closed-form KL divergence between Gaussian N(mu, sigma^2) and standard Normal N(0, I) in VAEs."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/Math/probability-and-information-theory?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probability-and-information-theory)
+<!-- talentme:top:end -->
+
 # 🌐 AI Math Foundations: Bayes Inference, Shannon Entropy, Cross-Entropy & KL Divergence
 
 > **Core Executive Summary**: Probability theory and information theory form the mathematical backbone of artificial intelligence. From **Bayesian Inference** parameter estimation to **Shannon Entropy** and deep learning loss foundations—**Cross-Entropy** and **KL Divergence**—mathematical rigour dictates model optimization. This guide derives MLE vs MAP equivalences, KL divergence non-negativity proofs, Softmax cross-entropy gradients, and VAE closed-form KL lower bounds.
@@ -162,3 +166,9 @@ if __name__ == "__main__":
 > 💡 **Intuition**: One thread runs through the whole guide: information theory quantifies uncertainty and distribution mismatch in bits — every training, alignment, and generation objective reduces to additions and subtractions of entropy, cross-entropy, and KL.
 >
 > 🎤 **Interview Answer**: "Takeaway: say three things and you're set — KL ≥ 0 and asymmetric, cross-entropy = entropy + KL, and the Softmax cross-entropy gradient is p - y. Why: logs turn products into sums, which is the root of every simplification. Example: classification → cross-entropy; distribution alignment (VAE/RLHF) → KL; generative metric reporting → JS or FID."
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probability-and-information-theory-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=probability-and-information-theory-coaching).
+<!-- talentme:bottom:end -->

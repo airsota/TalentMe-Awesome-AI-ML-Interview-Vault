@@ -16,6 +16,10 @@ interviewFollowups:
   - "完整描述从读论文到重现数字再到组件替换的论文复现流程。"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/RS/rs-experiment-design-and-reproducibility?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-experiment-design-and-reproducibility)
+<!-- talentme:top:end -->
+
 # 🔬 RS 实验设计与可复现研究：消融实验、种子控制、超参搜索与可复现性全景全解
 
 > **核心摘要**：在 RS (Research Scientist) 面试与真实科研中，一篇论文可信与否的分水岭几乎从来不是模型本身，而是实验设计。本指南完整覆盖实验设计三原则（单变量控制、对照基线、多种子平均与固定数据划分的方差控制）、消融实验规范（组件开关、梯度消融、论文呈现）、超参搜索（网格/随机/贝叶斯对比与预算分配数学）、日志纪律（TensorBoard/W&B 字段清单、语义化命名、Config 固化）、完整可复现清单（固定种子、数据版本、deterministic 模式、环境锁定），以及 Train-Val 泄漏、测试集污染、多次试验选最优的选择偏差、Bonferroni 多重比较等常见坑。最后给出 Pure Numpy 网格搜索 + 多种子聚合实现与论文复现 4 步流程。
@@ -334,3 +338,9 @@ if __name__ == "__main__":
 4. **按预算搜索而非按直觉搜索**：默认随机搜索 + 对数均匀先验，评估昂贵时升级贝叶斯优化，网格只留给极小离散空间。
 5. **日志与固化**：config 哈希 + 数据版本 + 环境锁定 + deterministic 模式即可复现契约；语义化命名让表格行映射到运行 ID。
 6. **校正选择偏差**：任何"从 N 次试验里挑最优"的结论都要说明选择过程，并用未触碰过的数据验证最终选择。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-experiment-design-and-reproducibility-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-experiment-design-and-reproducibility-coaching)。
+<!-- talentme:bottom:end -->

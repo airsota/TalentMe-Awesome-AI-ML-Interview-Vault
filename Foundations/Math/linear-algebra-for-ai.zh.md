@@ -16,6 +16,10 @@ interviewFollowups:
   - "反向传播中如何通过 Jacobian 维度检查验证链式法则？Hessian 矩阵在优化（如牛顿法）中起什么作用？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/Math/linear-algebra-for-ai?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-algebra-for-ai)
+<!-- talentme:top:end -->
+
 # 🧮 线性代数核心：向量空间、四大子空间、SVD/EVD、投影与最小二乘、Jacobian/Hessian 全景
 
 > **核心摘要**：线性代数是机器学习和深度学习的底层基座——每个张量都是矩阵，每一层都是矩阵乘法，每一条损失曲面都是矩阵运算的函数。本指南覆盖 AI 工程师不可妥协的数理核心：向量空间与矩阵运算、带有秩-零化度定理的四大子空间、特征值分解 EVD 与奇异值分解 SVD 的几何意义、正交投影与最小二乘的几何（正规方程 $X^T X w = X^T y$ 本质上是一条投影声明）、PCA / 低秩近似 / Moore-Penrose 伪逆等分解应用，以及多元微积分（梯度、Jacobian、Hessian）与每次反向传播都要用到的链式法则维度检查。
@@ -399,3 +403,9 @@ if __name__ == "__main__":
 3. **研究任意矩阵用奇异值而非特征值**：$\sigma_i = \sqrt{\lambda_i(A^T A)}$ 是稳定路径，且当 $\text{rank}(A) < \min(m, n)$ 时依然优雅退化。
 4. **每次反向传播都要过维度检查**：链式法则 $(k \times n) = (k \times m)(m \times n)$ 能在转置梯度污染训练前抓住它。
 5. **截断 SVD 是通用压缩原语**：PCA、嵌入剪枝、去噪、LoRA 全部归结为 Eckart-Young——用奇异值谱和解释方差曲线来选择 $k$。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-algebra-for-ai-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-algebra-for-ai-coaching)。
+<!-- talentme:bottom:end -->

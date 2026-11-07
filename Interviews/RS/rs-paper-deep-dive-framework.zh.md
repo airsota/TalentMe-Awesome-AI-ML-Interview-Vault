@@ -16,6 +16,10 @@ interviewFollowups:
   - '作为顶会 Reviewer，如果由你来审阅一篇声称超越 GPT-4o 的论文，你会优先设计哪些消融实验和压力测试？'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/RS/rs-paper-deep-dive-framework?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-paper-deep-dive-framework)
+<!-- talentme:top:end -->
+
 # 🌐 RS 论文拆解与研究 Vision：如何向面试官复述 SOTA 论文创新点
 
 > **核心摘要**：在算法研究科学家（Research Scientist, RS）面试中，面试官最看重的是候选人的**独立科研品味（Research Taste）、前沿技术视野（Research Vision）以及对 SOTA 论文的批判性深度解构能力**。面试绝不是简单复述论文摘要，而是展现“从第一性原理审视问题、刺破工程增量迷雾、洞悉算法理论边界”的高维认知。本指南深入剖析论文拆解四步法、DeepSeek-R1 纯 RL 涌现机制与 Pass@k 评估算子。
@@ -168,3 +172,9 @@ if __name__ == "__main__":
 1. **自洽性 (Soundness)**：数学推导是否存在隐式边界条件假设（如假设数据服从高斯分布、梯度Lipschitz连续）？实验对照组 Baseline 是否充分调优？
 2. **新颖性 (Novelty)**：核心数学机制是否早在统计学或物理学领域已有对偶形态？是原理创新还是仅仅换了新名字？
 3. **显著性与复现性 (Significance & Reproducibility)**：收益是否大于 $3\sigma$ 置信区间？多种子（Multi-seed）方差是否披露？是否开源了完整的数据清洗脚本与超参数网格？
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-paper-deep-dive-framework-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=rs-paper-deep-dive-framework-coaching)。
+<!-- talentme:bottom:end -->

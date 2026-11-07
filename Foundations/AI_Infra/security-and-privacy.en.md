@@ -16,6 +16,10 @@ interviewFollowups:
   - "Compare RegEx pattern matching vs NER named entity recognition in PII anonymization accuracy."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Infra/security-and-privacy?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=security-and-privacy)
+<!-- talentme:top:end -->
+
 # 🌐 AI Safety & Privacy: Prompt Injection, Guardrails, Differential Privacy & Federated Learning
 
 > **Core Executive Summary**: Interactive LLM applications introduce novel security threat vectors. **Prompt Injections** can hijack model behavior, and **PII leakage** risks regulatory non-compliance. Deploying **Guardrails** alongside **Differential Privacy (DP-SGD)** and **Federated Learning (FedAvg)** protects data privacy while releasing AI capabilities safely.
@@ -143,3 +147,9 @@ if __name__ == "__main__":
 1. **RAG Hardening**: Isolate external retrieved documents using strict `<context>` delimiters.
 2. **Multi-layer Defense**: Deploy **Presidio PII redaction + Llama Guard** on API gateways.
 3. **Differential Privacy**: Fine-tune on sensitive data with **DP-SGD (Opacus)** while bounding $(\epsilon, \delta)$.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=security-and-privacy-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=security-and-privacy-coaching).
+<!-- talentme:bottom:end -->

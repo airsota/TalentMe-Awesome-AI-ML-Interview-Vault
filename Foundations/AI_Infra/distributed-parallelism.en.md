@@ -16,6 +16,10 @@ interviewFollowups:
   - "Design optimal 4D hybrid parallelism (DP+TP+PP+EP) topology mapping for a 1024-GPU H100 cluster training a 409B MoE model."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Infra/distributed-parallelism?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=distributed-parallelism)
+<!-- talentme:top:end -->
+
 # 🌐 Distributed Training Parallelism: TP, PP, DP & DeepSpeed ZeRO 1/2/3
 
 > **Core Executive Summary**: Single GPU VRAM cannot host 100B+ LLM training parameters, gradients, and optimizer states (a 70B FP16 model requires 1.12TB training VRAM). **4D Parallelism (DP, TP, PP, EP)** and **DeepSpeed ZeRO** partition memory across thousands of GPUs. This guide dissects Megatron-LM tensor parallelism, 1F1B pipeline bubble ratios, ZeRO 1/2/3 bounds, and 4D topology design.
@@ -141,3 +145,9 @@ if __name__ == "__main__":
 1. **Intra-Node Isolation**: Restrict Tensor Parallelism (TP) to intra-node NVLink domains.
 2. **Inter-Node Scaling**: Use Pipeline Parallelism (PP) or ZeRO-3 for cross-node scaling over InfiniBand.
 3. **Memory Optimization**: Default to **FSDP or DeepSpeed ZeRO-3** for 100B+ LLM pre-training.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=distributed-parallelism-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=distributed-parallelism-coaching).
+<!-- talentme:bottom:end -->

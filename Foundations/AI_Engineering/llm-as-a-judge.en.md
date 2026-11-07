@@ -16,6 +16,10 @@ interviewFollowups:
   - "Why does Chain-of-Thought (reasons before scores) improve LLM judge scoring accuracy?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Engineering/llm-as-a-judge?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-as-a-judge)
+<!-- talentme:top:end -->
+
 # 🌐 LLM-as-a-Judge Evaluation: Pointwise & Pairwise Paradigms, Bias Elimination & Cohen's Kappa
 
 > **Core Executive Summary**: Traditional metrics like BLEU and ROUGE fail to evaluate complex semantic quality. **LLM-as-a-Judge** uses strong LLMs (such as GPT-4) as evaluators. This guide dissects Pointwise vs Pairwise evaluation paradigms, Position and Verbosity bias mitigation, Cohen's Kappa statistical agreement, Elo rating systems, and standard benchmarks.
@@ -159,3 +163,9 @@ if __name__ == "__main__":
 1. **Position Bias Defense**: Swap model positions $(A, B)$ and $(B, A)$ in pairwise evaluations.
 2. **Reasoning First**: Require LLM judges to write explanations before outputting scores.
 3. **Statistical Agreement**: Validate LLM judges against human annotators using **Cohen's Kappa ($\kappa \ge 0.75$)**.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-as-a-judge-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-as-a-judge-coaching).
+<!-- talentme:bottom:end -->

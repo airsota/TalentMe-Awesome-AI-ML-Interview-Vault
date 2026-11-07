@@ -16,6 +16,10 @@ interviewFollowups:
   - "How to design Error Recovery Prompt strategies when a tool execution returns exceptions?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Engineering/tool-use-and-function-calling?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tool-use-and-function-calling)
+<!-- talentme:top:end -->
+
 # 🌐 Tool Use & Function Calling: Toolformer Self-Taught Calls, JSON Schema & Sandbox Execution
 
 > **Core Executive Summary**: LLMs cannot query real-time APIs or execute code natively. **Tool Use** and **Function Calling** bridge this gap by enabling LLMs to interact with external APIs, databases, and Code Interpreters via structured JSON protocols. This guide dissects Toolformer self-taught tool learning, OpenAI Function Calling protocols, Parallel tool calls, sandbox isolation, and error recovery loops.
@@ -150,3 +154,9 @@ if __name__ == "__main__":
 1. **Schema Standardization**: Use **JSON Schema** definitions with **Constrained Decoding** for zero-fail JSON outputs.
 2. **Production Sandbox**: Run code execution tasks inside **Firecracker MicroVMs (E2B)**.
 3. **Self-Healing Error Handling**: Wrap tool exceptions into `tool` role prompt responses to enable automatic LLM retries.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tool-use-and-function-calling-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=tool-use-and-function-calling-coaching).
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "分析 Hessian 矩阵的正定性 (H > 0) 与目标函数严格凸性 (Strict Convexity) 的关系，解释为什么二阶牛顿法 (Newton's Method) 比一阶梯度下降收敛速度更快？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/Math/optimization-and-matrix-calculus?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=optimization-and-matrix-calculus)
+<!-- talentme:top:end -->
+
 # 🌐 凸优化与矩阵求导全景：拉格朗日乘子法、KKT 条件、SVD 奇异值分解与梯度几何收敛
 
 > **核心摘要**：每一个机器学习模型（无论是 SVM 的几何间隔最大化、PCA 的方差最大化，还是 Transformer 的梯度下降更新）本质上都是一个**约束或无约束数学优化问题**。**矩阵求导 (Matrix Calculus)**、**KKT 条件 (Karush-Kuhn-Tucker)** 和 **SVD 奇异值分解** 构成了算法求解的物理底座。本指南系统解构拉格朗日对偶性、KKT 互补松弛性、SVD 低秩近似理论以及 Hessian 二阶收敛几何。
@@ -202,3 +206,9 @@ if __name__ == "__main__":
 1. **矩阵低秩压缩**：在大模型参数高效微调中优先采用 **LoRA (SVD 截断原理)**；
 2. **约束求解**：SVM 与凸优化推导必须牢记 **KKT 互补松弛性 $\lambda_i g_i(x) = 0$**；
 3. **二阶加速**：中等规模凸优化优先考虑 **L-BFGS** 拟合黑塞矩阵。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=optimization-and-matrix-calculus-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=optimization-and-matrix-calculus-coaching)。
+<!-- talentme:bottom:end -->

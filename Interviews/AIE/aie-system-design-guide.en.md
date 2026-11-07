@@ -16,6 +16,10 @@ interviewFollowups:
   - 'Where should Semantic Caching sit in the RAG pipeline? How to ensure strong cache consistency upon document mutations?'
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AIE/aie-system-design-guide?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-system-design-guide)
+<!-- talentme:top:end -->
+
 # 🌐 AIE LLM System Design Guide: Production RAG, Agent & Serving
 
 > **Executive Summary**: LLM System Design is the central evaluation for AI Application Architects and Senior AI Engineers. Unlike traditional distributed systems, LLM architectures grapple with distinct engineering constraints: KV Cache VRAM memory walls, non-deterministic execution sandboxing, low-latency hybrid knowledge retrieval, and real-time streaming throughput. This guide deconstructs enterprise multi-tenant RAG, autonomous Code Agent state machines, and vLLM PagedAttention VRAM budgeting.
@@ -135,3 +139,9 @@ Traditional PyTorch inference pre-allocates contiguous memory for maximum sequen
 3. **Total KV Cache for Concurrency 32**: $32 \times 4096 \times 0.328\text{ MB} \approx 43\text{ GB}$.
 4. **Total VRAM Requirement**: $140\text{ GB} + 43\text{ GB} + 10\text{ GB (Activation)} \approx 193\text{ GB}$.
    $\implies$ Requires **4x 80GB A100/H100 GPUs (TP=4)** for production stability.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-system-design-guide-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=aie-system-design-guide-coaching).
+<!-- talentme:bottom:end -->

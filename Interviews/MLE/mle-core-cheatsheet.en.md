@@ -16,6 +16,10 @@ interviewFollowups:
   - "Dissect the 5-Fold Cross-Validation training flow of Model Stacking and the Meta-Learner selection strategy that prevents overfitting."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/MLE/mle-core-cheatsheet?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-core-cheatsheet)
+<!-- talentme:top:end -->
+
 # 🌐 MLE Core Cheatsheet: High-Frequency Q&A, Competitions & Pinterest
 
 > **Core Executive Summary**: The MLE interview core is a closed loop of recurring topics — **regularization & bias-variance, overfitting diagnosis, feature engineering, evaluation metrics (AUC / PR / F1), class imbalance, vanishing gradients, cross-validation, model selection, and ensemble methods**. In production (e.g., Pinterest-scale recommenders) they form one pipeline: filter trillion-scale logs, engineer leakage-safe Target Encoding features, cross-validate rigorously, and stack heterogeneous base models. This cheatsheet answers the highest-frequency questions with standard answers, formulas, and quick-reference tables.
@@ -217,3 +221,9 @@ if __name__ == "__main__":
 2. **Choose the metric before the model**: imbalanced targets → stratified CV + PR-AUC + tuned threshold, never raw accuracy.
 3. **Match the family to the modality**: GBDT for tabular, FM/DeepFM for sparse IDs, NN for vision/text — then stack heterogeneously with a regularized linear meta-learner.
 4. **Diagnose before you tune**: use the bias-variance decomposition to decide between more data, more capacity, and more regularization.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-core-cheatsheet-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-core-cheatsheet-coaching).
+<!-- talentme:bottom:end -->

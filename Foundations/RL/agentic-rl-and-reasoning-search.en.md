@@ -16,6 +16,10 @@ interviewFollowups:
   - "How does DeepSeek-R1 unify MCTS tree search with end-to-end GRPO reinforcement learning?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/RL/agentic-rl-and-reasoning-search?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agentic-rl-and-reasoning-search)
+<!-- talentme:top:end -->
+
 # 🌐 Agentic RL & Reasoning Search: MCTS, Process Supervision & RLVR
 
 > **Core Executive Summary**: As LLMs evolve toward **Autonomous Agents** and **System 2 Slow-Thinking**, static single-pass generation gives way to trajectory planning, multi-step tool use, and self-reflection. **Agentic Reinforcement Learning (Agentic RL)** combines environment feedback with decision tree search, forming frontier paradigms represented by **MCTS (Monte Carlo Tree Search)**, **Process Supervision (PRM)**, and **RLVR (Verifiable Rewards)**. This guide dissects trajectory optimization, MCTS node selection, PRM step scoring, and RLVR.
@@ -174,3 +178,9 @@ if __name__ == "__main__":
 1. **Code & Math RL**: Use **RLVR** (Verifiable Rewards via compilers/unit tests) to eradicate Neural RM reward hacking.
 2. **Reasoning Models**: Leverage **MCTS** and **PRM** for System 2 slow-thinking reasoning search.
 3. **Sample Efficiency**: Relabel failed trajectories using **Hindsight Relabeling**.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agentic-rl-and-reasoning-search-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agentic-rl-and-reasoning-search-coaching).
+<!-- talentme:bottom:end -->

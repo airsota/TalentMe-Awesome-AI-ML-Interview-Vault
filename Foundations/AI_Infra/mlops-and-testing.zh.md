@@ -16,6 +16,10 @@ interviewFollowups:
   - "详细解构 LLMOps 自动化 CI/CD 流水线：Prompts 预发测试、回归评估与金丝雀 (Canary) 灰度发布流程？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Infra/mlops-and-testing?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mlops-and-testing)
+<!-- talentme:top:end -->
+
 # 🌐 MLOps 与在线测试全景：Data Drift 监控、PSI 指标、A/B 测试与 CUPED 方差降低
 
 > **核心摘要**：模型部署上线绝非终点，真实世界数据分布随着时间不断演化。**MLOps & LLMOps** 建立了模型监控、自动化重训练与科学在线实验闭环。通过 **PSI (Population Stability Index)** 实时预警数据漂移 (Data Drift)，利用 **CUPED** 算法降低 A/B 测试方差，能够在极短时间内以更少样本验证新模型效果。本指南系统解构 MLOps 生命周期、Data Drift 统计检测、CUPED 数学推导与 SRM 实验防错。
@@ -187,3 +191,9 @@ if __name__ == "__main__":
 1. **漂移预警**：建立基于 **PSI $\ge 0.25$** 的自动化模型报警与重训练触发器；
 2. **实验加速**：A/B 测试全面接入 **CUPED 方差降低** 算法，节省 50%+ 实验样本；
 3. **质量防错**：上线前强制校验 **卡方检验 $\chi^2$ 防范 SRM 流量偏差**。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mlops-and-testing-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mlops-and-testing-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "What are the fundamental differences in attention masking between Encoder-Only, Decoder-Only, and Encoder-Decoder models?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/LLM/transformer-architecture?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=transformer-architecture)
+<!-- talentme:top:end -->
+
 # 🌐 Transformer Architecture Breakdown: Self-Attention, MHA/GQA/MQA, RoPE & FlashAttention 1/2/3
 
 > **Core Executive Summary**: Since its introduction in 2017, the Transformer architecture has fundamentally reshaped artificial intelligence, serving as the universal backbone for modern Large Language Models (LLMs). This guide provides an exhaustive breakdown of Transformer mathematical foundations, architectural paradigms (Encoder-Only, Decoder-Only, Encoder-Decoder), attention mechanisms (MHA, MQA, GQA), positional encodings (RoPE), sparse long-context attention (BigBird), and hardware-level GPU kernel fusion (FlashAttention-1/2/3).
@@ -336,3 +340,9 @@ if __name__ == "__main__":
 1. **Architecture Selection**: For autoregressive text generation, adopt **Decoder-Only + GQA (Grouped-Query Attention) + RoPE + SwiGLU** (standard modern suite in LLaMA / Qwen / DeepSeek);
 2. **Kernel Optimization**: Enforce **FlashAttention-2** or **FlashAttention-3 (Hopper H100)** during training and serving to eliminate 80% of HBM I/O bottlenecks;
 3. **Long Context Extension**: Beyond 64K context, integrate RoPE Dynamic Frequency Scaling (YaRN) or Sparse Attention (BigBird) to maintain attention stability.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=transformer-architecture-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=transformer-architecture-coaching).
+<!-- talentme:bottom:end -->

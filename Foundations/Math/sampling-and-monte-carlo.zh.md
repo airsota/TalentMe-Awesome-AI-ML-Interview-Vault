@@ -16,6 +16,10 @@ interviewFollowups:
   - "Bootstrap 如何估计任意统计量 (如中位数) 的方差与置信区间？比较参数与非参数 Bootstrap、百分位法与 BCa 区间。"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/Math/sampling-and-monte-carlo?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=sampling-and-monte-carlo)
+<!-- talentme:top:end -->
+
 # 🎲 采样与蒙特卡洛方法：逆变换采样、拒绝采样、重要性采样、MCMC 与 Bootstrap 全景
 
 > **核心摘要**：采样理论回答一个基础问题——当我们只能廉价地生成均匀随机数时，如何从任意目标分布中抽取样本？本指南系统覆盖：精确采样（逆变换采样及其正确性证明）、近似采样（拒绝采样的接受率推导、重要性采样的方差分析与最优提议分布）、马尔可夫链蒙特卡洛（Metropolis-Hastings 与 Gibbs 的细致平衡、burn-in 与收敛诊断）、重采样技术（参数/非参数 Bootstrap 的方差估计与置信区间）、蒙特卡洛积分 $O(1/\sqrt{n})$ 误差定律与降方差技巧（分层采样、控制变量），并桥接经典采样理论与 LLM 解码（temperature、top-k、top-p）。配备 Pure Numpy 逆变换 + 拒绝采样 + Bootstrap 置信区间实现与 5 大高频面试考点。
@@ -397,3 +401,9 @@ if __name__ == "__main__":
 4. **MCMC 必须做诊断**：丢弃 burn-in、运行多链，报告 Gelman-Rubin $\hat{R} < 1.1$ 与 ESS——相关样本会悄然放大置信度。
 5. **敬畏 $O(1/\sqrt{n})$ 定律**：误差减半需样本翻四倍——或者用分层采样/控制变量降低 $\sigma_g$，而不是无限加大 $n$。
 6. **Bootstrap 用于一切无闭式标准误的统计量**：中位数、分位数、比值——用 $B \ge 1000$ 的非参数 Bootstrap 给出标准误与百分位区间，偏态统计量改用 BCa。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=sampling-and-monte-carlo-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=sampling-and-monte-carlo-coaching)。
+<!-- talentme:bottom:end -->

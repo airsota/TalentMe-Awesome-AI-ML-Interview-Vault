@@ -16,6 +16,10 @@ interviewFollowups:
   - "Offline metrics look great but online performance degrades — how do you debug this? How do you distinguish and respond to concept drift vs data drift?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/MLE/mle-model-evaluation-and-debugging?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-model-evaluation-and-debugging)
+<!-- talentme:top:end -->
+
 # 🔍 MLE Model Evaluation & Debugging Engineering: CV Strategies, Data Leakage, Bias-Variance Diagnosis, Drift & A/B Validation
 
 > **Core Executive Summary**: A model is only as good as the evaluation loop that validates it. This guide builds the complete evaluation-and-debugging engineering pipeline for MLE interviews and production: how to split data and choose the right cross-validation strategy (K-Fold vs Stratified vs GroupKFold vs TimeSeriesSplit vs LOOCV), how data leakage silently inflates every offline metric, how to systematically diagnose high bias vs high variance from train/val loss curves and learning curves, how to reconcile offline metrics with business metrics (PR vs ROC, threshold selection), and finally how to monitor production models for data/concept drift and validate every launch with an A/B test.
@@ -278,3 +282,9 @@ if __name__ == "__main__":
 3. **Diagnose before tuning**: bias → add capacity; variance → add data or regularization; use learning curves and cohort error analysis instead of guesswork.
 4. **Align metrics with business**: imbalanced tasks report PR-AUC; decision thresholds are cost optimization problems, not 0.5 defaults.
 5. **Monitor and A/B test**: PSI/KS for data drift, label-rate checks for concept drift; validate every launch with a pre-registered A/B experiment.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-model-evaluation-and-debugging-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-model-evaluation-and-debugging-coaching).
+<!-- talentme:bottom:end -->

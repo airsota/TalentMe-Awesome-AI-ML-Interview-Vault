@@ -16,6 +16,10 @@ interviewFollowups:
   - "LoRA 在推理部署阶段如何实现零推理延迟 (Zero Inference Latency)？融合权重时需注意什么？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/LLM/parameter-efficient-fine-tuning?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=parameter-efficient-fine-tuning)
+<!-- talentme:top:end -->
+
 # 🌐 高效微调 (PEFT) 架构全景：LoRA、QLoRA、DoRA、Prefix/Prompt Tuning、Adapters 与 MoRA/ReLoRA 深度剖析
 
 > **核心摘要**：随着大语言模型 (LLM) 参数量迈向千亿级，全参数微调 (Full Fine-Tuning) 的显存与计算开销变得不可承受。**高效参数微调 (Parameter-Efficient Fine-Tuning, PEFT)** 技术通过仅冻结预训练基座权重 $W_0$，仅训练极少量的增量参数（通常 $< 1\%$），实现与全量微调媲美的下游任务性能。本指南深度拆解 **LoRA** 的低秩数学推导、**QLoRA** 的 NF4 4-bit 量化与分页显存管理、**DoRA** 权重幅值与方向解耦、**Prefix/Prompt Tuning** 虚拟前缀机制、**Adapters** 瓶颈结构，以及 **MoRA/ReLoRA/S-LoRA** 等前沿 SOTA 扩展。
@@ -234,3 +238,9 @@ if __name__ == "__main__":
 1. **首选方案**：优先选择 **DoRA** 或 **LoRA**（作用于全模型所有 Linear 层，如 $r=16, \alpha=32$）；显存受限卡（如消费级 24G/48G 单卡）强力推荐 **QLoRA (NF4 + Double Quantization)**；
 2. **部署优化**：生产环境务必执行 `merge_weights()`，实现零推理延迟上线；若需单卡并发服务 1000+ 个不同任务的 Adapter，选用 **S-LoRA** 动态 Page 管理；
 3. **避免避坑**：切忌只给 $W_q, W_v$ 加 LoRA，全面覆盖 $W_q, W_k, W_v, W_o, W_{\text{gate}}, W_{\text{up}}, W_{\text{down}}$ 才能最大化激活参数能力！
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=parameter-efficient-fine-tuning-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=parameter-efficient-fine-tuning-coaching)。
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "How would you handle cold-start ads and budget pacing (PID) without hurting platform revenue or UX?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/System_Design/search-and-ad-system-design?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=search-and-ad-system-design)
+<!-- talentme:top:end -->
+
 # 🌐 Search & Advertising System Design: Query Understanding, Inverted Index, RTB & pCTR Prediction
 
 > **Core Executive Summary**: Search and advertising are two sides of the same funnel: understand the user's intent, retrieve a candidate pool at massive scale, rank it by relevance (and, for ads, by expected revenue), then blend and serve under strict latency budgets. On the search side, this guide covers query understanding, distributed inverted indexing, the Recall@K / MRR / NDCG metric family, and Pointwise/Pairwise/Listwise learning-to-rank with dual-tower architectures. On the ads side, it covers targeting, pCTR/pCVR prediction, the fundamental ranking equation $\text{eCPM} = \text{pCTR} \times \text{pCVR} \times \text{bid}$, the GSP vs VCG auction debate, ad-organic blending, budget pacing, and cold-start strategies — culminating in a runnable NumPy implementation of NDCG scoring and a GSP auction.
@@ -332,3 +336,9 @@ if __name__ == "__main__":
 ---
 
 *Reference lineage: Aman's System Design notes (search funnel, NDCG worked example, ads end-to-end index publisher, GSP/VCG, pacing) distilled into this TalentMe Foundations guide.*
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=search-and-ad-system-design-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=search-and-ad-system-design-coaching).
+<!-- talentme:bottom:end -->

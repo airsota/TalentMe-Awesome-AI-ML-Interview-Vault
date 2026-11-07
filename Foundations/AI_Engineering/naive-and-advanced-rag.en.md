@@ -16,6 +16,10 @@ interviewFollowups:
   - "Explain HyDE (Hypothetical Document Embeddings) workflow and identify query failure modes."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/AI_Engineering/naive-and-advanced-rag?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=naive-and-advanced-rag)
+<!-- talentme:top:end -->
+
 # 🌐 RAG Pipeline: From Naive RAG to Advanced RAG Architecture, Hybrid Search, RRF & Cross-Encoder
 
 > **Core Executive Summary**: Large Language Models suffer from knowledge cutoffs and hallucinations. **RAG (Retrieval-Augmented Generation)** connects LLMs to external authoritative knowledge bases for real-time document grounding. Evolving from Naive RAG to multi-query, hybrid-search **Advanced RAG**, RAG forms the foundation of enterprise AI systems. This guide dissects chunking, BM25 + Dense hybrid retrieval, RRF fusion, Cross-Encoder re-ranking, and Document Intelligence parsing.
@@ -157,3 +161,9 @@ if __name__ == "__main__":
 1. **Enterprise Retrieval Standard**: Always implement **BM25 + Dense Hybrid Search** with **RRF score fusion**.
 2. **Re-ranking Mandate**: Pipeline Top-30 hybrid candidates into a **Cross-Encoder (BGE-Reranker)** to yield Top-5 chunks.
 3. **Chunking Best Practice**: Prefer **Parent-Child Chunking** to eliminate context truncation.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=naive-and-advanced-rag-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=naive-and-advanced-rag-coaching).
+<!-- talentme:bottom:end -->

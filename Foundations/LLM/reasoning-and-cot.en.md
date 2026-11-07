@@ -16,6 +16,10 @@ interviewFollowups:
   - "How do Context Engineering strategies resolve Context Poisoning and Context Distraction in long-horizon reasoning?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/LLM/reasoning-and-cot?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=reasoning-and-cot)
+<!-- talentme:top:end -->
+
 # 🌐 Reasoning LLMs & Slow-Thinking: DeepSeek-R1 Pure RL, Aha Moment, Long CoT Distillation & OpenAI o1/o3
 
 > **Core Executive Summary**: Traditional intuitive generation models (System 1 / Fast Thinking) rely on pattern matching for one-shot answers, suffering from logic gaps in complex math, code, and reasoning. **Reasoning LLMs (System 2 Slow-Thinking)** introduce **Long Chain-of-Thought (CoT)** and **Test-Time Compute Scaling**, empowering models to plan, self-check, backtrack, and reflect. This guide dissects **DeepSeek-R1-Zero** pure RL, **DeepSeek-R1** 4-stage pipeline, **OpenAI o1/o3** test-time scaling laws, long CoT distillation, and **Context Engineering**.
@@ -179,3 +183,9 @@ if __name__ == "__main__":
 1. **Local & Edge Deployment**: Use **DeepSeek-R1 Distill Models (Qwen-1.5B to 32B)** for lightweight slow-thinking capabilities.
 2. **RL Training Avoid Pitfalls**: Avoid pure RL on raw base models without SFT; adopt the **DeepSeek 4-stage pipeline** to ensure clean formatting.
 3. **Context Engineering**: Implement **Tool-Result Clearing** and **Context Compaction** to prevent context poisoning during long reasoning loops.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=reasoning-and-cot-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=reasoning-and-cot-coaching).
+<!-- talentme:bottom:end -->

@@ -16,6 +16,10 @@ interviewFollowups:
   - "How is the LLaVA-Instruct-150K dataset generated using GPT-4 text prompts?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/Multimodal/vision-language-models?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vision-language-models)
+<!-- talentme:top:end -->
+
 # 🌐 Vision-Language Models (VLM): ViT, Projectors, LLaVA 2-Stage & DeepSeek-Janus Pro
 
 > **Core Executive Summary**: Vision-Language Models (VLMs) empower LLMs to perceive visual scenes. Rather than training multimodal models from scratch, VLMs utilize cross-modal projectors to map visual patch embeddings from pre-trained Vision Encoders (ViTs) into the text embedding space of LLMs. This guide dissects VLM tripartite stacks, LLaVA 2-stage training, AnyRes dynamic resolution, and DeepSeek-Janus Pro decoupled architectures.
@@ -164,3 +168,9 @@ if __name__ == "__main__":
 1. **Projector Choice**: Use **2-Layer MLP** for OCR/grounding accuracy; use **Q-Former** for long-context conversation efficiency.
 2. **Stage 1 Safeguard**: Freeze LLM during Stage 1 alignment to protect pre-trained text knowledge.
 3. **Unified Multimodal**: Prefer **DeepSeek-Janus Pro** decoupled encoders for combined understanding and generation.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vision-language-models-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=vision-language-models-coaching).
+<!-- talentme:bottom:end -->

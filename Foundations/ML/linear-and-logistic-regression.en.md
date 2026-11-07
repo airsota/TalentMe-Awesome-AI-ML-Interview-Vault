@@ -16,6 +16,10 @@ interviewFollowups:
   - "What are the differences between Sigmoid and Probit activation functions regarding distributional assumptions and derivatives?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/ML/linear-and-logistic-regression?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-and-logistic-regression)
+<!-- talentme:top:end -->
+
 # Linear & Logistic Regression: Mathematical Derivations, Log-Odds, MLE, VIF & Bias-Variance Full Guide
 
 > **Summary**: This comprehensive guide systematically covers the complete mathematical framework for Linear and Logistic Regression. We detail the 5 classical assumptions, OLS derivation, VIF multicollinearity detection, polynomial feature interactions, Sigmoid vs Probit comparison, MLE binary cross-entropy gradient derivation, low-data Bias-Variance bullseye dynamics, and step-by-step numerical calculations.
@@ -239,3 +243,9 @@ When sample size $n$ is smaller than feature count $d$, variance spikes dramatic
 1. **Theory**: Master OLS normal equation derivation, Sigmoid log-odds, VIF calculation, and BCE loss gradients.
 2. **Diagnostics**: Use VIF to detect multicollinearity and the Bullseye Model to diagnose overfitting.
 3. **Whiteboard**: Practice deriving the $\text{Bias}^2 + \text{Variance} + \sigma^2$ error decomposition.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-and-logistic-regression-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=linear-and-logistic-regression-coaching).
+<!-- talentme:bottom:end -->

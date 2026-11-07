@@ -16,6 +16,10 @@ interviewFollowups:
   - "How does the Muon/MuonClip optimizer in Kimi-K2 resolve gradient numerical instability compared to AdamW in 100B+ pre-training?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/LLM/llm-foundations-and-sota?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-foundations-and-sota)
+<!-- talentme:top:end -->
+
 # 🌐 Open & Commercial SOTA LLM Evolution: From BERT/GPT-4 to LLaMA-3, Qwen-3, Gemma-4 & Kimi-K2
 
 > **Core Executive Summary**: Since the Transformer paper, Large Language Models (LLMs) evolved from unidirectional/bidirectional encoders (BERT/GPT-1/2) to large-scale autoregressive generators, and now to sparse MoE activation and long-chain slow-thinking paradigms. This guide dissects **commercial closed frontiers** (GPT-4/4o, Claude 4, Gemini 2.0), **open base model leaders** (LLaMA 1/2/3), **open post-training recipes** (Tulu 3 SFT+DPO+RLVR), and **latest SOTA breakthroughs** (Qwen-3, Gemma-4, Kimi-K2).
@@ -171,3 +175,9 @@ if __name__ == "__main__":
 1. **Base Model Selection**: Standardize on **LLaMA-3 (8B/70B)** or **Qwen-2.5/3** for production GQA architecture and 128K context window.
 2. **Dual-Thinking Strategy**: Leverage **Qwen-3 Dual-Thinking** or **DeepSeek-R1 Distill** to toggle between Fast System 1 and Slow System 2 reasoning.
 3. **Post-Training Paradigm**: Follow the **Tülu 3** recipe combining SFT, DPO, and rule-based RLVR for transparent, verifiable alignment.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-foundations-and-sota-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=llm-foundations-and-sota-coaching).
+<!-- talentme:bottom:end -->

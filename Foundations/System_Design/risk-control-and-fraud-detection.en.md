@@ -16,6 +16,10 @@ interviewFollowups:
   - "Fraudsters can spoof device fingerprints and rotate IPs. How do graph-based methods catch colluding gangs that single-event features miss?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/System_Design/risk-control-and-fraud-detection?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=risk-control-and-fraud-detection)
+<!-- talentme:top:end -->
+
 # 🌐 Real-time Risk Control & Fraud Detection System Design: Streaming & Graph Risk
 
 > **Core Executive Summary**: A financial-grade risk control system must return a **Pass / Reject / Manual-Review** decision within a **10ms SLA** while scanning millions of events per second, on a distribution where fraud can be **0.1% or rarer**. This guide dissects the real-time pipeline — event ingestion, real-time features, rule engine, model scoring, strategy, and human review — then covers anomaly detection, imbalanced and cost-sensitive learning, risk metrics, adversarial fraud, graph-based collusion detection, and latency budgets with degradation.
@@ -327,3 +331,9 @@ Run it: at a 0.2% fraud rate the engine reports recall ~0.7 with a false-kill ra
 3. **Design for the 0.1% class**: SMOTE/class weights/Focal Loss for training, PR-AUC + MCC + false-kill rate for evaluation, calibration for threshold decisions — never raw accuracy.
 4. **Think in graphs**: entity graphs with community detection and 1–2 hop queries produce high-precision features attackers cannot easily fake.
 5. **Treat fraud as an arms race**: monitor rule close rates, raise attack costs (verification escalation), down-weight spoofable features — retune in days, not quarters.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=risk-control-and-fraud-detection-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=risk-control-and-fraud-detection-coaching).
+<!-- talentme:bottom:end -->

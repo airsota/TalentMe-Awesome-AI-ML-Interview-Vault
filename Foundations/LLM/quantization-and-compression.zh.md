@@ -16,6 +16,10 @@ interviewFollowups:
   - "对比 W8A8、W4A16 与 W4A4 在推理硬件部署时的性能瓶颈（Memory-Bandwidth Bound vs Compute-Bound）？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/LLM/quantization-and-compression?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=quantization-and-compression)
+<!-- talentme:top:end -->
+
 # 🌐 大模型量化与模型压缩全景：INT8/INT4 映射、SmoothQuant 异常值平滑、GPTQ 二阶 Hessian 优化与 AWQ/知识蒸馏剖析
 
 > **核心摘要**：随着大语言模型 (LLM) 参数量达到百亿至千亿级，全精度 FP16/BF16 模型的显存占用与访存带宽成为实时低延迟推理的致命瓶颈。**模型量化 (Quantization)** 技术通过将连续高精度浮点数映射为低精度整数（如 INT8、INT4），在显存占用缩减 50%~75% 的同时实现显着的吞吐量提升。本指南系统剖析非对称与对称量化数学映射、**SmoothQuant** 激活值异常值平滑机制、**GPTQ** 基于二阶 Hessian 逆矩阵的逐列最优补偿、**AWQ** 1% 关键激活感知量化，以及**知识蒸馏 (Knowledge Distillation)** 等模型压缩前沿技术。
@@ -224,3 +228,9 @@ if __name__ == "__main__":
 1. **消费级单卡/端侧 Decode 场景首选**：直接采用 **AWQ** 或 **GPTQ (INT4/W4A16)** 量化（配合 AutoGPTQ / vLLM），最大化降低 HBM 显存带宽搬运开销，提升 Decode Token 生成速度；
 2. **高并发服务器端吞吐场景首选**：采用 **SmoothQuant (INT8/W8A8)**，结合 TensorRT-LLM 激活高效 INT8 矩阵乘法 Tensor Core 算子，显著提升并发 Capacity；
 3. **量化避坑指南**：切忌直接对未平滑的激活值做普通 INT8 量化，必须引入 SmoothQuant 因子平滑，否则异常值通道会导致推理 Perplexity 严重崩溃！
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=quantization-and-compression-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=quantization-and-compression-coaching)。
+<!-- talentme:bottom:end -->

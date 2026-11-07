@@ -16,6 +16,10 @@ interviewFollowups:
   - "分析 Computer Use (电脑桌面控制 Agent) 在屏幕截图 Vision 解析、坐标点击与 OS 交互中的安全隔离与鲁棒性挑战？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Engineering/agent-design-patterns?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agent-design-patterns)
+<!-- talentme:top:end -->
+
 # 🌐 Agent 设计模式全景：ReAct 循环、Reflexion 自我反思、Plan-and-Execute 与 LangGraph 图工程
 
 > **核心摘要**：大语言模型（LLM）不仅能作为无状态的问答工具，更能进化为具备自主决策能力的 **AI Agent (智能体)**。Agent 通过四大支柱——**Brain (大脑推理)**、**Planning (规划解构)**、**Memory (长短期记忆)** 和 **Tools (工具调用)**，能够在复杂非确定性环境中自主完成目标。本指南系统解构 ReAct 思考动作循环、Reflexion 反思日志自愈、Plan-and-Execute 动态重规划、LangGraph 图状态控制以及 Claude Code 自主代码工程范式。
@@ -214,3 +218,9 @@ if __name__ == "__main__":
 1. **工业级 Agent 开发**：强烈推荐使用 **LangGraph** 替代线性 Chain，通过有向图机制管理状态与死循环；
 2. **复杂任务容错**：在代码生成或长推导场景中接入 **Reflexion 反思日志** 机制；
 3. **安全边界**：涉及电脑控制或 Shell 执行必须在隔离的 **MicroVM / Docker 沙箱** 中运行。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agent-design-patterns-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=agent-design-patterns-coaching)。
+<!-- talentme:bottom:end -->

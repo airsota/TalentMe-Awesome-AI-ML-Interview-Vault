@@ -16,6 +16,10 @@ interviewFollowups:
   - "解释 CUDA 中的 Warp (32 线程束)、Warp Divergence (分支发散) 以及 Memory Coalescing (显存合并合并访问) 优化的底层原理？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Infra/gpu-hardware-and-hbm?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gpu-hardware-and-hbm)
+<!-- talentme:top:end -->
+
 # 🌐 GPU 硬件架构全景：SM 流处理器、Tensor Core 混合精度、HBM 带宽与 Roofline 模型
 
 > **核心摘要**：大模型训练与推理的高效落地极度依赖于底层 GPU 硬件的物理特性。NVIDIA H100 / A100 等 Modern GPU 拥有由数十个 **SM (Streaming Multiprocessor)** 组成的超大规模并行架构，并配备 **Tensor Cores** 与 3TB/s+ 吞吐量的 **HBM3** 显存。本指南系统解构 SM 微架构、Tensor Cores 混合精度乘法、Roofline 性能建模以及 FlashAttention SRAM 分块优化。
@@ -182,3 +186,9 @@ if __name__ == "__main__":
 1. **算子开销优化**：对 Decoding 阶段算子使用 **FlashAttention 与 FlashDecoding** 减少 HBM I/O；
 2. **混合精度**：前向推理首选 **FP8 (E4M3)** 压榨 2x Tensor Core 硬件算力；
 3. **内存连续**：在 CUDA 编程中时刻注意 **Memory Coalescing 32-Byte 内存合并对齐**。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gpu-hardware-and-hbm-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=gpu-hardware-and-hbm-coaching)。
+<!-- talentme:bottom:end -->

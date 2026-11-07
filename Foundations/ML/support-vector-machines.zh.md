@@ -16,6 +16,10 @@ interviewFollowups:
   - "当特征维度 d 远大于样本量 n (如文本分类) 时，应该选择 Linear 核还是 RBF 核？为什么？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/ML/support-vector-machines?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=support-vector-machines)
+<!-- talentme:top:end -->
+
 # 支持向量机 (SVM)：最大间隔几何推导、对偶变换、KKT 条件与高斯 RBF 核技巧全解
 
 > **核心摘要**：支持向量机 (Support Vector Machine, SVM) 是经典统计学习中最具数学美感的分类算法之一。本指南系统化剖析从线性可分几何间隔最大化到软间隔松弛变量、拉格朗日对偶极值转换、KKT 条件下支持向量的稀疏性特征，再到高维核技巧 (Kernel Trick) 的映射原理与选型策略。
@@ -390,3 +394,9 @@ class PureNumpyRBFSVM:
 1. **几何推导**：掌握从几何间隔 $\frac{1}{\|w\|}$ 到凸二次规划原问题的等价转换。
 2. **对偶与 KKT**：深刻理解对偶问题 $X^T X$ 内积形式与支持向量在 $\alpha_i > 0$ 上的稀疏性含义。
 3. **核技巧选型**：牢记高斯 RBF 核无限维泰勒展开原理与 $d \gg n$ 场景下 Linear 核的工程优越性。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=support-vector-machines-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=support-vector-machines-coaching)。
+<!-- talentme:bottom:end -->

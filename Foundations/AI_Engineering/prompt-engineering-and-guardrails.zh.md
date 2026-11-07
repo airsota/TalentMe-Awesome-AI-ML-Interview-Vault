@@ -16,6 +16,10 @@ interviewFollowups:
   - "列举常见的越狱攻击模式（DAN、角色扮演、Agentic RAG 投毒）及其标准防御措施。"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/AI_Engineering/prompt-engineering-and-guardrails?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=prompt-engineering-and-guardrails)
+<!-- talentme:top:end -->
+
 # 🌐 Prompt 工程与安全护栏：Structured Outputs、Outlines 语法硬约束与 Llama Guard 防护
 
 > **核心摘要**：在企业级 AI 应用开发中，Prompt 工程不仅包含 Few-Shot 与 CoT 提示词撰写，更依赖于**Structured Outputs 结构化输出硬约束（如 Outlines / Instructor 保证 JSON 解析 100% 成功）与 Llama Guard 输入输出安全防护**。
@@ -132,3 +136,9 @@ if __name__ == "__main__":
 > 💡 **直观理解**: 这个算子演示了"结构化 Prompt 模板"的最小骨架——角色声明 + schema 描述 + 输入拼接；但注意它只是提示词，要保证 100% 合规还得叠加第二张牌：constrained decoding（考点 2/3 的 Outlines / Instructor）。
 >
 > 🎤 **面试速答**: "结论：结构化 Prompt = 角色 + schema 声明 + 输入。原理：模型按 prompt 里的 schema 描述生成 JSON，格式保证靠解码约束兜底。例子：抽取 'name/age/city' 的模板产出 'Bob is 25 in NYC' 的抽取指令，配合 Outlines 保证返回字段合法。"
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=prompt-engineering-and-guardrails-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=prompt-engineering-and-guardrails-coaching)。
+<!-- talentme:bottom:end -->

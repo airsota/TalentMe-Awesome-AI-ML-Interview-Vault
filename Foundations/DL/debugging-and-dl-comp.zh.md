@@ -16,6 +16,10 @@ interviewFollowups:
   - "对比 FCN、CNN、RNN 与 Transformer 的归纳偏置 (Inductive Bias)，为什么 Transformer 极其依赖超大规模预训练数据？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/DL/debugging-and-dl-comp?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=debugging-and-dl-comp)
+<!-- talentme:top:end -->
+
 # 深度学习调试与竞赛工程全景：4 步调试框架、单 Batch 过拟合验证、数值梯度检查、20大常见工程Bug、Grad-CAM 可解释性与架构归纳偏置选型指南
 
 > **核心摘要**：深度学习算法在工程落地与 Kaggle/KDD 竞赛中面临的最大挑战，往往不是网络结构的设计，而是漫长而痛苦的“模型调试 (Model Debugging)”过程。深度学习模型的隐蔽性极高——代码即使存在严重的逻辑 Bug（如 Data Leakage、Double Softmax、忘记清空梯度、隐式广播维度灾难），模型依然可能产生不报错的运行结果，但性能会严重劣化。本指南系统剖析深度学习 4 步调试框架（Sanity Check、单 Batch 强制过拟合、由简至繁渐进复杂度、数值梯度检查）、20 大常见工程 Bug 排查表、Grad-CAM (Gradient-weighted Class Activation Mapping) 可解释性显热图机制、Teacher-Student 知识蒸馏 (Knowledge Distillation)，以及四大基础神经网络架构在归纳偏置 (Inductive Bias) 上的本质权衡与 Pure Numpy 调试引擎实现。全篇配备丰富的 SEO 说明性段落与工程排坑实践。
@@ -203,3 +207,9 @@ class PureNumpyDLDebuggingEngine:
 1. **新项目开工准则**：第一天务必先完成 **Overfit Single Batch** 验证，确认 Pipeline 无 Bug 后再扩展数据集与复杂网络；
 2. **模型可解释性**：上线前使用 **Grad-CAM** 可视化模型注意区域，防止模型学到背景水印等假相关特征 (Spurious Correlation)；
 3. **架构选型与数据规模**：数据量 $<10$ 万选 **CNN / ResNet**（强归纳偏置防过拟合）；数据量 $>1000$ 万必选 **ViT / Transformer**（弱归纳偏置 Scaling 上限更高）。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=debugging-and-dl-comp-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=debugging-and-dl-comp-coaching)。
+<!-- talentme:bottom:end -->

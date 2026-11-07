@@ -16,6 +16,10 @@ interviewFollowups:
   - "在 MoE 模型分布式训练与推理中，专家并行 (Expert Parallelism, EP) 的 All-to-All 通信瓶颈如何解决？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/LLM/moe-architecture?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=moe-architecture)
+<!-- talentme:top:end -->
+
 # 🌐 MoE 混合专家模型与 DeepSeek MLA/MTP/mHC 架构解构：Top-k 门控、无辅助损失均衡、低秩潜注意力与 KAN 剖析
 
 > **核心摘要**：随着模型参数量迈向万亿关口，稠密 (Dense) 模型前向计算开销急剧飙升。**混合专家模型 (Mixture-of-Experts, MoE)** 通过将 FFN 全连接层替换为多个独立的专家网络，并由**门控路由 (Gating Router)** 对每个 Token 仅动态激活前 $k$ 个专家（如 256 个专家中激活 8 个），实现了**参数量提升数十倍而计算量 (FLOPs) 保持常数级**的突破。本指南深度拆解经典 MoE 的数学建模、**DeepSeek-V3/V4** 创新的**无辅助损失负载均衡 (Auxiliary-Loss-Free)**、**MLA (Multi-Head Latent Attention)** 93% 显存节省低秩压缩、**MTP (Multi-Token Prediction)** 多步预测，以及 **Kolmogorov-Arnold Networks (KAN)** 对传统 MLP 的范式重构。
@@ -215,3 +219,9 @@ if __name__ == "__main__":
 1. **MoE 路由选型**：全面抛弃传统的 Switch Transformer 辅助损失 $\mathcal{L}_{\text{aux}}$，改用 DeepSeek **Auxiliary-Loss-Free 动态偏置调节**，实现无损害的 100% 负载均衡；
 2. **长文本 Attention 架构**：生产环境部署强烈推荐 **DeepSeek MLA (Multi-Head Latent Attention)**，通过低秩 $c_t^{\text{KV}}$ 压缩结合解耦 RoPE，斩获 93% 的 KV Cache 显存节省；
 3. **分布式算子优化**：工程实施必须重叠 Expert Parallelism (EP) 的 All-to-All 通信与专家 GEMM 计算，消除通信瓶颈。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=moe-architecture-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=moe-architecture-coaching)。
+<!-- talentme:bottom:end -->

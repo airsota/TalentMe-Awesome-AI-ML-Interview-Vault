@@ -16,6 +16,10 @@ interviewFollowups:
   - "离线指标很好但线上效果差，如何排查？概念漂移与数据漂移如何区分与应对，A/B 测试扮演什么角色？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/MLE/mle-model-evaluation-and-debugging?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-model-evaluation-and-debugging)
+<!-- talentme:top:end -->
+
 # 🔍 MLE 模型评估与调试工程：交叉验证策略、数据泄漏、偏差方差诊断、漂移检测与 A/B 验证
 
 > **核心摘要**：模型的价值取决于验证它的评估闭环。本指南完整覆盖 MLE 面试与生产落地中的评估-调试工程链路：如何划分数据并选择正确的交叉验证策略（K-Fold / Stratified / GroupKFold / TimeSeriesSplit / 留一法）、数据泄漏如何静默地虚高每一个离线指标、如何通过 train/val 损失曲线与学习曲线系统化诊断高偏差 vs 高方差、如何对齐离线指标与业务指标（PR vs ROC、切点选择），以及如何在生产环境监控数据/概念漂移并用 A/B 测试验证每一次上线。
@@ -285,3 +289,9 @@ if __name__ == "__main__":
 3. **先诊断再调参**：偏差 → 加容量；方差 → 加数据或正则化；用学习曲线与分群误差分析代替拍脑袋。
 4. **指标对齐业务**：不平衡任务报告 PR-AUC；判定阈值是成本优化问题，不是 0.5 默认值。
 5. **监控 + A/B 双保险**：PSI/KS 盯数据漂移、标签率盯概念漂移；每次上线用预注册的 A/B 实验验证后再放量。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-model-evaluation-and-debugging-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-model-evaluation-and-debugging-coaching)。
+<!-- talentme:bottom:end -->

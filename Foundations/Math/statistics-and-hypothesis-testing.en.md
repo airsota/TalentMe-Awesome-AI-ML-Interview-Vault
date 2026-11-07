@@ -16,6 +16,10 @@ interviewFollowups:
   - "When should you choose a z-test, a t-test, or a chi-squared test? Give one ML application for each."
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/Math/statistics-and-hypothesis-testing?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=statistics-and-hypothesis-testing)
+<!-- talentme:top:end -->
+
 # 🌐 Statistical Inference & Hypothesis Testing: Distribution Families, MLE, CLT, p-Values, Confidence Intervals & Power Analysis
 
 > **Core Executive Summary**: Statistical inference is the discipline of turning noisy data into calibrated decisions under uncertainty, and hypothesis testing is the engine that converts evidence into verdicts. This guide builds the complete pipeline: the distribution family toolbox (Normal, Chi-squared, t, F, Poisson, Bernoulli), the Central Limit Theorem that licenses large-sample inference, point estimation via Maximum Likelihood and the Method of Moments with the three golden properties (unbiasedness, consistency, efficiency), the hypothesis testing framework (H₀/H₁, Type I/II errors, p-value pitfalls, multiple comparisons), test selection among z / t / χ², confidence interval construction (analytic and Bootstrap), and power analysis with the sample size formula $n = (z_\alpha + z_\beta)^2 \sigma^2 / \delta^2$. Every concept is anchored back to ML practice: A/B testing, metric significance testing, and classifier comparison.
@@ -339,3 +343,9 @@ if __name__ == "__main__":
 > 💡 **Intuition**: The whole guide is one pipeline: pick the family → size the experiment → test + interval → correct for multiplicity. Every formula reduces to 'signal vs. noise.'
 >
 > 🎤 **Interview Answer**: "Takeaway: the four interview pillars — CLT (why the z-approximation works), MLE (the sample proportion), p-values (conditional probability, not P(H0|data)), and CIs (coverage interpretation). Why: fluctuation cancellation → CLT, logs → MLE, conditioning → p-values, repeated sampling → intervals. Example: report any metric gain with a bootstrap interval and apply Bonferroni/FDR to any sweep."
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=statistics-and-hypothesis-testing-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=statistics-and-hypothesis-testing-coaching).
+<!-- talentme:bottom:end -->

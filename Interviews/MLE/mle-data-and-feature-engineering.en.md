@@ -16,6 +16,10 @@ interviewFollowups:
   - "What is PSI and how would you build a feature drift monitoring system in production?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/MLE/mle-data-and-feature-engineering?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-data-and-feature-engineering)
+<!-- talentme:top:end -->
+
 # 🌐 MLE Data & Feature Engineering: Quality Pipelines, Categorical Encoding, Imbalance, Selection & Drift Detection
 
 > **Core Executive Summary**: Model performance is decided before training starts — by data quality and feature engineering. This guide covers the full MLE data pipeline: the four data-quality threats (mislabeling, noise, duplication, outliers), missing-value imputation, categorical encoding (Label / One-Hot / Target / OOF / Embedding) with leakage prevention, numerical transformations (standardization, normalization, binning, Box-Cox), polynomial crossing and its explosion, class-imbalance handling (resampling, SMOTE, cost-sensitive learning, metrics), feature selection (filter / wrapper / embedded) with permutation importance and SHAP, and production drift monitoring with PSI.
@@ -296,3 +300,9 @@ if __name__ == "__main__":
 3. **Match transforms to model family**: trees need almost no preprocessing; linear models need scaling; heavy skew needs Box-Cox/log; interactions should be curated, not enumerated.
 4. **Imbalance is a metric problem first**: switch to PR-AUC + MCC, use Stratified CV, then choose resampling, SMOTE, or cost-sensitive losses.
 5. **Assume drift, monitor daily**: PSI on every feature with alert thresholds, so the model fails loudly and early instead of silently degrading.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-data-and-feature-engineering-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=mle-data-and-feature-engineering-coaching).
+<!-- talentme:bottom:end -->

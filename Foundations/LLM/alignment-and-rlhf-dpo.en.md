@@ -16,6 +16,10 @@ interviewFollowups:
   - "How do Process Reward Models (PRM) and Outcome Reward Models (ORM) differ in complex Chain-of-Thought (CoT/Math) reinforcement learning?"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **Read this guide with interactive mindmaps, atomic cards, and 1,898 flashcards on TalentMe** → [Open the interactive version](https://talentme.airsota.com/resources/p/LLM/alignment-and-rlhf-dpo?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=alignment-and-rlhf-dpo)
+<!-- talentme:top:end -->
+
 # 🌐 Preference Alignment: RLHF 3-Stage, PPO Clipped Loss, DPO Math Derivation, GRPO & PRM/ORPO
 
 > **Core Executive Summary**: While Pre-training and Supervised Fine-Tuning (SFT) instill strong language modeling and instruction following in LLMs, models may still output biased, toxic, or unhelpful content (the **Alignment Tax**). Preference alignment aligns LLM behavior with **Helpfulness, Honesty, and Harmlessness (3H)** standards. This guide provides an exhaustive analysis of the classic **RLHF 3-Stage pipeline** (SFT $\to$ RM $\to$ PPO), derives **PPO Clipped Surrogate Loss and GAE**, mathematically proves **DPO (Direct Preference Optimization)** implicit reward substitution, analyzes **IPO, KTO, and ORPO** variants, and dissects DeepSeek-R1 Critic-free **GRPO (Group Relative Policy Optimization)** and **PRM (Process Reward Model)** step-by-step rewards.
@@ -198,3 +202,9 @@ if __name__ == "__main__":
 1. **General Chat Alignment**: Use **DPO** or **ORPO** for sample efficiency and stability without PPO Critic tuning.
 2. **Math & Code Reasoning RL**: Adopt DeepSeek-R1 validated **GRPO** to eliminate Critic memory overhead, paired with **Process Reward Models (PRM)** for step-level reasoning verification.
 3. **Unpaired Feedback**: Use **KTO** for single-point thumbs-up/down log data alignment.
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **Ready to test yourself?** Practice this topic with [1,898 free flashcards](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=alignment-and-rlhf-dpo-flashcards) or book a [1:1 mock interview](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=alignment-and-rlhf-dpo-coaching).
+<!-- talentme:bottom:end -->

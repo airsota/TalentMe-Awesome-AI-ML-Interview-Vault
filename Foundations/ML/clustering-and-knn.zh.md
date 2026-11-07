@@ -16,6 +16,10 @@ interviewFollowups:
   - "KNN 在高维空间下为什么会出现维数灾难 (Curse of Dimensionality)？KD-Tree 检索效率为何随维度增加急剧下降？"
 ---
 
+<!-- talentme:top:start -->
+> 📖 **在 TalentMe 上以交互式导图、原子知识卡和 1,898 张闪卡阅读本指南** → [打开交互版](https://talentme.airsota.com/resources/p/ML/clustering-and-knn?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=clustering-and-knn)
+<!-- talentme:top:end -->
+
 # 无监督聚类与 KNN：K-Means++ 坐标下降、DBSCAN 密度聚类、GMM 期望最大化 (EM) 与 KD-Tree 极客指南
 
 > **核心摘要**：聚类与最近邻算法是模式识别与表征学习的基础。本指南系统梳理基于距离的 K-Means 算法及其坐标下降收敛机制、解决局部最优的 K-Means++ 初始化，基于密度的 DBSCAN 任意形状聚类，以概率建模为核心的 GMM 与 EM 算法严密数学推导，以及 KNN 算法中的维数灾难与 KD-Tree 空间索引优化。
@@ -287,3 +291,9 @@ class PureNumpyKMeans:
 1. **球形均衡数据**：优先选择 K-Means++，利用手肘法或轮廓系数确定最佳 $K$；
 2. **流形/非凸形状或噪声数据**：使用 DBSCAN 自动发现簇结构与剔除噪点；
 3. **概率密度与重叠簇**：使用 GMM 与 EM 算法估计样本隶属于各簇的概率得分。
+
+<!-- talentme:bottom:start -->
+---
+
+🎯 **准备好检验自己了吗？** 用 [1,898 张免费闪卡](https://talentme.airsota.com/tools/flashcards?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=clustering-and-knn-flashcards) 练习本题，或预约一场 [1v1 模拟面试](https://talentme.airsota.com/contact?utm_source=github&utm_medium=article&utm_campaign=tech-vault&utm_content=clustering-and-knn-coaching)。
+<!-- talentme:bottom:end -->
